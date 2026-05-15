@@ -1,7 +1,7 @@
 ---
 name: slide-excellence
 description: Multi-agent slide review (visual, pedagogy, proofreading). Use for comprehensive quality check before milestones.
-argument-hint: "[QMD or TEX filename]"
+argument-hint: "[TEX filename]"
 allowed-tools: ["Read", "Grep", "Glob", "Write", "Task"]
 context: fork
 ---
@@ -14,7 +14,7 @@ Run a comprehensive multi-dimensional review of lecture slides. Multiple agents 
 
 ### 1. Identify the File
 
-Parse `$ARGUMENTS` for the filename. Resolve path in `Quarto/` or `Slides/`.
+Parse `$ARGUMENTS` for the filename. Resolve path in `Slides/` or `Handouts/`.
 
 ### 2. Run Review Agents in Parallel
 
@@ -34,11 +34,7 @@ Parse `$ARGUMENTS` for the filename. Resolve path in `Quarto/` or `Slides/`.
 - Label overlaps, geometric accuracy, visual semantics
 - Save: `quality_reports/[FILE]_tikz_review.md`
 
-**Agent 5: Content Parity** (only for .qmd files with corresponding .tex)
-- Frame count comparison, environment parity, content drift
-- Save: `quality_reports/[FILE]_parity_report.md`
-
-**Agent 6: Substance Review** (optional, for .tex files)
+**Agent 5: Substance Review** (optional, for lecture slides)
 - Domain correctness via domain-reviewer protocol
 - Save: `quality_reports/[FILE]_substance_review.md`
 

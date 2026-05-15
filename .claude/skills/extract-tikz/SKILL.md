@@ -1,13 +1,13 @@
 ---
 name: extract-tikz
-description: Extract TikZ diagrams from Beamer source, compile to PDF, convert to SVG with 0-based indexing. Use when updating TikZ diagrams for Quarto slides.
+description: Extract TikZ diagrams from Beamer source, compile to PDF, convert to SVG with 0-based indexing.
 argument-hint: "[LectureN, e.g., Lecture2]"
 allowed-tools: ["Read", "Bash", "Glob"]
 ---
 
 # Extract TikZ Diagrams to SVG
 
-Extract TikZ diagrams from the Beamer source, compile to multi-page PDF, and convert each page to SVG for use in Quarto slides.
+Extract TikZ diagrams from the Beamer source, compile to multi-page PDF, and convert each page to SVG.
 
 ## Steps
 
@@ -48,17 +48,11 @@ for i in $(seq 1 $PAGES); do
 done
 ```
 
-### Step 5: Sync to docs/ for deployment
-```bash
-cd ../..
-./scripts/sync_to_docs.sh $ARGUMENTS
-```
-
-### Step 6: Verify SVG files
+### Step 5: Verify SVG files
 - Read 2-3 SVG files to confirm they contain valid SVG markup
 - Confirm file sizes are reasonable (not 0 bytes)
 
-### Step 7: Report results
+### Step 6: Report results
 
 ## Source of Truth Reminder
 TikZ diagrams MUST be edited in the Beamer `.tex` file first, then copied verbatim to `extract_tikz.tex`. See `.claude/rules/single-source-of-truth.md`.

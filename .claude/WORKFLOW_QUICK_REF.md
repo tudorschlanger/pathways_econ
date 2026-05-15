@@ -23,19 +23,17 @@ Repeat
 ## I Ask You When
 
 - **Design forks:** "Option A (fast) vs. Option B (robust). Which?"
-- **Code ambiguity:** "Spec unclear on X. Assume Y?"
-- **Replication edge case:** "Just missed tolerance. Investigate?"
-- **Scope question:** "Also refactor Y while here, or focus on X?"
+- **Content ambiguity:** "Spec unclear on X. Assume Y?"
+- **Scope question:** "Also add handout for this activity, or focus on slides?"
 
 ---
 
 ## I Just Execute When
 
-- Code fix is obvious (bug, pattern application)
-- Verification (tolerance checks, tests, compilation)
+- Fix is obvious (typo, pattern application)
+- Verification (compilation checks)
 - Documentation (logs, commits)
-- Plotting (per established standards)
-- Deployment (after you approve, I ship automatically)
+- Diagrams (per established TikZ standards)
 
 ---
 
@@ -50,24 +48,17 @@ Repeat
 
 ## Non-Negotiables (Customize These)
 
-<!-- Replace with YOUR project's locked-in preferences -->
-
-- [YOUR PATH CONVENTION] (e.g., `here::here()` for R, relative paths for LaTeX)
-- [YOUR SEED CONVENTION] (e.g., `set.seed()` once at top for stochastic code)
-- [YOUR FIGURE STANDARDS] (e.g., white bg, 300 DPI, custom theme)
-- [YOUR COLOR PALETTE] (e.g., institutional colors)
-- [YOUR TOLERANCE THRESHOLDS] (e.g., 1e-6 for point estimates)
+- Path convention: `TEXINPUTS=../Preambles:$TEXINPUTS` for all LaTeX compilation
+- Figure standards: white background, 300 DPI minimum, TikZ + pgfplots for diagrams
+- Color palette: primary_blue `#012169`, primary_gold `#B9975B`, accent_yellow `#F2A900`
 
 ---
 
 ## Preferences
 
-<!-- Fill in as you discover your working style -->
-
-**Visual:** [How you want figures/plots handled]
-**Reporting:** [Concise bullets? Detailed prose? Details on request?]
+**Visual:** Publication-ready TikZ + pgfplots; clean, minimal Beamer theme
+**Reporting:** Concise bullet summaries; details on request
 **Session logs:** Always (post-plan, incremental, end-of-session)
-**Replication:** [How strict? Flag near-misses?]
 
 ---
 

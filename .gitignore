@@ -1,5 +1,5 @@
 # ==============================================================================
-# .gitignore for Academic Claude Code Projects
+# .gitignore for Pathways Project
 # ==============================================================================
 
 # LaTeX build artifacts
@@ -26,12 +26,6 @@ __pycache__/
 *.pyc
 *.pyo
 
-# R
-.Rproj.user/
-.Rhistory
-.RData
-.Rdata
-
 # OS files
 .DS_Store
 Thumbs.db
@@ -48,9 +42,3 @@ CLAUDE.local.md
 *.swo
 *~
 
-# Quarto rendering artifacts
-.quarto/
-
-# Output artifacts — uncomment lines below based on your preference
-# *.rds
-# output/**/*.rds

@@ -31,11 +31,11 @@ Review the entire slide deck holistically. Produce a pedagogical report covering
 - Order of presentation: simple → relative → distributional → conditional
 - **Red flag:** Advanced concept introduced before simpler prerequisite
 
-### 5. FRAGMENT REVEALS FOR PROBLEM → SOLUTION
-- Use `. . .` (Quarto) to create pedagogical moments
-- Pattern: State problem → [fragment] → Show solution
-- Target: 3-5 fragment reveals per lecture (not every slide — use sparingly)
-- **Red flag:** Dense theorem slide reveals everything at once when incremental revelation would help
+### 5. PROGRESSIVE REVEALS FOR PROBLEM → SOLUTION
+- Use multiple frames to create pedagogical moments (no `\pause` or overlay commands per project rules)
+- Pattern: State problem → next frame → Show solution
+- Target: 3-5 progressive reveals per lecture (not every slide — use sparingly)
+- **Red flag:** Dense slide reveals everything at once when incremental revelation would help
 
 ### 6. STANDOUT SLIDES AT CONCEPTUAL PIVOTS
 - Major transitions need a visual/thematic break (transition slide)

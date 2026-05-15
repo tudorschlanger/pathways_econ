@@ -2,13 +2,13 @@
 name: deep-audit
 description: |
   Deep consistency audit of the entire repository infrastructure.
-  Launches 4 parallel specialist agents to find factual errors, code bugs,
-  count mismatches, and cross-document inconsistencies. Then fixes all issues
-  and loops until clean.
+  Launches parallel specialist agents to find configuration errors,
+  count mismatches, and cross-document inconsistencies. Then fixes all
+  issues and loops until clean.
   Use when: after making broad changes, before releases, or when user says
   "audit", "find inconsistencies", "check everything".
 author: Claude Code Academic Workflow
-version: 1.0.0
+version: 1.1.0
 allowed-tools: ["Read", "Write", "Edit", "Bash", "Glob", "Grep", "Task"]
 ---
 
@@ -18,26 +18,17 @@ Run a comprehensive consistency audit across the entire repository, fix all issu
 
 ## When to Use
 
-- After broad changes (new skills, rules, hooks, guide edits)
-- Before releases or major commits
+- After broad changes (new skills, rules, hooks)
+- Before major commits
 - When the user asks to "find inconsistencies", "audit", or "check everything"
 
 ## Workflow
 
-### PHASE 1: Launch 4 Parallel Audit Agents
+### PHASE 1: Launch 3 Parallel Audit Agents
 
-Launch these 4 agents simultaneously using `Task` with `subagent_type=general-purpose`:
+Launch these 3 agents simultaneously using `Task` with `subagent_type=general-purpose`:
 
-#### Agent 1: Guide Content Accuracy
-Focus: `guide/workflow-guide.qmd`
-- All numeric claims match reality (skill count, agent count, rule count, hook count)
-- All file paths mentioned actually exist on disk
-- All skill/agent/rule names match actual directory names
-- Code examples are syntactically correct
-- Cross-references and anchors resolve
-- No stale counts from previous versions
-
-#### Agent 2: Hook Code Quality
+#### Agent 1: Hook Code Quality
 Focus: `.claude/hooks/*.py` and `.claude/hooks/*.sh`
 - No remaining `/tmp/` usage (should use `~/.claude/sessions/`)
 - Hash length consistency (`[:8]` across all hooks)
@@ -48,34 +39,28 @@ Focus: `.claude/hooks/*.py` and `.claude/hooks/*.sh`
 - Correct field names from hook input schema (`source` not `type` for SessionStart)
 - PreCompact hooks print to stderr (stdout is ignored)
 
-#### Agent 3: Skills and Rules Consistency
+#### Agent 2: Skills and Rules Consistency
 Focus: `.claude/skills/*/SKILL.md` and `.claude/rules/*.md`
 - Valid YAML frontmatter in all files
 - No stale `disable-model-invocation: true`
 - `allowed-tools` values are sensible
-- Rule `paths:` reference existing directories
+- Rule `paths:` reference existing directories (`Slides/`, `Handouts/`)
 - No contradictions between rules
 - CLAUDE.md skills table matches actual skill directories 1:1
-- All templates referenced in rules/guide exist in `templates/`
+- All templates referenced in rules exist in `templates/`
 
-#### Agent 4: Cross-Document Consistency
-Focus: `README.md`, `docs/index.html`, `docs/workflow-guide.html`
-- All feature counts agree across all 3 documents
-- All links point to valid targets
-- License section matches LICENSE file
-- Directory tree matches actual structure
-- No stale counts from previous versions
+#### Agent 3: Cross-Document Consistency
+Focus: `CLAUDE.md`, `.claude/WORKFLOW_QUICK_REF.md`, `.claude/rules/knowledge-base-template.md`
+- All skill counts agree across CLAUDE.md and actual skill directories
+- Lecture state table filenames match actual files in `Slides/` and `Handouts/`
+- Notation in knowledge base matches usage across all `.tex` files
+- No stale placeholder text (`[YOUR`, `[Topic]`, etc.)
 
 ### PHASE 2: Triage Findings
 
 Categorize each finding:
 - **Genuine bug**: Fix immediately
 - **False alarm**: Discard (document WHY it's false for future rounds)
-
-Common false alarms to watch for:
-- Quarto callout `## Title` inside `:::` divs — this is standard syntax, NOT a heading bug
-- `allowed-tools` linter warning — known linter bug (Claude Code issue #25380), field IS valid
-- Counts in old session logs — these are historical records, not user-facing docs
 
 ### PHASE 3: Fix All Issues
 
@@ -84,17 +69,9 @@ Apply fixes in parallel where possible. For each fix:
 2. Apply the fix
 3. Verify the fix (grep for stale values, check syntax)
 
-### PHASE 4: Re-render if Guide Changed
+### PHASE 4: Loop or Declare Clean
 
-If `guide/workflow-guide.qmd` was modified:
-```bash
-quarto render guide/workflow-guide.qmd
-cp guide/workflow-guide.html docs/workflow-guide.html
-```
-
-### PHASE 5: Loop or Declare Clean
-
-After fixing, launch a fresh set of 4 agents to verify.
+After fixing, launch a fresh set of agents to verify.
 - If new issues found → fix and loop again
 - If zero genuine issues → declare clean and report summary
 
@@ -102,11 +79,9 @@ After fixing, launch a fresh set of 4 agents to verify.
 
 ## Key Lessons from Past Audits
 
-These are real bugs found across 7 rounds — check for these specifically:
-
 | Bug Pattern | Where to Check | What Went Wrong |
 |-------------|---------------|-----------------|
-| Stale counts ("19 skills" → "21") | Guide, README, landing page | Added skills but didn't update all mentions |
+| Stale counts ("19 skills" → "21") | CLAUDE.md skills table | Added skills but didn't update table |
 | Hook exit codes | All Python hooks | Exit 2 in PreCompact silently discards stdout |
 | Hook field names | post-compact-restore.py | SessionStart uses `source`, not `type` |
 | State in /tmp/ | All Python hooks | Should use `~/.claude/sessions/<hash>/` |
@@ -114,7 +89,6 @@ These are real bugs found across 7 rounds — check for these specifically:
 | Missing fail-open | Python hooks `__main__` | Unhandled exception → exit 1 → confusing behavior |
 | Python 3.10+ syntax | Type hints like `dict | None` | Need `from __future__ import annotations` |
 | Missing directories | quality_reports/specs/ | Referenced in rules but never created |
-| Always-on rule listing | Guide + README | meta-governance omitted from listings |
 | macOS-only commands | Skills, rules | `open` without `xdg-open` fallback |
 | Protected file blocking | settings.json edits | protect-files.sh blocks Edit/Write |
 
@@ -130,13 +104,12 @@ After each round, report:
 | # | Severity | File | Issue | Status |
 |---|----------|------|-------|--------|
 | 1 | Critical | file.py:42 | Description | Fixed |
-| 2 | Medium | file.qmd:100 | Description | Fixed |
+| 2 | Medium | rule.md:10 | Description | Fixed |
 
 ### Verification
-- [ ] No stale counts (grep confirms)
+- [ ] CLAUDE.md skills table matches actual directories
 - [ ] All hooks have fail-open + future annotations
-- [ ] Guide renders successfully
-- [ ] docs/ updated
+- [ ] No stale placeholders in any config file
 
 ### Result: [CLEAN | N issues remaining]
 ```
