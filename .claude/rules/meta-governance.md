@@ -19,6 +19,7 @@
 - **Verify after:** Compile and confirm output at end of every task
 - **Session logging:** Post-plan, incremental, end-of-session
 - **Single source of truth:** Beamer `.tex` for slides, Handouts `.tex` for activities
+- **Preamble conventions:** All non-Beamer LaTeX documents must use `header_doc.tex` (`\input{../Preambles/header_doc}`). Beamer slides use `header_slides.tex`. Never create standalone preambles in individual files.
 
 ## Context Survival
 

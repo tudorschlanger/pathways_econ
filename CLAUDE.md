@@ -22,16 +22,27 @@
 Pathways/
 ├── CLAUDE.md                    # This file
 ├── .claude/                     # Rules, skills, agents, hooks
-├── Bibliography_base.bib        # Centralized bibliography
-├── Figures/                     # Figures and images
-├── Preambles/header.tex         # LaTeX headers
-├── Slides/                      # Beamer .tex lecture slides
-├── Handouts/                    # Standalone .tex activity/worksheet documents
-├── Lectures/                    # Reference materials (PowerPoint, Word, Excel)
-├── Pilot/                       # Pilot session materials (reference only)
-├── quality_reports/             # Plans, session logs, merge reports
+│   ├── agents/                  # Custom agent definitions
+│   ├── hooks/                   # Pre/post hooks (e.g., pre-compact)
+│   ├── rules/                   # Governance rules (plan-first, orchestrator, etc.)
+│   ├── skills/                  # Slash-command skills
+│   └── state/                   # Gitignored local state
+├── codes/Preambles/             # LaTeX headers (header_slides.tex, header_doc.tex)
+├── data/                        # Datasets
+├── doc/
+│   ├── Lectures/                # Reference materials per lesson (Lesson 1–5)
+│   └── Pilot/                   # Pilot session materials (reference only)
+├── output/
+│   ├── Lecture1/                # Lecture 1: slides + compiled PDF
+│   ├── syllabus/                # Course syllabus handout
+│   └── figures/                 # Figures and images
+├── quality_reports/
+│   ├── plans/                   # Implementation plans
+│   ├── session_logs/            # Session logs
+│   ├── specs/                   # Requirements specifications
+│   └── merges/                  # Quality reports at merge time
 ├── explorations/                # Sandbox for experimental work
-└── templates/                   # Session log, quality report templates
+└── templates/                   # Session log, quality report, LaTeX templates
 ```
 
 ---
@@ -39,14 +50,11 @@ Pathways/
 ## Commands
 
 ```bash
-# LaTeX (3-pass, XeLaTeX only)
-cd Slides && TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
-BIBINPUTS=..:$BIBINPUTS bibtex file
-TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
-TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
+# Compile lecture slides (XeLaTeX, from lecture folder)
+cd output/LectureN && TEXINPUTS=../../codes/Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
 
-# Compile handouts (same preamble path)
-cd Handouts && TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
+# Compile handouts/syllabus (same preamble path)
+cd output/syllabus && TEXINPUTS=../../codes/Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
 ```
 
 ---
@@ -100,8 +108,9 @@ cd Handouts && TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmod
 
 | Lecture | Beamer | Handout | Key Content |
 |---------|--------|---------|-------------|
-| 1: Thinking Like an Economist | `Lecture01_Opportunity_Cost.tex` | `Handout01_Weekend_Planning.tex` | Opportunity cost, sunk cost fallacy, cost-benefit analysis, smartphone ban debate |
-| 2: Causal Claims & Data | `Lecture02_Causal_Claims.tex` | `Handout02_Firefighters.tex` | Causal claims, DAGs, firefighter activity, chart detective |
-| 3: Markets & Externalities | `Lecture03_Markets.tex` | `Handout03_Carbon_Tax.tex` | Commons game, tragedy of the commons, carbon tax game |
-| 4: Trade Policy | `Lecture04_Trade.tex` | `Handout04_Steel_Tariff.tex` | Steel tariff debate, stakeholder analysis with citations |
-| 5: Finance & Behavior | `Lecture05_Finance.tex` | `Handout05_Coin_Flip.tex` | Stock market game, behavioral finance, prospect theory |
+| 1: Thinking Like an Economist | `lec1_slides.tex` | -- | Opportunity cost, sunk cost fallacy, cost-benefit analysis, smartphone ban debate |
+| Syllabus | -- | `syllabus.tex` | 5-day workshop overview |
+| 2: Causal Claims & Data | Planned | Planned | Causal claims, DAGs, firefighter activity, chart detective |
+| 3: Markets & Externalities | Planned | Planned | Commons game, tragedy of the commons, carbon tax game |
+| 4: Trade Policy | Planned | Planned | Steel tariff debate, stakeholder analysis with citations |
+| 5: Finance & Behavior | Planned | Planned | Stock market game, behavioral finance, prospect theory |

@@ -1,0 +1,174 @@
+% =============================================================================
+% Pathways: Economics & Finance Workshop — Document Preamble
+% =============================================================================
+% Usage: Each handout/activity .tex file should start with:
+%   \documentclass[letterpaper,10pt]{article}
+%   \input{../../codes/Preambles/header_doc}
+% Compile: cd output/Handouts && TEXINPUTS=../../codes/Preambles:$TEXINPUTS xelatex file.tex
+% =============================================================================
+
+% ---------- Packages ----------
+% Fonts
+\usepackage{palatino}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[normalem]{ulem}
+
+% Math
+\usepackage{amsmath,amssymb,amsthm,eucal,bbold,bm}
+
+% Figures and tables
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{array,tabularx,booktabs,subcaption}
+\usepackage{pdflscape}
+\usepackage{siunitx}
+
+% TikZ and pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,calc}
+
+% Colored boxes
+\usepackage[most]{tcolorbox}
+
+% Miscellaneous
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{enumitem}
+
+% ---------- Margins ----------
+\usepackage[left=1in,right=1in,top=0.75in,bottom=1in,marginparwidth=1.5in,footskip=0.7in]{geometry}
+
+% ---------- Itemize ----------
+\setlist[enumerate]{itemsep=-0.4em,topsep=0.2em}
+\setlist[itemize]{itemsep=-0.4em,topsep=0.2em}
+
+% =============================================================================
+% Colors — Okabe-Ito colorblind-friendly palette
+% =============================================================================
+
+\definecolor{black}{HTML}{000000}
+\definecolor{orange}{HTML}{E69F00}
+\definecolor{skyblue}{HTML}{56B4E9}
+\definecolor{green}{HTML}{009E73}
+\definecolor{yellow}{HTML}{F0E442}
+\definecolor{blue}{HTML}{0072B2}
+\definecolor{vermillion}{HTML}{D55E00}
+\definecolor{purple}{HTML}{CC79A7}
+
+% Semantic aliases (mapped to Okabe-Ito)
+\definecolor{softbg}{HTML}{F5F5F5}
+\definecolor{lightgray}{gray}{0.65}
+
+% =============================================================================
+% Box Environments
+% =============================================================================
+
+% --- Key points (orange background) ---
+\newtcolorbox{keybox}{
+  colback=orange!12,
+  colframe=orange,
+  fonttitle=\bfseries,
+  boxrule=0.5pt,
+  arc=2pt,
+  left=6pt,
+  right=6pt,
+  top=4pt,
+  bottom=4pt
+}
+
+% --- Highlights (orange left accent) ---
+\newtcolorbox{highlightbox}{
+  colback=white,
+  colframe=orange,
+  fonttitle=\bfseries,
+  boxrule=0pt,
+  leftrule=3pt,
+  arc=0pt,
+  left=6pt,
+  right=6pt,
+  top=4pt,
+  bottom=4pt
+}
+
+% --- Definitions (blue border, titled) ---
+\newtcolorbox{definitionbox}[1][]{
+  colback=blue!5,
+  colframe=blue,
+  fonttitle=\bfseries,
+  title={#1},
+  boxrule=0.5pt,
+  arc=2pt,
+  left=6pt,
+  right=6pt,
+  top=4pt,
+  bottom=4pt
+}
+
+% --- Methods (sky blue background) ---
+\newtcolorbox{methodbox}{
+  colback=skyblue!8,
+  colframe=skyblue!70,
+  fonttitle=\bfseries,
+  boxrule=0.5pt,
+  arc=2pt,
+  left=6pt,
+  right=6pt,
+  top=4pt,
+  bottom=4pt
+}
+
+% --- Results (green border) ---
+\newtcolorbox{resultbox}{
+  colback=green!5,
+  colframe=green,
+  fonttitle=\bfseries,
+  boxrule=0.5pt,
+  arc=2pt,
+  left=6pt,
+  right=6pt,
+  top=4pt,
+  bottom=4pt
+}
+
+% --- Quotes (purple left rule) ---
+\newtcolorbox{quotebox}{
+  colback=softbg,
+  colframe=purple,
+  fonttitle=\itshape,
+  boxrule=0pt,
+  leftrule=2pt,
+  arc=0pt,
+  left=6pt,
+  right=6pt,
+  top=4pt,
+  bottom=4pt
+}
+
+% =============================================================================
+% Math Commands
+% =============================================================================
+
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\suminfty}[1]{\sum_{#1=0}^\infty}
+\newcommand{\Lcal}{\mathcal{L}}
+\newcommand{\prtl}[2]{\frac{\partial #1}{\partial #2}}
+\renewcommand{\div}[2]{\frac{d #1}{d #2}}
+\newcommand{\suchthat}{\text{ s.t. }}
+\newcommand{\wrt}{\text{ w.r.t. }}
+\newcommand{\red}[1]{\textcolor{vermillion}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+
+% =============================================================================
+% Economics Shortcuts
+% =============================================================================
+
+\newcommand{\OC}{\text{Opportunity Cost}}
+\newcommand{\DWL}{\text{DWL}}
+\newcommand{\pmark}{\textcolor{resultgreen}{\checkmark}}
+\newcommand{\xmark}{\textcolor{darkred}{\texttimes}}
