@@ -7,15 +7,9 @@
 % Compile: cd output/Slides && TEXINPUTS=../../codes/Preambles:$TEXINPUTS xelatex file.tex
 % =============================================================================
 
-% ---------- Packages ----------
-% Fonts
-\usepackage{lmodern}
-\usepackage[utf8]{inputenc}
-\usepackage[normalem]{ulem}
-
-% Math
-\usepackage{amsmath,amssymb,amsthm}
-
+% =============================================================================
+% ---------- Main Packages ----------
+% =============================================================================
 % Figures and tables
 \usepackage{graphicx}
 \usepackage{array,tabularx,booktabs,threeparttable}
@@ -24,7 +18,7 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \usepackage{tikz}
-\usetikzlibrary{positioning,arrows.meta,calc}
+\usetikzlibrary{positioning,arrows.meta,calc,shapes.geometric}
 
 % Colored boxes
 \usepackage[most]{tcolorbox}
@@ -35,38 +29,101 @@
 \usepackage[nodayofweek]{datetime}
 \usepackage{hyperref}
 
+% =============================================================================
+% ---------- Fonts (load before theme!) ----------
+% =============================================================================
+% Select font encoding
+\usepackage[T1]{fontenc}
+% Select text font
+\usepackage{sourcesanspro}
+% Select monospaced font
+\usepackage{sourcecodepro}
+% Define semibold font series
+\DeclareRobustCommand{\sbseries}{\fontseries{sb}\selectfont}
+\DeclareTextFontCommand{\textsb}{\sbseries}
+% Select URL font
+\urlstyle{same}
+
+% =============================================================================
 % ---------- Theme ----------
-\usetheme{CambridgeUS}
-\usecolortheme{dolphin}
+% =============================================================================
+\usetheme{Boadilla}
+\usecolortheme{seagull}
 \usepackage{appendixnumberbeamer}
+% Apply sophisticated fonts
+\usefonttheme{professionalfonts}
+% Set title font
+\setbeamerfont{title}{size=\huge, shape=\scshape}
+% Set author font
+\setbeamerfont{author}{size=\large}
+% Set date font
+\setbeamerfont{date}{size=\Huge, size=\large}
+% Set frame title font
+\setbeamerfont{frametitle}{size=\LARGE,shape=\scshape}
+% Ensure uniform capitalization of frame title, and lower title
+\setbeamertemplate{frametitle}{\vskip3mm\MakeLowercase{\insertframetitle}}
+% Format continuation count for multipage slides
+\setbeamertemplate{frametitle continuation}{[\insertcontinuationcount]}
+% Set the font size for the outline / table of contents
+\setbeamerfont{section in toc}{size=\large}
+% Set list font
+\setbeamerfont{itemize/enumerate subbody}{size=\normalsize} % Second level
+\setbeamerfont{itemize/enumerate subsubbody}{size=\normalsize} % Third level
+% Set theorem fonts
+\setbeamerfont{block title}{series=\sbseries,size=\normalsize} % Title
+% Set button font
+\setbeamerfont{button}{size=\footnotesize}
 
+% =============================================================================
+% ---------- Colors (Okabe-Ito colorblind-friendly palette) ----------
+% =============================================================================
+\definecolor{black}{HTML}{000000}
+\definecolor{orange}{HTML}{E69F00}
+\definecolor{skyblue}{HTML}{56B4E9}
+\definecolor{green}{HTML}{009E73}
+\definecolor{yellow}{HTML}{F0E442}
+\definecolor{blue}{HTML}{0072B2}
+\definecolor{vermillion}{HTML}{D55E00}
+\definecolor{purple}{HTML}{CC79A7}
+
+% Gray tones
+\colorlet{BlackGray}{black!85!}
+\colorlet{DarkGray}{gray!65!}
+\colorlet{LightGray}{gray!30!}
+
+% Semantic colors
+\definecolor{softbg}{HTML}{F5F5F5}
+\definecolor{lightgray}{gray}{0.65}
+
+% =============================================================================
 % ---------- Itemize ----------
-\setbeamercovered{invisible}
-\setbeamertemplate{itemize items}[default]
-\setbeamertemplate{enumerate items}[default]
+% =============================================================================
+% Set itemized-list item color
+\setbeamercolor{itemize item}{fg=DarkGray} % First level
+\setbeamercolor{itemize subitem}{fg=DarkGray} % Second level
+\setbeamercolor{itemize subsubitem}{fg=DarkGray} % Third level
+% Set numbered-list item color
+\setbeamercolor{enumerate item}{fg=DarkGray} % First level
+\setbeamercolor{enumerate subitem}{fg=DarkGray} % Second level
+\setbeamercolor{enumerate subsubitem}{fg=DarkGray} % Third level
+% Select itemized-list items
+\setbeamertemplate{itemize item}{\textbullet} % First level
+\setbeamertemplate{itemize subitem}{\textendash} % Second level
+\setbeamertemplate{itemize subsubitem}{\textsquare} % Third level
+% Select numbered-list items
+\setbeamertemplate{enumerate item}[default] % First level
+\setbeamertemplate{enumerate subitem}{\alph{enumii}.} % Second level
+\setbeamertemplate{enumerate subsubitem}{\roman{enumiii}.} % Third level
 
-\setbeamertemplate{itemize item}[triangle]
-\setbeamertemplate{itemize subitem}[triangle]
-\setbeamertemplate{itemize subsubitem}{-}
+% =============================================================================
+% ---------- Frame Settings ----------
+% =============================================================================
 
-% ---------- Headline / Footline ----------
-\setbeamertemplate{headline}{}
-
-\setbeamertemplate{footline}{
-  \leavevmode
-  \hbox{
-    \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.25ex,leftskip=1em,rightskip=1em]{footline}
-      \hfill \insertframenumber
-    \end{beamercolorbox}
-  }
-}
-
-\setbeamertemplate{navigation symbols}{}
-
-% ---------- Frame title (centered) ----------
+% Frame title (centered with custom spacing)
 \makeatletter
 \setbeamertemplate{frametitle}{
   \nointerlineskip
+  \rule{0pt}{1.2cm}% Vertical spacing (adjust to move title up/down)
   \begin{beamercolorbox}[wd=\paperwidth,sep=0.35cm,center]{frametitle}
     {\usebeamerfont{frametitle}\insertframetitle\par}
     \ifx\insertframesubtitle\@empty\else
@@ -77,47 +134,45 @@
 }
 \makeatother
 
-% ---------- Margins ----------
-\setbeamersize{
-  text margin left=2em,
-  text margin right=2em
-}
+% Section outline frames
+\setbeamercolor{section in toc}{fg=black}
+\setbeamercolor{section in toc shaded}{fg=black!30}
+\setbeamertemplate{section in toc}[sections numbered]
 
-% ---------- Section outline frames ----------
 \AtBeginSection[]{
   \begin{frame}{Outline}
-    \tableofcontents[currentsection,
-                     currentsubsection,
-                     hideothersubsections]
+    \tableofcontents[currentsection, sectionstyle=show/shaded]
   \end{frame}
 }
 
+% Margins
+\setbeamersize{
+  text margin left=3em,
+  text margin right=3em
+}
+
+% Header and footer
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{
+  \leavevmode
+  \hbox{
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.25ex,leftskip=1em,rightskip=1em]{footline}
+      \hfill \insertframenumber
+    \end{beamercolorbox}
+  }
+}
+\setbeamertemplate{navigation symbols}{}
+
 % =============================================================================
-% Colors — Okabe-Ito colorblind-friendly palette
+% ---------- Box Environments ----------
 % =============================================================================
 
-\definecolor{black}{HTML}{000000}
-\definecolor{orange}{HTML}{E69F00}
-\definecolor{skyblue}{HTML}{56B4E9}
-\definecolor{green}{HTML}{009E73}
-\definecolor{yellow}{HTML}{F0E442}
-\definecolor{blue}{HTML}{0072B2}
-\definecolor{vermillion}{HTML}{D55E00}
-\definecolor{purple}{HTML}{CC79A7}
-
-% Semantic aliases (mapped to Okabe-Ito)
-\definecolor{softbg}{HTML}{F5F5F5}
-\definecolor{lightgray}{gray}{0.65}
-
-% =============================================================================
-% Box Environments
-% =============================================================================
-
-% --- Key points (orange background) ---
-\newtcolorbox{keybox}{
+% Question box (orange background)
+\newtcolorbox{questionbox}{
   colback=orange!12,
   colframe=orange,
   fonttitle=\bfseries,
+  title={Question},
   boxrule=0.5pt,
   arc=2pt,
   left=6pt,
@@ -126,10 +181,24 @@
   bottom=4pt
 }
 
-% --- Highlights (orange left accent) ---
-\newtcolorbox{highlightbox}{
-  colback=white,
-  colframe=orange,
+% Answer box (green border)
+\newtcolorbox{answerbox}{
+  colback=green!5,
+  colframe=green,
+  fonttitle=\bfseries,
+  title={Answer},
+  boxrule=0.5pt,
+  arc=2pt,
+  left=6pt,
+  right=6pt,
+  top=4pt,
+  bottom=4pt
+}
+
+% Insight box (blue left accent)
+\newtcolorbox{insightbox}{
+  colback=blue!5,
+  colframe=blue,
   fonttitle=\bfseries,
   boxrule=0pt,
   leftrule=3pt,
@@ -140,7 +209,7 @@
   bottom=4pt
 }
 
-% --- Definitions (blue border, titled) ---
+% Definition box (blue border with custom title)
 \newtcolorbox{definitionbox}[1][]{
   colback=blue!5,
   colframe=blue,
@@ -154,7 +223,7 @@
   bottom=4pt
 }
 
-% --- Methods (sky blue background) ---
+% Method box (sky blue background)
 \newtcolorbox{methodbox}{
   colback=skyblue!8,
   colframe=skyblue!70,
@@ -167,20 +236,7 @@
   bottom=4pt
 }
 
-% --- Results (green border) ---
-\newtcolorbox{resultbox}{
-  colback=green!5,
-  colframe=green,
-  fonttitle=\bfseries,
-  boxrule=0.5pt,
-  arc=2pt,
-  left=6pt,
-  right=6pt,
-  top=4pt,
-  bottom=4pt
-}
-
-% --- Quotes (purple left rule) ---
+% Quote box (purple left rule, italic)
 \newtcolorbox{quotebox}{
   colback=softbg,
   colframe=purple,
@@ -195,26 +251,46 @@
 }
 
 % =============================================================================
-% Math Commands
+% ---------- Math ----------
 % =============================================================================
 
+% Avoid "Too many math alphabets" error (set before loading math fonts)
+\newcommand{\hmmax}{0}
+\newcommand{\bmmax}{0}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{MnSymbol}
+\usepackage[cal=euler, bb=fourier]{mathalpha}
+\usepackage{bm}
+\usepackage[italic, eulergreek, nolessnomore, noparenthesis, noplusnominus, noequal, nohbar]{mathastext}
+
+% Correct spacing for specific letters
+\MTsetmathskips{y}{2mu}{0mu}
+\MTsetmathskips{j}{2mu}{0mu}
+
+% Standard operators
 \newcommand{\E}{\mathrm{E}}
 \newcommand{\Var}{\mathrm{Var}}
 \newcommand{\Cov}{\mathrm{Cov}}
 \newcommand{\R}{\mathbb{R}}
+
+% Summation and calculus
 \newcommand{\suminfty}[1]{\sum_{#1=0}^\infty}
 \newcommand{\Lcal}{\mathcal{L}}
 \newcommand{\prtl}[2]{\frac{\partial #1}{\partial #2}}
 \renewcommand{\div}[2]{\frac{d #1}{d #2}}
+
+% Text abbreviations
 \newcommand{\suchthat}{\text{ s.t. }}
 \newcommand{\wrt}{\text{ w.r.t. }}
+
+% Color utilities
 \newcommand{\red}[1]{\textcolor{vermillion}{#1}}
 \newcommand{\blue}[1]{\textcolor{blue}{#1}}
 
 % =============================================================================
-% Economics Shortcuts
+% ---------- Economics Shortcuts ----------
 % =============================================================================
-
 \newcommand{\OC}{\text{Opportunity Cost}}
 \newcommand{\DWL}{\text{DWL}}
 \newcommand{\pmark}{\textcolor{resultgreen}{\checkmark}}

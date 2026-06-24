@@ -18,8 +18,9 @@
 *.run.xml
 *-blx.bib
 
-# Compiled PDFs
+# Compiled PDFs and presentations
 *.pdf
+*.pptx
 
 # Python
 __pycache__/

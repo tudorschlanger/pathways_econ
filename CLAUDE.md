@@ -91,6 +91,16 @@ cd output/syllabus && TEXINPUTS=../../codes/Preambles:$TEXINPUTS xelatex -intera
 
 ---
 
+## Slide Figure Convention
+
+- All lecture figures live in `output/LectureN/fig/` (e.g., `output/Lecture1/fig/`)
+- When a slide has both text and a figure, use a **60/40 column split**: 60% text (left), 40% figure (right)
+- Include figures with `\includegraphics[width=\textwidth]{fig/filename}` inside the right column
+- Prefer real photographs or high-quality illustrations over clip-art
+- Every figure file should have a descriptive name (e.g., `market_exchange.jpg`, not `img1.jpg`)
+
+---
+
 ## Beamer Custom Environments
 
 | Environment | Effect | Use Case |
