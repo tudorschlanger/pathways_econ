@@ -1,0 +1,155 @@
+% =============================================================================
+% Lecture 2 Handout: Same Data, Different Stories
+% =============================================================================
+\documentclass[letterpaper,10pt]{article}
+\input{../../codes/Preambles/header_doc}
+
+% ---------- Title ----------
+\title{\textbf{Same Data, Different Stories}\\[0.3em]
+{\large Lecture 2 Activity: Inflation \& Graph Design}}
+\author{Pathways: Economics \& Finance Workshop}
+\date{Summer 2026}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+% =============================================================================
+\section*{Context}
+% =============================================================================
+
+In August 2022, the U.S.\ government signed the \textbf{Inflation Reduction Act}.
+The table below shows the monthly inflation rate (CPI, year-over-year \% change)
+for all of 2022.
+
+\vspace{0.5em}
+\begin{center}
+\begin{tabular}{l c l c}
+  \toprule
+  \textbf{Month} & \textbf{Inflation (\%)} & \textbf{Month} & \textbf{Inflation (\%)} \\
+  \midrule
+  January   & 7.5 & July      & 8.5 \\
+  February  & 7.9 & August    & 8.3 \\
+  March     & 8.5 & September & 8.2 \\
+  April     & 8.3 & October   & 7.7 \\
+  May       & 8.6 & November  & 7.1 \\
+  June      & \textbf{9.1} (peak) & December  & 6.5 \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.3em}
+\noindent\textbf{Key date:} The Inflation Reduction Act was signed on \textbf{August 16, 2022}.
+
+% =============================================================================
+\section*{Your Task}
+% =============================================================================
+
+Using the same data above, create \textbf{two graphs} that tell different stories.
+Quick sketches are fine---this is about framing, not art. See next page.
+
+\newpage
+% =============================================================================
+\subsection*{Graph A: ``The Policy Worked!''}
+% =============================================================================
+
+Create a graph that makes the Inflation Reduction Act look \textbf{as effective as possible}.
+
+% \begin{highlightbox}
+% \textbf{Hints for Graph A:}
+% \begin{itemize}
+%   \item Plot only \textbf{August--December} 2022 (after the policy was signed)
+%   \item Set the y-axis to a narrow range (e.g., 6.3\% to 8.4\%)
+%   \item Use a dramatic title (e.g., ``Policy Made Inflation Plunge!'')
+%   \item You can note: inflation fell from 8.3\% to 6.5\% $=$ about 22\% decline
+% \end{itemize}
+% \end{highlightbox}
+
+\vspace{1em}
+\noindent\textbf{Draw Graph A here:}
+
+\vspace{0.3em}
+\begin{center}
+\begin{tikzpicture}
+  % Grid for sketching
+  \draw[gray!30, step=0.5cm] (0,0) grid (10,6);
+  \draw[thick, ->] (0,0) -- (10.5,0) node[right] {\small Month};
+  \draw[thick, ->] (0,0) -- (0,6.5) node[above] {\small Inflation (\%)};
+\end{tikzpicture}
+\end{center}
+
+\noindent\textbf{Title for Graph A:} \rule{8cm}{0.4pt}
+
+% =============================================================================
+\subsection*{Graph B: ``A More Careful Look''}
+% =============================================================================
+
+Create a graph that gives a \textbf{fairer, more honest} picture of the same data.
+
+% \begin{highlightbox}
+% \textbf{Hints for Graph B:}
+% \begin{itemize}
+%   \item Show the \textbf{full year} (January--December)
+%   \item Use a standard y-axis starting at 0 (or at least 0--10\%)
+%   \item Use a neutral title (e.g., ``2022 U.S.\ Inflation Rate'')
+%   \item Note that inflation peaked in \textbf{June}---two months \emph{before} the policy
+% \end{itemize}
+% \end{highlightbox}
+
+\vspace{1em}
+\noindent\textbf{Draw Graph B here:}
+
+\vspace{0.3em}
+\begin{center}
+\begin{tikzpicture}
+  % Grid for sketching
+  \draw[gray!30, step=0.5cm] (0,0) grid (10,6);
+  \draw[thick, ->] (0,0) -- (10.5,0) node[right] {\small Month};
+  \draw[thick, ->] (0,0) -- (0,6.5) node[above] {\small Inflation (\%)};
+\end{tikzpicture}
+\end{center}
+
+\noindent\textbf{Title for Graph B:} \rule{8cm}{0.4pt}
+
+% =============================================================================
+\subsection*{Confounders}
+% =============================================================================
+
+\begin{definitionbox}[Confounder]
+  A \textbf{hidden third factor} that drives both things you are comparing. It makes you think A causes B, when in reality something else (C) causes both A and B.
+\end{definitionbox}
+
+\vspace{0.5em}
+Even if inflation did fall after August 2022, that does \textbf{not prove} the
+Inflation Reduction Act \textbf{caused} the decline. List \textbf{three other
+reasons} inflation might have fallen (think: confounders!):
+
+\vspace{0.5em}
+\begin{enumerate}[itemsep=1.5em]
+  \item \rule{12cm}{0.4pt}
+  \item \rule{12cm}{0.4pt}
+  \item \rule{12cm}{0.4pt}
+\end{enumerate}
+
+% =============================================================================
+\subsection*{Reflection}
+% =============================================================================
+
+\begin{enumerate}[itemsep=1em]
+  \item What makes Graph A persuasive, even though it is misleading?
+
+  \vspace{1em}
+  \rule{14cm}{0.4pt}
+
+  \item What makes Graph B fairer?
+
+  \vspace{1em}
+  \rule{14cm}{0.4pt}
+
+  \item What is the key lesson about how graphs shape stories?
+
+  \vspace{1em}
+  \rule{14cm}{0.4pt}
+\end{enumerate}
+
+\end{document}
