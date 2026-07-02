@@ -28,7 +28,7 @@
   \titlepage
 \end{frame}
 
-\begin{frame}{Quiz: Opportunity Cost}
+\begin{frame}{Review: Opportunity Cost}
 
   \begin{questionbox}
     You won a \textbf{free ticket} to see an Eric Clapton concert (which has no
@@ -52,6 +52,16 @@
 
 \end{frame}
 
+\begin{frame}{Review: Opportunity Cost --- Answer}
+
+  \begin{answerbox}
+    The correct answer is \textbf{B. \$10}.\\[0.5em]
+    The opportunity cost of seeing Clapton is what you \textbf{give up}: the net benefit of seeing Dylan.\\[0.3em]
+    You value Dylan at \$50 and the ticket costs \$40, so the opportunity cost is \$50 $-$ \$40 $=$ \textbf{\$10}.
+  \end{answerbox}
+
+\end{frame}
+
 % =============================================================================
 \section{Can You Trust What You See?}
 % =============================================================================
@@ -62,7 +72,7 @@
     \begin{column}{0.58\textwidth}
       \vspace{1em}
       \begin{questionbox}
-        Did the cat do this?
+        Did the cat leave a dent?
       \end{questionbox}
     \end{column}
     \begin{column}{0.38\textwidth}
@@ -107,8 +117,8 @@
 
   \vspace{0.5em}
   \begin{enumerate}
-    \item \textbf{Correlation vs.\ causation}: how to tell the difference
-    \item \textbf{Misleading graphs}: how data can make you think it's causation!
+    \item \textbf{Correlation vs.\ causality}: how to tell the difference
+    \item \textbf{Misleading graphs}: how data can make you think it's causality!
     \item \textbf{Chart detective}: how to protect yourself in the future
   \end{enumerate}
 
@@ -121,21 +131,21 @@
 \begin{frame}{A Suspicious Pattern}
 
   \centering
-  \includegraphics[width=0.85\textwidth, height=6.5cm, keepaspectratio]{fig/margarine_divorce_maine.pdf}
+  \includegraphics[width=0.85\textwidth, height=6.5cm, keepaspectratio]{fig/stevie_netflix.pdf}
 
   \vspace{0.3em}
-  {\tiny\textcolor{lightgray}{Source: tylervigen.com --- Spurious Correlations. Correlation: $r = 0.99$ (where 1.0 would be a perfect match).}}
+  {\tiny\textcolor{lightgray}{Source: tylervigen.com --- Spurious Correlations.}}
 
 \end{frame}
 
 \begin{frame}{What's Going On?}
 
   \begin{questionbox}
-    Does margarine \textbf{cause} divorce?\\[0.3em]
+    Does the popularity of the name ``Stevie'' \textbf{cause} Netflix's stock price to rise?\\[0.3em]
     In your group, come up with:
     \begin{enumerate}
       \item One \textbf{funny} explanation (technically possible but absurd)
-      \item One sentence explaining why the chart \textbf{does not prove} causation
+      \item One sentence explaining why the chart \textbf{does not prove} causality
     \end{enumerate}
   \end{questionbox}
 
@@ -148,7 +158,7 @@
 
   \begin{answerbox}
     The chart shows a \textbf{pattern}, not a cause.\\[0.3em]
-    Both margarine use and divorce rates were declining over the same period---likely for completely unrelated reasons (changing diets, changing social norms).
+    Both the name ``Stevie'' and Netflix's stock price were rising over the same period---likely for completely unrelated reasons.
   \end{answerbox}
 
   \vspace{0.5em}
@@ -170,80 +180,8 @@
     \end{column}
     \begin{column}{0.48\textwidth}
       \pause
-      \vspace{0.3em}
-      \centering
-      {\scriptsize\textbf{France, August 2003}}
-
-      \vspace{0.2em}
-      \begin{tikzpicture}
-        \begin{axis}[
-          width=\textwidth,
-          height=4.5cm,
-          axis y line*=left,
-          xlabel style={font=\tiny},
-          ylabel style={font=\tiny, color=orange!80!black},
-          ylabel={Ice cream sales (k/day)},
-          xmin=0.5, xmax=20.5,
-          ymin=5, ymax=24,
-          xtick={1,5,10,15,20},
-          xticklabels={Aug 1,5,10,15,20},
-          xticklabel style={font=\tiny},
-          yticklabel style={font=\tiny, color=orange!80!black},
-          axis line style={orange!80!black},
-          tick style={orange!80!black},
-        ]
-        \addplot[orange!80!black, thick, mark=none] coordinates {
-          (1,13) (2,14.5) (3,15) (4,17.5) (5,18)
-          (6,19.5) (7,21) (8,20) (9,20.5) (10,22)
-          (11,20.5) (12,19) (13,16) (14,13.5)
-          (15,10) (16,8.5) (17,7) (18,7.5) (19,8) (20,8)
-        };
-        \end{axis}
-        \begin{axis}[
-          width=\textwidth,
-          height=4.5cm,
-          axis y line*=right,
-          axis x line=none,
-          ylabel style={font=\tiny, color=blue!70!black},
-          ylabel={Excess deaths/day},
-          xmin=0.5, xmax=20.5,
-          ymin=0, ymax=2500,
-          ytick={0,500,1000,1500,2000},
-          yticklabel style={font=\tiny, color=blue!70!black},
-          axis line style={blue!70!black},
-          tick style={blue!70!black},
-        ]
-        \addplot[blue!70!black, thick, mark=none] coordinates {
-          (1,50) (2,60) (3,80) (4,150) (5,300)
-          (6,500) (7,800) (8,1200) (9,1400) (10,1600)
-          (11,1800) (12,2200) (13,1900) (14,1000)
-          (15,500) (16,200) (17,100) (18,80) (19,50) (20,30)
-        };
-        \end{axis}
-      \end{tikzpicture}
-
-      \vspace{0.1em}
-      {\tiny\textcolor{lightgray}{Illustrative data}}
-    \end{column}
-  \end{columns}
-
-\end{frame}
-
-\begin{frame}{Why Do Correlations Happen? (1/4)}
-
-  \begin{columns}[T]
-    \begin{column}{0.48\textwidth}
-      There are \textbf{four} possible explanations when you see two things moving together:
-
-      \vspace{0.8em}
-      \begin{enumerate}
-        \item \textcolor{vermillion}{\textbf{Coincidence}}---the pattern is random chance.\\
-              {\small Margarine and divorce just happened to trend the same way.}
-      \end{enumerate}
-    \end{column}
-    \begin{column}{0.48\textwidth}
-      \vspace{0.5em}
-      \includegraphics[width=\textwidth]{fig/margarine_divorce_maine.pdf}
+      \vspace{1em}
+      \includegraphics[width=\textwidth]{fig/stevie_netflix.pdf}
 
       \vspace{0.3em}
       {\tiny\textcolor{lightgray}{Source: tylervigen.com}}
@@ -252,18 +190,113 @@
 
 \end{frame}
 
-\begin{frame}{Why Do Correlations Happen? (2/4)}
+\begin{frame}{Correlation: Scatter Plot}
 
-  There are \textbf{four} possible explanations when you see two things moving together:
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{definitionbox}[Correlation]
+        Two things \textbf{move together}---when one goes up, the other tends to go up (or down).\\[0.3em]
+        It tells us there is a \textbf{pattern}, but \textbf{not why} the pattern exists.
+      \end{definitionbox}
 
-  \vspace{0.8em}
-  \begin{enumerate}
-    \item \textcolor{vermillion}{\textbf{Coincidence}}---the pattern is random chance.\\
-          {\small Margarine and divorce just happened to trend the same way.}
+      \vspace{0.5em}
+      {\small Does Netflix \textbf{cause} babies to be named Stevie?}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \centering
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\textwidth,
+          height=6.5cm,
+          xlabel={\small Netflix stock price (\$)},
+          ylabel={\small Babies named ``Stevie''},
+          xmin=-20, xmax=680,
+          ymin=150, ymax=1350,
+          grid=major,
+          grid style={gray!20},
+          xticklabel style={font=\tiny},
+          yticklabel style={font=\tiny},
+          xlabel style={font=\small},
+          ylabel style={font=\small},
+        ]
+        \addplot[only marks, mark=*, mark size=2pt, blue!70!black] coordinates {
+          (1,232) (4,215) (2,211) (4,251) (4,229)
+          (4,217) (4,239) (8,210) (25,227) (10,253)
+          (14,259) (52,316) (49,310) (109,376) (125,440)
+          (196,469) (259,622) (326,791) (539,1131) (606,1200)
+        };
+        % Line of best fit (r = 0.996)
+        \addplot[domain=0:650, thick, vermillion, dashed, samples=2] {232 + 1.6*x};
+        % Year annotations
+        \node[font=\tiny, anchor=south] at (1,240) {03};
+        \node[font=\tiny, anchor=west] at (6,215) {04};
+        \node[font=\tiny, anchor=north] at (2,203) {05};
+        \node[font=\tiny, anchor=west] at (6,251) {06};
+        \node[font=\tiny, anchor=south west] at (6,229) {07};
+        \node[font=\tiny, anchor=north] at (4,209) {08};
+        \node[font=\tiny, anchor=south] at (4,247) {09};
+        \node[font=\tiny, anchor=north west] at (10,205) {10};
+        \node[font=\tiny, anchor=south west] at (27,227) {11};
+        \node[font=\tiny, anchor=west] at (12,253) {12};
+        \node[font=\tiny, anchor=south west] at (16,259) {13};
+        \node[font=\tiny, anchor=south] at (52,324) {14};
+        \node[font=\tiny, anchor=north] at (49,302) {15};
+        \node[font=\tiny, anchor=south] at (109,384) {16};
+        \node[font=\tiny, anchor=south] at (125,448) {17};
+        \node[font=\tiny, anchor=south] at (196,477) {18};
+        \node[font=\tiny, anchor=south] at (259,630) {19};
+        \node[font=\tiny, anchor=south] at (326,799) {20};
+        \node[font=\tiny, anchor=south] at (539,1139) {21};
+        \node[font=\tiny, anchor=south] at (606,1208) {22};
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
 
-    \vspace{0.6em}
-    \item \textcolor{green}{\textbf{Causality}}---one thing truly causes the other.
-  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Why Do Correlations Happen?}
+
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      There are \textbf{four} possible explanations when you see two things moving together:
+
+      \vspace{0.8em}
+      \begin{enumerate}
+        \item \textcolor{vermillion}{\textbf{Coincidence}}
+        \item \textcolor{green}{\textbf{Causality}}
+        \item \textcolor{blue}{\textbf{Reverse causality}}
+        \item \textcolor{orange}{\textbf{Hidden third factor (confounder)}}
+      \end{enumerate}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \centering
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\textwidth,
+          height=6cm,
+          xlabel={\tiny Netflix stock price (\$)},
+          ylabel={\tiny Babies named ``Stevie''},
+          xmin=-20, xmax=680,
+          ymin=150, ymax=1350,
+          grid=major,
+          grid style={gray!20},
+          xticklabel style={font=\tiny},
+          yticklabel style={font=\tiny},
+          xlabel style={font=\tiny},
+          ylabel style={font=\tiny},
+        ]
+        \addplot[only marks, mark=*, mark size=1.5pt, blue!70!black] coordinates {
+          (1,232) (4,215) (2,211) (4,251) (4,229)
+          (4,217) (4,239) (8,210) (25,227) (10,253)
+          (14,259) (52,316) (49,310) (109,376) (125,440)
+          (196,469) (259,622) (326,791) (539,1131) (606,1200)
+        };
+        \addplot[domain=0:650, thick, vermillion, dashed, samples=2] {232 + 1.6*x};
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
 
 \end{frame}
 
@@ -288,7 +321,7 @@
         \item Flipping a light switch $\rightarrow$ light turns on
         \item Studying more $\rightarrow$ higher test scores
         \item Drinking coffee $\rightarrow$ feeling more alert
-        \item Texting while driving $\rightarrow$ more accidents
+
       \end{itemize}
 
       \vspace{0.5em}
@@ -312,7 +345,7 @@
       \vspace{0.5em}
       Drawing the arrows forces you to think about:
       \begin{itemize}
-        \item \textbf{Direction}---which way does causation flow?
+        \item \textbf{Direction}---which way does causality flow?
         % \item \textbf{Hidden factors}---is there a confounder I'm missing?
         \item \textbf{What's real}---which connections are causal vs.\ just correlated?
       \end{itemize}
@@ -358,22 +391,48 @@
 
 \end{frame}
 
-\begin{frame}{Why Do Correlations Happen? (3/4)}
+\begin{frame}{Why Do Correlations Happen?}
 
-  There are \textbf{four} possible explanations when you see two things moving together:
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      There are \textbf{four} possible explanations when you see two things moving together:
 
-  \vspace{0.8em}
-  \begin{enumerate}
-    \item \textcolor{vermillion}{\textbf{Coincidence}}---the pattern is random chance.\\
-          {\small Margarine and divorce just happened to trend the same way.}
-
-    \vspace{0.6em}
-    \item \textcolor{green}{\textbf{Causality}}---one thing truly causes the other.\\
-          {\small Flipping a switch turns the light on.}
-
-    \vspace{0.6em}
-    \item \textcolor{blue}{\textbf{Reverse causality}}---you got the direction backwards.
-  \end{enumerate}
+      \vspace{0.8em}
+      \begin{enumerate}
+        \item \textcolor{vermillion}{\textbf{Coincidence}}
+        \item \textcolor{green}{\textbf{Causality}}
+        \item \textcolor{blue}{\textbf{Reverse causality}}
+        \item \textcolor{orange}{\textbf{Hidden third factor (confounder)}}
+      \end{enumerate}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \centering
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\textwidth,
+          height=6cm,
+          xlabel={\tiny Netflix stock price (\$)},
+          ylabel={\tiny Babies named ``Stevie''},
+          xmin=-20, xmax=680,
+          ymin=150, ymax=1350,
+          grid=major,
+          grid style={gray!20},
+          xticklabel style={font=\tiny},
+          yticklabel style={font=\tiny},
+          xlabel style={font=\tiny},
+          ylabel style={font=\tiny},
+        ]
+        \addplot[only marks, mark=*, mark size=1.5pt, blue!70!black] coordinates {
+          (1,232) (4,215) (2,211) (4,251) (4,229)
+          (4,217) (4,239) (8,210) (25,227) (10,253)
+          (14,259) (52,316) (49,310) (109,376) (125,440)
+          (196,469) (259,622) (326,791) (539,1131) (606,1200)
+        };
+        \addplot[domain=0:650, thick, vermillion, dashed, samples=2] {232 + 1.6*x};
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
 
 \end{frame}
 
@@ -407,8 +466,8 @@
     node distance=2cm and 4cm,
     box/.style={draw, rounded corners=4pt, fill=blue!8, minimum width=3.5cm, minimum height=1cm, align=center, font=\normalsize},
   ]
-    \node[box] (a) {\textbf{\# ambulances}\\[0.2em]\textbf{at an accident}};
-    \node[box, right=4cm of a] (b) {\textbf{\# of deaths}\\[0.2em]\textbf{at an accident}};
+    \node[box] (a) {\textbf{Student gets}\\[0.2em]\textbf{tutoring}};
+    \node[box, right=4cm of a] (b) {\textbf{Student gets}\\[0.2em]\textbf{low grades}};
   \end{tikzpicture}
 
 \end{frame}
@@ -422,38 +481,61 @@
     box/.style={draw, rounded corners=4pt, fill=blue!8, minimum width=3.5cm, minimum height=1cm, align=center, font=\normalsize},
     arr/.style={-{Stealth[length=7pt]}, thick, blue!70}
   ]
-    \node[box] (a) {\textbf{\# ambulances}\\[0.2em]\textbf{at an accident}};
-    \node[box, right=4cm of a] (b) {\textbf{\# of deaths}\\[0.2em]\textbf{at an accident}};
+    \node[box] (a) {\textbf{Student gets}\\[0.2em]\textbf{tutoring}};
+    \node[box, right=4cm of a] (b) {\textbf{Student gets}\\[0.2em]\textbf{low grades}};
 
     \draw[arr] (b) -- node[above, font=\small] {causes} (a);
   \end{tikzpicture}
 
   \vspace{1.5em}
   \begin{insightbox}
-    More ambulances at an accident, more deaths. Do ambulances \textbf{cause} deaths? No---worse accidents cause \textbf{both} more deaths and more ambulances to be called.
+    Students who get tutoring have lower grades. Does tutoring \textbf{cause} bad grades? No---students who are \textbf{already struggling} are the ones who seek tutoring.
   \end{insightbox}
 
 \end{frame}
 
-\begin{frame}{Why Do Correlations Happen? (4/4)}
+\begin{frame}{Why Do Correlations Happen?}
 
-  There are \textbf{four} possible explanations when you see two things moving together:
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      There are \textbf{four} possible explanations when you see two things moving together:
 
-  \vspace{0.8em}
-  \begin{enumerate}
-    \item \textcolor{vermillion}{\textbf{Coincidence}}---the pattern is random chance.\\
-          {\small Margarine and divorce just happened to trend the same way.}
-
-    \vspace{0.6em}
-    \item \textcolor{green}{\textbf{Causality}}---one thing truly causes the other.\\
-          {\small Flipping a switch turns the light on.}
-
-    \vspace{0.6em}
-    \item \textcolor{blue}{\textbf{Reverse causality}}---you got the direction backwards.
-
-    \vspace{0.6em}
-    \item \textcolor{orange}{\textbf{Hidden third factor (confounder)}}---something else drives both.
-  \end{enumerate}
+      \vspace{0.8em}
+      \begin{enumerate}
+        \item \textcolor{vermillion}{\textbf{Coincidence}}
+        \item \textcolor{green}{\textbf{Causality}}
+        \item \textcolor{blue}{\textbf{Reverse causality}}
+        \item \textcolor{orange}{\textbf{Hidden third factor (confounder)}}
+      \end{enumerate}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \centering
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\textwidth,
+          height=6cm,
+          xlabel={\tiny Netflix stock price (\$)},
+          ylabel={\tiny Babies named ``Stevie''},
+          xmin=-20, xmax=680,
+          ymin=150, ymax=1350,
+          grid=major,
+          grid style={gray!20},
+          xticklabel style={font=\tiny},
+          yticklabel style={font=\tiny},
+          xlabel style={font=\tiny},
+          ylabel style={font=\tiny},
+        ]
+        \addplot[only marks, mark=*, mark size=1.5pt, blue!70!black] coordinates {
+          (1,232) (4,215) (2,211) (4,251) (4,229)
+          (4,217) (4,239) (8,210) (25,227) (10,253)
+          (14,259) (52,316) (49,310) (109,376) (125,440)
+          (196,469) (259,622) (326,791) (539,1131) (606,1200)
+        };
+        \addplot[domain=0:650, thick, vermillion, dashed, samples=2] {232 + 1.6*x};
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
 
 \end{frame}
 
@@ -473,7 +555,7 @@
     \draw[arr] (c) -- (a);
     \draw[arr] (c) -- (b);
 
-    \draw[dashed, gray, thick] (a) -- node[below, font=\small, text=gray] {correlation (not causation!)} (b);
+    \draw[dashed, gray, thick] (a) -- node[below, font=\small, text=gray] {correlation (not causality!)} (b);
   \end{tikzpicture}
 
   \vspace{1em}
@@ -554,9 +636,9 @@
           axis y line*=left,
           xlabel style={font=\tiny},
           ylabel style={font=\tiny, color=vermillion},
-          ylabel={Max temp.\ (\textdegree C)},
+          ylabel={Max temp.\ (\textdegree F)},
           xmin=0.5, xmax=20.5,
-          ymin=25, ymax=44,
+          ymin=77, ymax=112,
           xtick={1,5,10,15,20},
           xticklabels={Aug 1,5,10,15,20},
           xticklabel style={font=\tiny},
@@ -565,10 +647,10 @@
           tick style={vermillion},
         ]
         \addplot[vermillion, thick, mark=none] coordinates {
-          (1,33) (2,34) (3,35) (4,37) (5,38)
-          (6,39) (7,40) (8,40) (9,40) (10,41)
-          (11,40) (12,39) (13,36) (14,33)
-          (15,30) (16,28) (17,27) (18,27) (19,28) (20,28)
+          (1,91) (2,93) (3,95) (4,99) (5,100)
+          (6,102) (7,104) (8,104) (9,104) (10,106)
+          (11,104) (12,102) (13,97) (14,91)
+          (15,86) (16,82) (17,81) (18,81) (19,82) (20,82)
         };
         \end{axis}
         \begin{axis}[
@@ -617,7 +699,7 @@
     \draw[arr] (temp) -- (ice);
     \draw[arr] (temp) -- (heat);
 
-    \draw[dashed, gray, thick] (ice) -- node[below, font=\small, text=gray] {correlation (not causation!)} (heat);
+    \draw[dashed, gray, thick] (ice) -- node[below, font=\small, text=gray] {correlation (not causality!)} (heat);
   \end{tikzpicture}
 
   \vspace{1em}
@@ -634,7 +716,7 @@
   {\Large We have learned that seeing a pattern is \textbf{not enough}.}
 
   \vspace{1em}
-  Correlation does not prove causation.
+  Correlation does not prove causality.
 
   \vspace{2em}
   {\Large But what if the \textbf{numbers are real}---and the \textbf{graph itself} is designed to mislead you?}
@@ -650,39 +732,6 @@
 
 \begin{frame}{U.S.\ Steel Production}
 
-  \centering
-  {\large\bfseries Total U.S.\ Steel Production (Mt) 2024 v.\ 2025}
-
-  \vspace{0.5em}
-  \begin{tikzpicture}
-    \begin{axis}[
-      width=0.7\textwidth,
-      height=6.5cm,
-      ybar,
-      bar width=2.5cm,
-      ymin=80.0, ymax=82.0,
-      ytick={80.2,80.4,80.6,80.8,81.0,81.2,81.4,81.6,81.8},
-      yticklabel style={font=\small},
-      xmin=-0.6, xmax=1.6,
-      xtick={0,1},
-      xticklabels={{\small 2024 Total Steel}\\\small{Production (Mt)}, {\small Total Steel Production}\\\small{2025 (Mt)}},
-      xticklabel style={font=\small, align=center, text width=3.5cm},
-      enlarge x limits=false,
-      axis line style={black},
-      tick style={black},
-      ymajorgrids=true,
-      grid style={gray!30},
-      axis on top,
-    ]
-    \addplot[ybar, draw=none, fill=red, bar shift=0cm] coordinates {(0,80.85)};
-    \addplot[ybar, draw=none, fill=green!70!black, bar shift=0cm] coordinates {(1,81.8)};
-    \end{axis}
-  \end{tikzpicture}
-
-\end{frame}
-
-\begin{frame}{What Do the Numbers Say?}
-
   \begin{columns}[T]
     \begin{column}{0.48\textwidth}
       \begin{questionbox}
@@ -693,21 +742,60 @@
           \item Compute the difference in \textbf{absolute} terms, and then in \textbf{percentage} terms.
         \end{enumerate}
       \end{questionbox}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \centering
+      {\small\bfseries Total U.S.\ Steel Production (Mt) 2024 v.\ 2025}
 
-      \vspace{0.5em}
-      \pause
+      \vspace{0.3em}
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\textwidth,
+          height=5.5cm,
+          ybar,
+          bar width=2cm,
+          ymin=80.0, ymax=82.0,
+          ytick={80.2,80.4,80.6,80.8,81.0,81.2,81.4,81.6,81.8},
+          yticklabel style={font=\tiny},
+          xmin=-0.6, xmax=1.6,
+          xtick={0,1},
+          xticklabels={2024, 2025},
+          xticklabel style={font=\small},
+          enlarge x limits=false,
+          axis line style={black},
+          tick style={black},
+          ymajorgrids=true,
+          grid style={gray!30},
+          axis on top,
+        ]
+        \addplot[ybar, draw=none, fill=red, bar shift=0cm] coordinates {(0,80.85)};
+        \addplot[ybar, draw=none, fill=green!70!black, bar shift=0cm] coordinates {(1,81.8)};
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}{U.S.\ Steel Production --- Answer}
+
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
       \begin{answerbox}
         2024: 80.8 million tons\\
         2025: 81.8 million tons\\[0.3em]
         Increase: 1.0 million tons\\
         \textbf{That's only $\approx$1.2\%}
       \end{answerbox}
-    \end{column}
-    \begin{column}{0.48\textwidth}
-      \vspace{0.5em}
-      The bars \emph{look} very different because the y-axis starts at 80, not zero.
 
       \vspace{0.5em}
+      The bars \emph{look} very different because the y-axis starts at 80, not zero.
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \centering
+      {\small\textbf{Corrected chart (y-axis starts at 0):}}
+
+      \vspace{0.3em}
       \begin{tikzpicture}
         \begin{axis}[
           width=\textwidth,
@@ -734,22 +822,6 @@
 
 \end{frame}
 
-\begin{frame}{Chart Detective Toolkit}
-
-  \begin{methodbox}
-    \textbf{5 questions that save you from bad graphs:}
-
-    \vspace{0.3em}
-    \begin{enumerate}
-      \item What \textbf{story} is the title pushing?
-      \item What are the \textbf{units}?
-      \item Does the y-axis \textbf{start at zero}?
-      \item What \textbf{time window} is shown?
-      \item What \textbf{context is missing}?
-    \end{enumerate}
-  \end{methodbox}
-
-\end{frame}
 
 \begin{frame}{Your Turn: Be a Chart Detective}
 
@@ -770,9 +842,9 @@
 
 \end{frame}
 
-% --- Case Study 1: Florida Gun Deaths ---
+% --- Case Study 1: Farmers Markets in Florida ---
 
-\begin{frame}{Case 1: Florida Gun Deaths}
+\begin{frame}{Case 1: Farmers Markets in Florida}
 
   \begin{columns}[T]
     \begin{column}{0.42\textwidth}
@@ -794,31 +866,29 @@
           height=5.5cm,
           y dir=reverse,
           xlabel={},
-          ylabel={\small Number of murders (firearms)},
-          xmin=1989, xmax=2015,
+          ylabel={\small Number of farmers markets},
+          xmin=1999, xmax=2015,
           ymin=0, ymax=1050,
           ytick={0,200,400,600,800,1000},
           yticklabel style={font=\tiny},
-          xtick={1990,1995,2000,2005,2010,2014},
+          xtick={2000,2003,2005,2008,2011,2014},
           xticklabel style={font=\tiny, rotate=45, anchor=east},
           axis line style={black},
           title style={font=\small\bfseries},
-          title={Gun Deaths in Florida},
+          title={Farmers Markets in Florida},
           area style,
           grid=none,
         ]
-        \addplot[vermillion!80, fill=vermillion!30, thick] coordinates {
-          (1990,873) (1991,891) (1992,900) (1993,898) (1994,881)
-          (1995,834) (1996,785) (1997,740) (1998,699) (1999,675)
-          (2000,693) (2001,688) (2002,699) (2003,715) (2004,743)
-          (2005,721) (2006,740) (2007,752) (2008,770) (2009,800)
-          (2010,828) (2011,870) (2012,893) (2013,897) (2014,873)
+        \addplot[green!60!black, fill=green!30, thick] coordinates {
+          (2000,873) (2001,891) (2002,900) (2003,898) (2004,881)
+          (2005,834) (2006,785) (2007,740) (2008,699) (2009,675)
+          (2010,693) (2011,688) (2012,699) (2013,715) (2014,743)
         } \closedcycle;
 
-        % Stand Your Ground annotation
+        % Policy annotation
         \draw[black, thick, dashed] (2005,0) -- (2005,1050);
         \node[font=\tiny, text width=2.5cm, align=center, anchor=south] at (2005,10)
-          {2005: ``Stand Your\\Ground'' law enacted};
+          {2005: State funding\\program launched};
         \end{axis}
       \end{tikzpicture}
     \end{column}
@@ -918,34 +988,6 @@
 \begin{frame}{Case 3: Global Temperatures}
 
   \begin{columns}[T]
-    \begin{column}{0.55\textwidth}
-      \centering
-      \begin{tikzpicture}
-        \begin{axis}[
-          width=\textwidth,
-          height=5cm,
-          ybar,
-          bar width=5pt,
-          xlabel={Year},
-          ylabel={\small Temp.\ anomaly (\textdegree C)},
-          title style={font=\small\bfseries},
-          title={Global Temperature Anomalies (2015--2022)},
-          xmin=2014.2, xmax=2022.8,
-          ymin=-0.1, ymax=1.3,
-          xtick={2015,2016,...,2022},
-          xticklabel style={font=\tiny},
-          yticklabel style={font=\tiny},
-          grid=major,
-          grid style={gray!15},
-        ]
-        \addplot[fill=vermillion!60, draw=vermillion] coordinates {
-          (2015,0.90) (2016,1.01) (2017,0.92) (2018,0.83)
-          (2019,0.98) (2020,1.02) (2021,0.84) (2022,0.86)
-        };
-
-        \end{axis};
-      \end{tikzpicture}
-    \end{column}
     \begin{column}{0.42\textwidth}
       \vspace{1em}
       \textbf{Chart Detective:}
@@ -956,6 +998,34 @@
         \item What \textbf{time window} is shown?
         \item What \textbf{context is missing}?
       \end{enumerate}
+    \end{column}
+    \begin{column}{0.55\textwidth}
+      \centering
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\textwidth,
+          height=5cm,
+          ybar,
+          bar width=5pt,
+          xlabel={Year},
+          ylabel={\small Temp.\ anomaly (\textdegree F)},
+          title style={font=\small\bfseries},
+          title={Global Temperature Anomalies (2015--2022)},
+          xmin=2014.2, xmax=2022.8,
+          ymin=-0.2, ymax=2.4,
+          xtick={2015,2016,...,2022},
+          xticklabel style={font=\tiny},
+          yticklabel style={font=\tiny},
+          grid=major,
+          grid style={gray!15},
+        ]
+        \addplot[fill=vermillion!60, draw=vermillion] coordinates {
+          (2015,1.62) (2016,1.82) (2017,1.66) (2018,1.49)
+          (2019,1.76) (2020,1.84) (2021,1.51) (2022,1.55)
+        };
+
+        \end{axis};
+      \end{tikzpicture}
     \end{column}
   \end{columns}
 
@@ -971,37 +1041,36 @@
       ybar,
       bar width=1pt,
       xlabel={Year},
-      ylabel={\small Temperature anomaly (\textdegree C)},
+      ylabel={\small Temperature anomaly (\textdegree F)},
       title style={font=\small\bfseries},
       title={Global Temperature Anomalies (1880--2022)},
       xmin=1878, xmax=2024,
-      ymin=-0.6, ymax=1.2,
+      ymin=-1.1, ymax=2.2,
       xtick={1880,1900,1920,1940,1960,1980,2000,2020},
       xticklabel style={font=\tiny},
       yticklabel style={font=\tiny},
       ymajorgrids=true,
       grid style={gray!15},
     ]
-    % Approximate NOAA data: negative anomalies (blue) and positive (red)
-    % Simplified representative data points
+    % Approximate NOAA data converted to °F (anomaly × 1.8)
     \addplot[fill=blue!60, draw=blue!60] coordinates {
-      (1880,-0.17) (1882,-0.10) (1884,-0.28) (1886,-0.31) (1888,-0.17)
-      (1890,-0.35) (1892,-0.31) (1894,-0.32) (1896,-0.10) (1898,-0.27)
-      (1900,-0.08) (1902,-0.27) (1904,-0.44) (1906,-0.22) (1908,-0.43)
-      (1910,-0.43) (1912,-0.34) (1914,-0.15) (1916,-0.33) (1918,-0.26)
-      (1920,-0.25) (1922,-0.26) (1924,-0.25) (1926,-0.06) (1928,-0.18)
-      (1930,-0.09) (1932,-0.12) (1934,-0.11) (1936,-0.12) (1938,-0.02)
-      (1940,0.10) (1942,0.09) (1944,0.20) (1946,-0.01) (1948,-0.04)
-      (1950,-0.16) (1952,0.02) (1954,-0.12) (1956,-0.14) (1958,0.07)
-      (1960,0.01) (1962,0.06) (1964,-0.20) (1966,-0.02) (1968,-0.07)
-      (1970,0.04) (1972,0.02) (1974,-0.07) (1976,-0.10) (1978,0.07)
+      (1880,-0.31) (1882,-0.18) (1884,-0.50) (1886,-0.56) (1888,-0.31)
+      (1890,-0.63) (1892,-0.56) (1894,-0.58) (1896,-0.18) (1898,-0.49)
+      (1900,-0.14) (1902,-0.49) (1904,-0.79) (1906,-0.40) (1908,-0.77)
+      (1910,-0.77) (1912,-0.61) (1914,-0.27) (1916,-0.59) (1918,-0.47)
+      (1920,-0.45) (1922,-0.47) (1924,-0.45) (1926,-0.11) (1928,-0.32)
+      (1930,-0.16) (1932,-0.22) (1934,-0.20) (1936,-0.22) (1938,-0.04)
+      (1940,0.18) (1942,0.16) (1944,0.36) (1946,-0.02) (1948,-0.07)
+      (1950,-0.29) (1952,0.04) (1954,-0.22) (1956,-0.25) (1958,0.13)
+      (1960,0.02) (1962,0.11) (1964,-0.36) (1966,-0.04) (1968,-0.13)
+      (1970,0.07) (1972,0.04) (1974,-0.13) (1976,-0.18) (1978,0.13)
     };
     \addplot[fill=vermillion!60, draw=vermillion!60] coordinates {
-      (1980,0.26) (1982,0.12) (1984,0.15) (1986,0.18) (1988,0.38)
-      (1990,0.44) (1992,0.23) (1994,0.31) (1996,0.33) (1998,0.63)
-      (2000,0.40) (2002,0.56) (2004,0.54) (2006,0.61) (2008,0.54)
-      (2010,0.72) (2012,0.62) (2014,0.74) (2016,1.01) (2018,0.83)
-      (2020,1.02) (2022,0.86)
+      (1980,0.47) (1982,0.22) (1984,0.27) (1986,0.32) (1988,0.68)
+      (1990,0.79) (1992,0.41) (1994,0.56) (1996,0.59) (1998,1.13)
+      (2000,0.72) (2002,1.01) (2004,0.97) (2006,1.10) (2008,0.97)
+      (2010,1.30) (2012,1.12) (2014,1.33) (2016,1.82) (2018,1.49)
+      (2020,1.84) (2022,1.55)
     };
     \end{axis}
 
@@ -1196,7 +1265,7 @@
 
   \vspace{0.5em}
   \begin{itemize}
-    \item \textbf{Correlation is not causation.} It can be:
+    \item \textbf{Correlation is not causality.} It can be:
       \begin{enumerate}
         \item Coincidence
         \item Reverse causality

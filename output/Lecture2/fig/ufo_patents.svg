@@ -1,0 +1,327 @@
+<svg width="600" height="360" xmlns="http://www.w3.org/2000/svg"> <rect width="100%" height="100%" fill="#FEFEFE" />
+<line x1="70" y1="260" x2="530" y2="260" stroke="#9f9f9f" stroke-width="1" />
+<rect x="70" y="87" width="460" height="173" fill="#FEFEFE" />
+<text text-anchor="middle" x="300.0" y="20" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="bold" font-size="22" fill="#000000">UFO sightings in New Mexico</text>
+<text text-anchor="middle" x="300.0" y="42" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#000000">correlates with</text>
+<text text-anchor="middle" x="300.0" y="68" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="bold" font-size="22" fill="#ba0f27">Patents granted in the US</text>
+<text text-anchor="start" x="23" y="305.3333333333333" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#9f9f9f">UFO sightings reported in New Mexico &#183; Source: National UFO Reporting Center</text>
+<text text-anchor="start" x="23" y="328.66666666666663" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#9f9f9f">Total number of patents granted in the US &#183; Source: USPTO</text>
+<text text-anchor="start" x="23" y="351.99999999999994" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#9f9f9f">1975-2020, r=0.937, r&#178;=0.878, p&lt;0.01  &#183;  tylervigen.com/spurious/correlation/3099</text>
+<polyline points="5,300.66666666666663 20,300.66666666666663" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1" />
+<polygon points="3.2,300.66666666666663 5,298.8666666666666 6.8,300.66666666666663 5,302.46666666666664" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="3.2,300.66666666666663 5,298.8666666666666 6.8,300.66666666666663 5,302.46666666666664" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polyline points="5,323.99999999999994 20,323.99999999999994" style="fill:none;stroke:#ba0f27;stroke-width:1.55" />
+<circle cx="5" cy="323.99999999999994" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="5" cy="323.99999999999994" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<text x="5" y="178.5" transform="rotate(270 5 173.5)" text-anchor="middle" fill="#000000" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" dominant-baseline="central">UFO sightings</text>
+<text x="173.5" y="-389" transform="rotate(90 100 100)" text-anchor="middle" fill="#ba0f27" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" dominant-baseline="central">Patents granted</text>
+<line x1="71" y1="93.5" x2="528" y2="93.5" stroke="#F3F3F3" stroke-width="1" fill="#FEFEFE" />
+<text text-anchor="end" x="62" y="98.16666666666667" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#000000">109</text>
+<text text-anchor="start" x="538" y="98.16666666666667" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#ba0f27">391K</text>
+<line x1="71" y1="133.5" x2="528" y2="133.5" stroke="#F3F3F3" stroke-width="1" fill="#FEFEFE" />
+<text text-anchor="end" x="62" y="138.16666666666666" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">82</text>
+<text text-anchor="start" x="538" y="138.16666666666666" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#ba0f27">306.4K</text>
+<line x1="71" y1="173.5" x2="528" y2="173.5" stroke="#F3F3F3" stroke-width="1" fill="#FEFEFE" />
+<text text-anchor="end" x="62" y="178.16666666666666" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">55</text>
+<text text-anchor="start" x="538" y="178.16666666666666" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#ba0f27">222K</text>
+<line x1="71" y1="213.5" x2="528" y2="213.5" stroke="#F3F3F3" stroke-width="1" fill="#FEFEFE" />
+<text text-anchor="end" x="62" y="218.16666666666666" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">28</text>
+<text text-anchor="start" x="538" y="218.16666666666666" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#ba0f27">137.1K</text>
+<line x1="71" y1="253.5" x2="528" y2="253.5" stroke="#F3F3F3" stroke-width="1" fill="#FEFEFE" />
+<text text-anchor="end" x="62" y="258.1666666666667" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12">1</text>
+<text text-anchor="start" x="538" y="258.1666666666667" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#ba0f27">52K</text>
+<polyline points="76.5,260 76.5,266" style="fill:none;stroke:#000000;stroke-width:1" />
+<polyline points="126.16666666666667,260 126.16666666666667,266" style="fill:none;stroke:#000000;stroke-width:1" />
+<polyline points="175.83333333333334,260 175.83333333333334,266" style="fill:none;stroke:#000000;stroke-width:1" />
+<polyline points="225.5,260 225.5,266" style="fill:none;stroke:#000000;stroke-width:1" />
+<polyline points="275.1666666666667,260 275.1666666666667,266" style="fill:none;stroke:#000000;stroke-width:1" />
+<polyline points="324.83333333333337,260 324.83333333333337,266" style="fill:none;stroke:#000000;stroke-width:1" />
+<polyline points="374.5,260 374.5,266" style="fill:none;stroke:#000000;stroke-width:1" />
+<polyline points="424.1666666666667,260 424.1666666666667,266" style="fill:none;stroke:#000000;stroke-width:1" />
+<polyline points="473.83333333333337,260 473.83333333333337,266" style="fill:none;stroke:#000000;stroke-width:1" />
+<polyline points="523.5,260 523.5,266" style="fill:none;stroke:#000000;stroke-width:1" />
+<text text-anchor="middle" x="76.5" y="281" font-weight="bold" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14">1975</text>
+<text text-anchor="middle" x="126.16666666666667" y="281" font-weight="bold" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14">1980</text>
+<text text-anchor="middle" x="175.83333333333334" y="281" font-weight="bold" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14">1985</text>
+<text text-anchor="middle" x="225.5" y="281" font-weight="bold" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14">1990</text>
+<text text-anchor="middle" x="275.1666666666667" y="281" font-weight="bold" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14">1995</text>
+<text text-anchor="middle" x="324.83333333333337" y="281" font-weight="bold" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14">2000</text>
+<text text-anchor="middle" x="374.5" y="281" font-weight="bold" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14">2005</text>
+<text text-anchor="middle" x="424.1666666666667" y="281" font-weight="bold" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14">2010</text>
+<text text-anchor="middle" x="473.83333333333337" y="281" font-weight="bold" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14">2015</text>
+<text text-anchor="middle" x="523.5" y="281" font-weight="bold" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14">2020</text>
+<polyline points="76.5,241.9746523369453 86.43333333333334,242.64641707756354" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="86.43333333333334,242.64641707756354 96.36666666666667,245.2952109598748" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="96.36666666666667,245.2952109598748 106.3,244.94893560483038" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="106.3,244.94893560483038 116.23333333333333,253.5" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="116.23333333333333,253.5 126.16666666666667,247.0010776816558" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="126.16666666666667,247.0010776816558 136.1,244.6891109864478" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="136.1,244.6891109864478 146.03333333333333,248.36822758274528" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="146.03333333333333,248.36822758274528 155.96666666666667,248.97952404853996" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="155.96666666666667,248.97952404853996 165.9,243.93987126871178" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="165.9,243.93987126871178 175.83333333333334,241.7691546842245" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="175.83333333333334,241.7691546842245 185.76666666666665,241.9500871002982" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="185.76666666666665,241.9500871002982 195.7,236.03411674392513" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="195.7,236.03411674392513 205.63333333333333,238.4495408780891" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="205.63333333333333,238.4495408780891 215.56666666666666,229.82289113939" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="215.56666666666666,229.82289113939 225.5,231.45553455962678" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="225.5,231.45553455962678 235.43333333333334,227.85625498243232" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="235.43333333333334,227.85625498243232 245.36666666666667,227.52651392128496" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="245.36666666666667,227.52651392128496 255.3,226.41540937140158" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="255.3,226.41540937140158 265.23333333333335,224.60088871829697" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="265.23333333333335,224.60088871829697 275.1666666666667,224.48420384422332" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="275.1666666666667,224.48420384422332 285.1,220.77012902654343" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="285.1,220.77012902654343 295.0333333333333,219.64910390032182" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="295.0333333333333,219.64910390032182 304.9666666666667,201.19069060202543" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="304.9666666666667,201.19069060202543 314.9,198.38316749830227" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="314.9,198.38316749830227 324.83333333333337,195.12638400897578" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="324.83333333333337,195.12638400897578 334.76666666666665,191.3513685080752" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="334.76666666666665,191.3513685080752 344.7,191.16004310726623" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="344.7,191.16004310726623 354.6333333333333,189.91430216422097" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="354.6333333333333,189.91430216422097 364.56666666666666,192.6131713366205" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="364.56666666666666,192.6131713366205 374.5,203.75303374767486" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="374.5,203.75303374767486 384.43333333333334,185.47697009064336" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="384.43333333333334,185.47697009064336 394.3666666666667,191.8573179013257" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="394.3666666666667,191.8573179013257 404.3,190.75896837816293" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="404.3,190.75896837816293 414.23333333333335,187.5924148926747" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="414.23333333333335,187.5924148926747 424.1666666666667,162.83160116921078" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="424.1666666666667,162.83160116921078 434.1,161.23864005432696" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="434.1,161.23864005432696 444.03333333333336,147.50336590982903" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="444.03333333333336,147.50336590982903 453.9666666666667,135.14516224275886" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="453.9666666666667,135.14516224275886 463.90000000000003,124.24008680504296" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="463.90000000000003,124.24008680504296 473.83333333333337,124.26465204169004" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="473.83333333333337,124.26465204169004 483.76666666666665,120.6729309988485" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="483.76666666666665,120.6729309988485 493.7,112.25461336325253" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="493.7,112.25461336325253 503.6333333333333,117.64526558209572" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="503.6333333333333,117.64526558209572 513.5666666666666,93.5" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<polyline points="513.5666666666666,93.5 523.5,94.54071569872154" style="fill:none;stroke:#ba0f27;stroke-width:1.55"  />
+<circle cx="76.5" cy="241.9746523369453" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="76.5" cy="241.9746523369453" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="86.43333333333334" cy="242.64641707756354" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="86.43333333333334" cy="242.64641707756354" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="96.36666666666667" cy="245.2952109598748" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="96.36666666666667" cy="245.2952109598748" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="106.3" cy="244.94893560483038" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="106.3" cy="244.94893560483038" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="116.23333333333333" cy="253.5" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="116.23333333333333" cy="253.5" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="126.16666666666667" cy="247.0010776816558" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="126.16666666666667" cy="247.0010776816558" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="136.1" cy="244.6891109864478" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="136.1" cy="244.6891109864478" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="146.03333333333333" cy="248.36822758274528" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="146.03333333333333" cy="248.36822758274528" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="155.96666666666667" cy="248.97952404853996" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="155.96666666666667" cy="248.97952404853996" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="165.9" cy="243.93987126871178" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="165.9" cy="243.93987126871178" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="175.83333333333334" cy="241.7691546842245" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="175.83333333333334" cy="241.7691546842245" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="185.76666666666665" cy="241.9500871002982" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="185.76666666666665" cy="241.9500871002982" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="195.7" cy="236.03411674392513" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="195.7" cy="236.03411674392513" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="205.63333333333333" cy="238.4495408780891" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="205.63333333333333" cy="238.4495408780891" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="215.56666666666666" cy="229.82289113939" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="215.56666666666666" cy="229.82289113939" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="225.5" cy="231.45553455962678" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="225.5" cy="231.45553455962678" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="235.43333333333334" cy="227.85625498243232" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="235.43333333333334" cy="227.85625498243232" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="245.36666666666667" cy="227.52651392128496" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="245.36666666666667" cy="227.52651392128496" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="255.3" cy="226.41540937140158" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="255.3" cy="226.41540937140158" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="265.23333333333335" cy="224.60088871829697" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="265.23333333333335" cy="224.60088871829697" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="275.1666666666667" cy="224.48420384422332" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="275.1666666666667" cy="224.48420384422332" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="285.1" cy="220.77012902654343" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="285.1" cy="220.77012902654343" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="295.0333333333333" cy="219.64910390032182" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="295.0333333333333" cy="219.64910390032182" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="304.9666666666667" cy="201.19069060202543" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="304.9666666666667" cy="201.19069060202543" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="314.9" cy="198.38316749830227" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="314.9" cy="198.38316749830227" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="324.83333333333337" cy="195.12638400897578" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="324.83333333333337" cy="195.12638400897578" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="334.76666666666665" cy="191.3513685080752" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="334.76666666666665" cy="191.3513685080752" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="344.7" cy="191.16004310726623" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="344.7" cy="191.16004310726623" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="354.6333333333333" cy="189.91430216422097" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="354.6333333333333" cy="189.91430216422097" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="364.56666666666666" cy="192.6131713366205" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="364.56666666666666" cy="192.6131713366205" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="374.5" cy="203.75303374767486" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="374.5" cy="203.75303374767486" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="384.43333333333334" cy="185.47697009064336" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="384.43333333333334" cy="185.47697009064336" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="394.3666666666667" cy="191.8573179013257" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="394.3666666666667" cy="191.8573179013257" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="404.3" cy="190.75896837816293" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="404.3" cy="190.75896837816293" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="414.23333333333335" cy="187.5924148926747" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="414.23333333333335" cy="187.5924148926747" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="424.1666666666667" cy="162.83160116921078" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="424.1666666666667" cy="162.83160116921078" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="434.1" cy="161.23864005432696" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="434.1" cy="161.23864005432696" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="444.03333333333336" cy="147.50336590982903" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="444.03333333333336" cy="147.50336590982903" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="453.9666666666667" cy="135.14516224275886" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="453.9666666666667" cy="135.14516224275886" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="463.90000000000003" cy="124.24008680504296" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="463.90000000000003" cy="124.24008680504296" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="473.83333333333337" cy="124.26465204169004" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="473.83333333333337" cy="124.26465204169004" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="483.76666666666665" cy="120.6729309988485" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="483.76666666666665" cy="120.6729309988485" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="493.7" cy="112.25461336325253" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="493.7" cy="112.25461336325253" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="503.6333333333333" cy="117.64526558209572" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="503.6333333333333" cy="117.64526558209572" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="513.5666666666666" cy="93.5" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="513.5666666666666" cy="93.5" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<circle cx="523.5" cy="94.54071569872154" r="1.5" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7" />
+<circle cx="523.5" cy="94.54071569872154" r="1.5" stroke="#ba0f27" stroke-width="1.5" fill="#ba0f27"  />
+<polyline points="76.5,252.0185185185185 86.43333333333334,250.53703703703704" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="86.43333333333334,250.53703703703704 96.36666666666667,246.09259259259258" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="96.36666666666667,246.09259259259258 106.3,247.57407407407408" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="106.3,247.57407407407408 116.23333333333333,250.53703703703704" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="116.23333333333333,250.53703703703704 126.16666666666667,253.5" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="126.16666666666667,253.5 136.1,250.53703703703704" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="136.1,250.53703703703704 146.03333333333333,253.5" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="146.03333333333333,253.5 155.96666666666667,252.0185185185185" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="155.96666666666667,252.0185185185185 165.9,250.53703703703704" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="165.9,250.53703703703704 175.83333333333334,253.5" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="175.83333333333334,253.5 185.76666666666665,252.0185185185185" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="185.76666666666665,252.0185185185185 195.7,252.0185185185185" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="195.7,252.0185185185185 205.63333333333333,244.61111111111111" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="205.63333333333333,244.61111111111111 215.56666666666666,250.53703703703704" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="215.56666666666666,250.53703703703704 225.5,250.53703703703704" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="225.5,250.53703703703704 235.43333333333334,243.12962962962962" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="235.43333333333334,243.12962962962962 245.36666666666667,250.53703703703704" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="245.36666666666667,250.53703703703704 255.3,247.57407407407408" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="255.3,247.57407407407408 265.23333333333335,241.64814814814815" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="265.23333333333335,241.64814814814815 275.1666666666667,246.09259259259258" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="275.1666666666667,246.09259259259258 285.1,243.12962962962962" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="285.1,243.12962962962962 295.0333333333333,223.87037037037035" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="295.0333333333333,223.87037037037035 304.9666666666667,217.94444444444446" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="304.9666666666667,217.94444444444446 314.9,212.0185185185185" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="314.9,212.0185185185185 324.83333333333337,206.09259259259258" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="324.83333333333337,206.09259259259258 334.76666666666665,213.5" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="334.76666666666665,213.5 344.7,194.24074074074073" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="344.7,194.24074074074073 354.6333333333333,194.24074074074073" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="354.6333333333333,194.24074074074073 364.56666666666666,200.16666666666666" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="364.56666666666666,200.16666666666666 374.5,209.05555555555554" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="374.5,209.05555555555554 384.43333333333334,167.57407407407408" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="384.43333333333334,167.57407407407408 394.3666666666667,183.87037037037038" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="394.3666666666667,183.87037037037038 404.3,174.98148148148147" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="404.3,174.98148148148147 414.23333333333335,183.87037037037038" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="414.23333333333335,183.87037037037038 424.1666666666667,201.64814814814815" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="424.1666666666667,201.64814814814815 434.1,203.12962962962962" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="434.1,203.12962962962962 444.03333333333336,157.2037037037037" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="444.03333333333336,157.2037037037037 453.9666666666667,134.98148148148147" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="453.9666666666667,134.98148148148147 463.90000000000003,93.5" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="463.90000000000003,93.5 473.83333333333337,154.24074074074073" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="473.83333333333337,154.24074074074073 483.76666666666665,143.87037037037038" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="483.76666666666665,143.87037037037038 493.7,139.42592592592592" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="493.7,139.42592592592592 503.6333333333333,170.53703703703704" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="503.6333333333333,170.53703703703704 513.5666666666666,133.5" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polyline points="513.5666666666666,133.5 523.5,143.87037037037038" style="fill:none;stroke:#000000;stroke-width:1.55" stroke-dasharray="3,1"  />
+<polygon points="74.7,252.0185185185185 76.5,250.2185185185185 78.3,252.0185185185185 76.5,253.81851851851852" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="74.7,252.0185185185185 76.5,250.2185185185185 78.3,252.0185185185185 76.5,253.81851851851852" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="84.63333333333334,250.53703703703704 86.43333333333334,248.73703703703703 88.23333333333333,250.53703703703704 86.43333333333334,252.33703703703705" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="84.63333333333334,250.53703703703704 86.43333333333334,248.73703703703703 88.23333333333333,250.53703703703704 86.43333333333334,252.33703703703705" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="94.56666666666668,246.09259259259258 96.36666666666667,244.29259259259257 98.16666666666667,246.09259259259258 96.36666666666667,247.8925925925926" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="94.56666666666668,246.09259259259258 96.36666666666667,244.29259259259257 98.16666666666667,246.09259259259258 96.36666666666667,247.8925925925926" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="104.5,247.57407407407408 106.3,245.77407407407406 108.1,247.57407407407408 106.3,249.3740740740741" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="104.5,247.57407407407408 106.3,245.77407407407406 108.1,247.57407407407408 106.3,249.3740740740741" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="114.43333333333334,250.53703703703704 116.23333333333333,248.73703703703703 118.03333333333333,250.53703703703704 116.23333333333333,252.33703703703705" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="114.43333333333334,250.53703703703704 116.23333333333333,248.73703703703703 118.03333333333333,250.53703703703704 116.23333333333333,252.33703703703705" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="124.36666666666667,253.5 126.16666666666667,251.7 127.96666666666667,253.5 126.16666666666667,255.3" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="124.36666666666667,253.5 126.16666666666667,251.7 127.96666666666667,253.5 126.16666666666667,255.3" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="134.29999999999998,250.53703703703704 136.1,248.73703703703703 137.9,250.53703703703704 136.1,252.33703703703705" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="134.29999999999998,250.53703703703704 136.1,248.73703703703703 137.9,250.53703703703704 136.1,252.33703703703705" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="144.23333333333332,253.5 146.03333333333333,251.7 147.83333333333334,253.5 146.03333333333333,255.3" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="144.23333333333332,253.5 146.03333333333333,251.7 147.83333333333334,253.5 146.03333333333333,255.3" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="154.16666666666666,252.0185185185185 155.96666666666667,250.2185185185185 157.76666666666668,252.0185185185185 155.96666666666667,253.81851851851852" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="154.16666666666666,252.0185185185185 155.96666666666667,250.2185185185185 157.76666666666668,252.0185185185185 155.96666666666667,253.81851851851852" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="164.1,250.53703703703704 165.9,248.73703703703703 167.70000000000002,250.53703703703704 165.9,252.33703703703705" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="164.1,250.53703703703704 165.9,248.73703703703703 167.70000000000002,250.53703703703704 165.9,252.33703703703705" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="174.03333333333333,253.5 175.83333333333334,251.7 177.63333333333335,253.5 175.83333333333334,255.3" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="174.03333333333333,253.5 175.83333333333334,251.7 177.63333333333335,253.5 175.83333333333334,255.3" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="183.96666666666664,252.0185185185185 185.76666666666665,250.2185185185185 187.56666666666666,252.0185185185185 185.76666666666665,253.81851851851852" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="183.96666666666664,252.0185185185185 185.76666666666665,250.2185185185185 187.56666666666666,252.0185185185185 185.76666666666665,253.81851851851852" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="193.89999999999998,252.0185185185185 195.7,250.2185185185185 197.5,252.0185185185185 195.7,253.81851851851852" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="193.89999999999998,252.0185185185185 195.7,250.2185185185185 197.5,252.0185185185185 195.7,253.81851851851852" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="203.83333333333331,244.61111111111111 205.63333333333333,242.8111111111111 207.43333333333334,244.61111111111111 205.63333333333333,246.41111111111113" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="203.83333333333331,244.61111111111111 205.63333333333333,242.8111111111111 207.43333333333334,244.61111111111111 205.63333333333333,246.41111111111113" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="213.76666666666665,250.53703703703704 215.56666666666666,248.73703703703703 217.36666666666667,250.53703703703704 215.56666666666666,252.33703703703705" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="213.76666666666665,250.53703703703704 215.56666666666666,248.73703703703703 217.36666666666667,250.53703703703704 215.56666666666666,252.33703703703705" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="223.7,250.53703703703704 225.5,248.73703703703703 227.3,250.53703703703704 225.5,252.33703703703705" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="223.7,250.53703703703704 225.5,248.73703703703703 227.3,250.53703703703704 225.5,252.33703703703705" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="233.63333333333333,243.12962962962962 235.43333333333334,241.3296296296296 237.23333333333335,243.12962962962962 235.43333333333334,244.92962962962963" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="233.63333333333333,243.12962962962962 235.43333333333334,241.3296296296296 237.23333333333335,243.12962962962962 235.43333333333334,244.92962962962963" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="243.56666666666666,250.53703703703704 245.36666666666667,248.73703703703703 247.16666666666669,250.53703703703704 245.36666666666667,252.33703703703705" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="243.56666666666666,250.53703703703704 245.36666666666667,248.73703703703703 247.16666666666669,250.53703703703704 245.36666666666667,252.33703703703705" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="253.5,247.57407407407408 255.3,245.77407407407406 257.1,247.57407407407408 255.3,249.3740740740741" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="253.5,247.57407407407408 255.3,245.77407407407406 257.1,247.57407407407408 255.3,249.3740740740741" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="263.43333333333334,241.64814814814815 265.23333333333335,239.84814814814814 267.03333333333336,241.64814814814815 265.23333333333335,243.44814814814816" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="263.43333333333334,241.64814814814815 265.23333333333335,239.84814814814814 267.03333333333336,241.64814814814815 265.23333333333335,243.44814814814816" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="273.3666666666667,246.09259259259258 275.1666666666667,244.29259259259257 276.9666666666667,246.09259259259258 275.1666666666667,247.8925925925926" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="273.3666666666667,246.09259259259258 275.1666666666667,244.29259259259257 276.9666666666667,246.09259259259258 275.1666666666667,247.8925925925926" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="283.3,243.12962962962962 285.1,241.3296296296296 286.90000000000003,243.12962962962962 285.1,244.92962962962963" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="283.3,243.12962962962962 285.1,241.3296296296296 286.90000000000003,243.12962962962962 285.1,244.92962962962963" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="293.2333333333333,223.87037037037035 295.0333333333333,222.07037037037034 296.8333333333333,223.87037037037035 295.0333333333333,225.67037037037036" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="293.2333333333333,223.87037037037035 295.0333333333333,222.07037037037034 296.8333333333333,223.87037037037035 295.0333333333333,225.67037037037036" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="303.1666666666667,217.94444444444446 304.9666666666667,216.14444444444445 306.7666666666667,217.94444444444446 304.9666666666667,219.74444444444447" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="303.1666666666667,217.94444444444446 304.9666666666667,216.14444444444445 306.7666666666667,217.94444444444446 304.9666666666667,219.74444444444447" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="313.09999999999997,212.0185185185185 314.9,210.2185185185185 316.7,212.0185185185185 314.9,213.81851851851852" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="313.09999999999997,212.0185185185185 314.9,210.2185185185185 316.7,212.0185185185185 314.9,213.81851851851852" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="323.03333333333336,206.09259259259258 324.83333333333337,204.29259259259257 326.6333333333334,206.09259259259258 324.83333333333337,207.8925925925926" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="323.03333333333336,206.09259259259258 324.83333333333337,204.29259259259257 326.6333333333334,206.09259259259258 324.83333333333337,207.8925925925926" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="332.96666666666664,213.5 334.76666666666665,211.7 336.56666666666666,213.5 334.76666666666665,215.3" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="332.96666666666664,213.5 334.76666666666665,211.7 336.56666666666666,213.5 334.76666666666665,215.3" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="342.9,194.24074074074073 344.7,192.44074074074072 346.5,194.24074074074073 344.7,196.04074074074074" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="342.9,194.24074074074073 344.7,192.44074074074072 346.5,194.24074074074073 344.7,196.04074074074074" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="352.8333333333333,194.24074074074073 354.6333333333333,192.44074074074072 356.43333333333334,194.24074074074073 354.6333333333333,196.04074074074074" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="352.8333333333333,194.24074074074073 354.6333333333333,192.44074074074072 356.43333333333334,194.24074074074073 354.6333333333333,196.04074074074074" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="362.76666666666665,200.16666666666666 364.56666666666666,198.36666666666665 366.3666666666667,200.16666666666666 364.56666666666666,201.96666666666667" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="362.76666666666665,200.16666666666666 364.56666666666666,198.36666666666665 366.3666666666667,200.16666666666666 364.56666666666666,201.96666666666667" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="372.7,209.05555555555554 374.5,207.25555555555553 376.3,209.05555555555554 374.5,210.85555555555555" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="372.7,209.05555555555554 374.5,207.25555555555553 376.3,209.05555555555554 374.5,210.85555555555555" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="382.6333333333333,167.57407407407408 384.43333333333334,165.77407407407406 386.23333333333335,167.57407407407408 384.43333333333334,169.3740740740741" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="382.6333333333333,167.57407407407408 384.43333333333334,165.77407407407406 386.23333333333335,167.57407407407408 384.43333333333334,169.3740740740741" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="392.56666666666666,183.87037037037038 394.3666666666667,182.07037037037037 396.1666666666667,183.87037037037038 394.3666666666667,185.6703703703704" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="392.56666666666666,183.87037037037038 394.3666666666667,182.07037037037037 396.1666666666667,183.87037037037038 394.3666666666667,185.6703703703704" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="402.5,174.98148148148147 404.3,173.18148148148146 406.1,174.98148148148147 404.3,176.78148148148148" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="402.5,174.98148148148147 404.3,173.18148148148146 406.1,174.98148148148147 404.3,176.78148148148148" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="412.43333333333334,183.87037037037038 414.23333333333335,182.07037037037037 416.03333333333336,183.87037037037038 414.23333333333335,185.6703703703704" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="412.43333333333334,183.87037037037038 414.23333333333335,182.07037037037037 416.03333333333336,183.87037037037038 414.23333333333335,185.6703703703704" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="422.3666666666667,201.64814814814815 424.1666666666667,199.84814814814814 425.9666666666667,201.64814814814815 424.1666666666667,203.44814814814816" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="422.3666666666667,201.64814814814815 424.1666666666667,199.84814814814814 425.9666666666667,201.64814814814815 424.1666666666667,203.44814814814816" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="432.3,203.12962962962962 434.1,201.3296296296296 435.90000000000003,203.12962962962962 434.1,204.92962962962963" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="432.3,203.12962962962962 434.1,201.3296296296296 435.90000000000003,203.12962962962962 434.1,204.92962962962963" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="442.23333333333335,157.2037037037037 444.03333333333336,155.40370370370368 445.83333333333337,157.2037037037037 444.03333333333336,159.0037037037037" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="442.23333333333335,157.2037037037037 444.03333333333336,155.40370370370368 445.83333333333337,157.2037037037037 444.03333333333336,159.0037037037037" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="452.1666666666667,134.98148148148147 453.9666666666667,133.18148148148146 455.7666666666667,134.98148148148147 453.9666666666667,136.78148148148148" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="452.1666666666667,134.98148148148147 453.9666666666667,133.18148148148146 455.7666666666667,134.98148148148147 453.9666666666667,136.78148148148148" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="462.1,93.5 463.90000000000003,91.7 465.70000000000005,93.5 463.90000000000003,95.3" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="462.1,93.5 463.90000000000003,91.7 465.70000000000005,93.5 463.90000000000003,95.3" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="472.03333333333336,154.24074074074073 473.83333333333337,152.44074074074072 475.6333333333334,154.24074074074073 473.83333333333337,156.04074074074074" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="472.03333333333336,154.24074074074073 473.83333333333337,152.44074074074072 475.6333333333334,154.24074074074073 473.83333333333337,156.04074074074074" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="481.96666666666664,143.87037037037038 483.76666666666665,142.07037037037037 485.56666666666666,143.87037037037038 483.76666666666665,145.6703703703704" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="481.96666666666664,143.87037037037038 483.76666666666665,142.07037037037037 485.56666666666666,143.87037037037038 483.76666666666665,145.6703703703704" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="491.9,139.42592592592592 493.7,137.6259259259259 495.5,139.42592592592592 493.7,141.22592592592594" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="491.9,139.42592592592592 493.7,137.6259259259259 495.5,139.42592592592592 493.7,141.22592592592594" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="501.8333333333333,170.53703703703704 503.6333333333333,168.73703703703703 505.43333333333334,170.53703703703704 503.6333333333333,172.33703703703705" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="501.8333333333333,170.53703703703704 503.6333333333333,168.73703703703703 505.43333333333334,170.53703703703704 503.6333333333333,172.33703703703705" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="511.7666666666666,133.5 513.5666666666666,131.7 515.3666666666666,133.5 513.5666666666666,135.3" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="511.7666666666666,133.5 513.5666666666666,131.7 515.3666666666666,133.5 513.5666666666666,135.3" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+<polygon points="521.7,143.87037037037038 523.5,142.07037037037037 525.3,143.87037037037038 523.5,145.6703703703704" stroke="#F7F7F7" stroke-width="1.5" fill="#F7F7F7"  />
+<polygon points="521.7,143.87037037037038 523.5,142.07037037037037 525.3,143.87037037037038 523.5,145.6703703703704" stroke="#000000" stroke-width="1.5" fill="#000000"  />
+</svg>
