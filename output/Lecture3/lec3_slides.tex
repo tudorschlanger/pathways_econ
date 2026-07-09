@@ -1,0 +1,1199 @@
+% =============================================================================
+% Lecture 3: Climate Change and Common Resources
+% =============================================================================
+\documentclass[9pt,english,aspectratio=169]{beamer}
+\input{../../codes/Preambles/header_slides}
+
+% ---------- Title ----------
+\title{\textbf{\textcolor{green}{Climate Change and Common Resources}}}
+\subtitle{Pathways to Arts \& Humanities Summer Scholars Program}
+\author{Instructor: Tudor Schlanger}
+\date{Summer 2026}
+
+\begin{document}
+
+% =============================================================================
+% Title
+% =============================================================================
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% ---------- Review Question ----------
+\begin{frame}{Review: Correlation vs.\ Causality}
+
+  \begin{questionbox}
+    A study finds that cities with more firefighters also have
+    more fire damage.  \\
+    
+    A local politician concludes:
+    ``There are too many firefighters, they get in each other's way and do more bad than good. They \textbf{cause} more fire damage! So we should hire fewer firefighters!''
+
+    \vspace{0.5em}
+    What is wrong with this reasoning? You can choose one or more options. 
+  \end{questionbox}
+
+  \vspace{0.5em}
+  \begin{enumerate}[A.]
+    \item Nothing, it's a true causal statement
+    \item Reverse causality
+    \item Hidden third factor (Confounder)
+  \end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Review: Correlation vs.\ Causality --- Answer}
+
+  \begin{answerbox}
+    The correct answers are: \\[0.5em]
+    \textbf{B. Reverse causality:} More fire damage causes cities to hire
+    more firefighters --- the causation runs the opposite direction.\\[0.3em]
+    \textbf{C. Hidden third factor:} Bigger cities have both more fires
+    \emph{and} more firefighters. City size is a confounder.
+  \end{answerbox}
+
+  \vspace{0.5em}
+  \begin{insightbox}
+    Seeing two things move together (correlation) does not tell you
+    which one causes the other --- or whether something else drives both.
+  \end{insightbox}
+
+\end{frame}
+
+% =============================================================================
+\section{The Candy Problem}
+% =============================================================================
+
+% ---------- Game Round 1 ----------
+\begin{frame}{Yale Policy 101}
+
+  \begin{columns}[T]
+    \begin{column}{0.58\textwidth}
+      \vspace{2em}
+      {\LARGE\textbf{YALE POLICY 101: KIDS DESERVE CANDY!}}
+
+      \vspace{1.5em}
+      Rules:
+      \begin{enumerate}
+        \item Line up 
+        \item Walk up to the candy bowl
+        \item Take as many pieces as you want (for you, your family, friends...)
+        \item No limits, no penalties
+      \end{enumerate}
+
+      \vspace{1em}
+      \textit{Seriously --- no limits.}
+    \end{column}
+    \begin{column}{0.38\textwidth}
+      \vspace{1em}
+      \includegraphics[width=\textwidth]{fig/candy_bowl.jpg}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Yale Policy 101: Consequences}
+
+  \begin{columns}[c]
+    \begin{column}{0.48\textwidth}
+      \centering
+      \begin{tikzpicture}[scale=0.75]
+        % Newspaper frame
+        \draw[black, thick] (0,0) rectangle (5,6.5);
+        % Masthead
+        \fill[blue!15] (0,5.5) rectangle (5,6.5);
+        \node[font=\large\bfseries\scshape] at (2.5,6.2) {Yale Daily News};
+        \draw[black, thin] (0.3,5.7) -- (4.7,5.7);
+        \node[font=\tiny] at (2.5,5.85) {New Haven, CT \quad Summer 2026};
+        % Headline
+        \node[text width=4.2cm, align=center, font=\small\bfseries]
+          at (2.5,4.8) {CANDY CRISIS:\\Policy 101 Depletes\\Yale's Candy Stocks};
+        % Divider
+        \draw[black, thin] (0.3,3.9) -- (4.7,3.9);
+        % Fake article body (gray lines)
+        \foreach \y in {3.6,3.35,3.1,2.85,2.6,2.35,2.1,1.85,1.6,1.35,1.1,0.85,0.6}
+          \fill[gray!40] (0.4,\y) rectangle (4.6,\y+0.12);
+      \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \centering
+      \begin{tikzpicture}[scale=0.75]
+        % Newspaper frame
+        \draw[black, thick] (0,0) rectangle (5,6.5);
+        % Masthead
+        \fill[vermillion!15] (0,5.5) rectangle (5,6.5);
+        \node[font=\large\bfseries\scshape] at (2.5,6.2) {Yale Herald};
+        \draw[black, thin] (0.3,5.7) -- (4.7,5.7);
+        \node[font=\tiny] at (2.5,5.85) {New Haven, CT \quad Summer 2026};
+        % Headline
+        \node[text width=4.2cm, align=center, font=\small\bfseries]
+          at (2.5,4.8) {UNFAIR DISTRIBUTION:\\Not Everyone Got Candy\\Under Policy 101};
+        % Divider
+        \draw[black, thin] (0.3,3.9) -- (4.7,3.9);
+        % Fake article body (gray lines)
+        \foreach \y in {3.6,3.35,3.1,2.85,2.6,2.35,2.1,1.85,1.6,1.35,1.1,0.85,0.6}
+          \fill[gray!40] (0.4,\y) rectangle (4.6,\y+0.12);
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ---------- Game Round 2 ----------
+\begin{frame}{Yale Policy 102}
+
+  \begin{columns}[T]
+    \begin{column}{0.58\textwidth}
+      \vspace{2em}
+      
+
+      {\LARGE\textbf{Yale Policy 102: KIDS DESERVE \red{ONE} CANDY!!}}
+
+      \vspace{1.5em}
+      New rules:
+      \begin{itemize}
+        \item Count the number of candies you took 
+        \item Your favorite candy is free
+        \item Every additional piece costs \$5, paid to instructor in cash
+        \item You can return any candy you don't want
+      \end{itemize}
+
+      \vspace{1em}
+      
+    \end{column}
+    \begin{column}{0.38\textwidth}
+      \vspace{1em}
+      \includegraphics[width=\textwidth]{fig/candy_bowl.jpg}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% % ---------- Game Round 3 ----------
+% \begin{frame}{Round 3: Does Monitoring Matter?}
+
+%   \begin{columns}[T]
+%     \begin{column}{0.48\textwidth}
+%       \centering
+%       \textbf{\textcolor{blue}{Group A: Opaque Bag}}
+
+%       \vspace{0.5em}
+%       You reach in privately.\\
+%       Nobody can see how much you take.
+
+%       \vspace{0.5em}
+%       Same \$5 fine applies.
+%     \end{column}
+%     \begin{column}{0.48\textwidth}
+%       \centering
+%       \textbf{\textcolor{green}{Group B: Clear Bag}}
+
+%       \vspace{0.5em}
+%       Everyone can see what you take.\\
+%       Full transparency.
+
+%       \vspace{0.5em}
+%       Same \$5 fine applies.
+%     \end{column}
+%   \end{columns}
+
+%   \vspace{1.5em}
+%   \begin{center}
+%     \Large Does it matter that people can see what you're taking?
+%   \end{center}
+
+% \end{frame}
+
+% ---------- Debrief ----------
+\begin{frame}{Debrief: What Did You Notice?}
+
+  \begin{enumerate}
+    \item What happened to the candy under Yale Policy 101? Why?
+    \vspace{1em}
+    \item Did Yale Policy 102 solve it? Why?
+  \end{enumerate}
+
+\end{frame}
+
+
+
+
+% ---------- Economists Study Incentives ----------
+\begin{frame}{How Economists Think}
+
+  \begin{center}
+  \begin{tikzpicture}[
+    nd/.style={rounded corners=3pt, draw=DarkGray, fill=softbg,
+               text width=5cm, minimum height=0.8cm,
+               align=center, font=\small},
+    ar/.style={-{Stealth[length=4pt]}, thick, DarkGray}
+  ]
+    \node[nd, fill=vermillion!15, draw=vermillion] (obs) at (0,4)
+      {\textbf{Observe the problem}\\[-1pt]
+       {\scriptsize e.g., Policy 101 depleted all candy}};
+    \node[circle, fill=vermillion, text=white, font=\small\bfseries,
+          inner sep=0pt, minimum size=0.5cm] at ([shift={(0.25,-.25)}]obs.north west) {1};
+
+    \node[nd] (why) at (0,2.7)
+      {\textbf{Why is this happening?}\\[-1pt]
+       {\scriptsize What incentives drive this behavior?}};
+    \node[circle, fill=DarkGray, text=white, font=\small\bfseries,
+          inner sep=0pt, minimum size=0.5cm] at ([shift={(0.25,-.25)}]why.north west) {2};
+
+    \node[nd, fill=green!12, draw=green] (design) at (0,0.1)
+      {\textbf{Design better rules}\\[-1pt]
+       {\scriptsize e.g., Policy 102 puts a price on overuse}};
+    \node[circle, fill=green, text=white, font=\small\bfseries,
+          inner sep=0pt, minimum size=0.5cm] at ([shift={(0.25,-.25)}]design.north west) {3};
+
+    \draw[ar] (obs) -- (why);
+    \draw[ar] (why) -- (design);
+  \end{tikzpicture}
+  \end{center}
+
+  % \vspace{-0.3em}
+  % \begin{insightbox}
+  %   Today's tools: common resources, externalities, tragedy of the commons, government policy.
+  % \end{insightbox}
+
+\end{frame}
+
+
+% ---------- Policy Comparison Diagram ----------
+\begin{frame}{The Problem}
+
+  \begin{center}
+  \begin{tikzpicture}[
+    pol/.style={rounded corners=4pt, minimum width=3.2cm,
+                minimum height=0.9cm, align=center, font=\small\bfseries},
+    stp/.style={rounded corners=2pt, draw=DarkGray, fill=softbg,
+                minimum width=3.2cm, minimum height=0.7cm,
+                align=center, font=\scriptsize},
+    res/.style={rounded corners=2pt, minimum width=3.2cm,
+                minimum height=0.7cm, align=center, font=\scriptsize\bfseries},
+    ar/.style={-{Stealth[length=4pt]}, thick, DarkGray}
+  ]
+    % --- Policy 101 (left) ---
+    \node[pol, fill=vermillion!20, draw=vermillion] (p1) at (-3.5,3)
+      {Policy 101\\{\scriptsize \$0 price}};
+    \node[stp] (p1s1) at (-3.5,1.8) {Everyone grabs\\as much as they want};
+    \node[font=\scriptsize\bfseries, text=blue, anchor=west]
+      at ([xshift=4pt]p1s1.east) {$\leftarrow$ Demand};
+
+    \node[stp] (p1s2) at (-3.5,0.6) {Bowl empties\\in seconds};
+    \node[font=\scriptsize\bfseries, text=orange, anchor=west]
+      at ([xshift=4pt]p1s2.east) {$\leftarrow$ Supply};
+    \node[res, text=vermillion] (p1out) at (-3.5,-0.7)
+      {Depletion +\\Unfair distribution};
+
+    \draw[ar] (p1) -- (p1s1);
+    \draw[ar] (p1s1) -- (p1s2);
+    \draw[ar] (p1s2) -- (p1out);
+
+    % --- Policy 102 (right) ---
+    % \node[pol, fill=green!15, draw=green] (p2) at (3.5,3)
+    %   {Policy 102\\{\scriptsize \$5 per extra piece}};
+    % \node[stp] (p2s1) at (3.5,1.8) {Students compare cost\\to willingness to pay};
+    % \node[stp] (p2s2) at (3.5,0.6) {People take less\\candy remains};
+    % \node[res, text=green] (p2out) at (3.5,-0.7)
+    %   {Conservation +\\Fairer outcome};
+
+    % \draw[ar] (p2) -- (p2s1);
+    % \draw[ar] (p2s1) -- (p2s2);
+    % \draw[ar] (p2s2) -- (p2out);
+
+    % % --- Center comparison ---
+    % \node[font=\Large\bfseries, text=DarkGray] at (0,3) {vs.};
+    % \draw[dotted, thick, DarkGray] (0,2.5) -- (0,-1.1);
+
+    % % --- Bottom insight ---
+    % \node[text width=10cm, align=center, font=\small] at (0,-1.7)
+    %   {The \textbf{same people}, the \textbf{same candy} ---
+    %    only the \textbf{rules} changed.};
+  \end{tikzpicture}
+  \end{center}
+
+\end{frame}
+
+
+% ---------- Demand Curve ----------
+\begin{frame}{The Demand Curve}
+
+  \vspace{-0.5em}
+  \begin{center}
+  \begin{tikzpicture}[scale=0.75]
+    % Axes
+    \draw[-{Stealth[length=5pt]}, thick] (0,0) -- (7.5,0)
+      node[below] {Quantity};
+    \draw[-{Stealth[length=5pt]}, thick] (0,0) -- (0,5.5)
+      node[above] {Price};
+
+    % Demand curve: convex, never touches x-axis, clipped to axes
+    \clip (-0.1,0) rectangle (7.5,5.3);
+    \draw[blue, very thick, domain=0.25:7, smooth, samples=80]
+      plot (\x, {3.2/(\x+0.15) + 0.2});
+
+    % Label
+    \node[blue, font=\bfseries] at (6,1.5) {Demand};
+  \end{tikzpicture}
+  \end{center}
+
+\end{frame}
+
+% ---------- Demand Curve with Price Line ----------
+\begin{frame}{The Demand for Candy}
+
+  \begin{center}
+    {\small\textbf{Policy 101: Price = \$0}}
+
+    \vspace{0.3em}
+    \begin{tikzpicture}[scale=0.75]
+      % Axes
+      \draw[-{Stealth[length=5pt]}, thick] (0,0) -- (7.5,0)
+        node[below] {Quantity};
+      \draw[-{Stealth[length=5pt]}, thick] (0,0) -- (0,5.5)
+        node[above] {Price};
+
+      % Price line
+      \draw[vermillion, thick, dashed] (0,0.15) -- (7.2,0.15);
+      \node[vermillion, font=\bfseries, anchor=east] at (-0.2,0.15) {\$0};
+
+      % Demand curve
+      \clip (-0.5,0) rectangle (7.5,5.3);
+      \draw[blue, very thick, domain=0.25:7, smooth, samples=80]
+        plot (\x, {3.2/(\x+0.15) + 0.2});
+
+      % Label
+      \node[blue, font=\bfseries] at (6,1.5) {Demand};
+    \end{tikzpicture}
+  \end{center}
+
+\end{frame}
+
+% ---------- Candy Bowl Is Everywhere ----------
+\begin{frame}{The Supply of Candy}
+
+  \begin{columns}[T]
+    \begin{column}{0.58\textwidth}
+      The supply of candy is \textbf{finite}! Which means two things:
+      \begin{enumerate}
+        \item I cannot demand an infinite amount
+        \item Every unit I consume is one less unit for others!
+      \end{enumerate}
+
+      \begin{definitionbox}[Rivalrous]
+        A good is rivalrous when one person's consumption reduces the amount available for others.
+      \end{definitionbox}
+
+    \end{column}
+    \begin{column}{0.38\textwidth}
+      \vspace{1em} \pause 
+      \includegraphics[width=\textwidth]{fig/siblings_toy.jpg}
+
+      \vspace{0.3em}
+      {\tiny\textcolor{lightgray}{Photo: Pexels (free license)}}
+    \end{column}
+  \end{columns}
+  \pause
+        \begin{insightbox}
+        \centering Finite goods $\implies$ Rivalrous goods
+      \end{insightbox}
+
+\end{frame}
+
+% ---------- Types of Goods ----------
+\begin{frame}{Rivalrous goods}
+
+  \begin{center}
+  \begin{tikzpicture}[
+    cell/.style={minimum width=4.8cm, minimum height=2cm, align=center,
+                 font=\small, rounded corners=2pt},
+    lbl/.style={font=\small\bfseries, text=DarkGray}
+  ]
+    % Column headers
+    \node[lbl] at (2.5,3.3) {Rivalrous};
+    \node[lbl] at (7.5,3.3) {Non-rivalrous};
+
+    % Grid lines
+    \draw[DarkGray, thick] (0.3,-1.1) rectangle (9.7,2.9);
+    \draw[DarkGray, thick] (5,-1.1) -- (5,2.9);
+    \draw[DarkGray, thick] (0.3,0.9) -- (9.7,0.9);
+
+    % Cells — examples only, no category labels
+    \node[cell] at (2.65,2) {Store clothing\\Cars at a dealership};
+    \node[cell] at (7.35,2) {Netflix movies\\Toll road};
+    \node[cell] at (2.65,0) {Ocean fish\\Groundwater};
+    \node[cell] at (7.35,0) {National defense\\Public parks};
+  \end{tikzpicture}
+  \end{center} \pause 
+
+  \begin{questionbox}
+    What is the difference between top and bottom rows?
+  \end{questionbox}
+
+\end{frame}
+
+% ---------- Types of Goods with Excludability ----------
+\begin{frame}{Excludable Goods}
+
+  \begin{center}
+  \begin{tikzpicture}[
+    cell/.style={minimum width=4.8cm, minimum height=2cm, align=center,
+                 font=\small, rounded corners=2pt},
+    lbl/.style={font=\small\bfseries, text=DarkGray}
+  ]
+    % Row headers
+    \node[lbl, rotate=90, anchor=south] at (-0.6,1) {\normalsize Excludability};
+    \node[lbl, rotate=90] at (-0.1,2) {High};
+    \node[lbl, rotate=90] at (-0.1,0) {Low};
+
+    % Grid lines
+    \draw[DarkGray, thick] (0.3,-1.1) rectangle (9.7,2.9);
+    \draw[DarkGray, thick] (5,-1.1) -- (5,2.9);
+    \draw[DarkGray, thick] (0.3,0.9) -- (9.7,0.9);
+
+    % Cells — examples only
+    \node[cell] at (2.65,2) {Store clothing\\Cars at a dealership};
+    \node[cell] at (7.35,2) {Netflix movies\\Toll road};
+    \node[cell] at (2.65,0) {Ocean fish\\Groundwater};
+    \node[cell] at (7.35,0) {National defense\\Public parks};
+  \end{tikzpicture}
+  \end{center} \pause
+
+  \begin{definitionbox}[Excludable]
+      A good is excludable when it's possible to prevent people who haven't paid from using it.
+  \end{definitionbox}
+
+
+\end{frame}
+
+\begin{frame}{Excludable Goods}
+
+  \begin{center}
+  \begin{tikzpicture}[
+    cell/.style={minimum width=4.8cm, minimum height=2cm, align=center,
+                 font=\small, rounded corners=2pt},
+    lbl/.style={font=\small\bfseries, text=DarkGray}
+  ]
+    % Row headers
+    \node[lbl, rotate=90, anchor=south] at (-0.6,1) {\normalsize Excludability};
+    \node[lbl, rotate=90] at (-0.1,2) {High};
+    \node[lbl, rotate=90] at (-0.1,0) {Low};
+
+    % Grid lines
+    \draw[DarkGray, thick] (0.3,-1.1) rectangle (9.7,2.9);
+    \draw[DarkGray, thick] (5,-1.1) -- (5,2.9);
+    \draw[DarkGray, thick] (0.3,0.9) -- (9.7,0.9);
+
+    % Cells — examples only
+    \node[cell] at (2.65,2) {Store clothing\\Cars at a dealership};
+    \node[cell] at (7.35,2) {Netflix movies\\Toll road};
+    \node[cell] at (2.65,0) {Ocean fish\\Groundwater};
+    \node[cell] at (7.35,0) {National defense\\Public parks};
+  \end{tikzpicture}
+  \end{center}
+
+
+    \begin{questionbox}
+    What type of good is the candy in Yale Policy 101?
+  \end{questionbox}
+
+\end{frame}
+
+% ---------- Candy in the matrix ----------
+\begin{frame}{Excludable Goods}
+
+  \begin{center}
+  \begin{tikzpicture}[
+    cell/.style={minimum width=4.8cm, minimum height=2cm, align=center,
+                 font=\small, rounded corners=2pt},
+    lbl/.style={font=\small\bfseries, text=DarkGray}
+  ]
+    % Row headers
+    \node[lbl, rotate=90, anchor=south] at (-0.6,1) {\normalsize Excludability};
+    \node[lbl, rotate=90] at (-0.1,2) {High};
+    \node[lbl, rotate=90] at (-0.1,0) {Low};
+
+    % Grid lines
+    \draw[DarkGray, thick] (0.3,-1.1) rectangle (9.7,2.9);
+    \draw[DarkGray, thick] (5,-1.1) -- (5,2.9);
+    \draw[DarkGray, thick] (0.3,0.9) -- (9.7,0.9);
+
+    % Cells
+    \node[cell] at (2.65,2) {Store clothing\\Cars at a dealership};
+    \node[cell] at (7.35,2) {Netflix movies\\Toll road};
+    \node[cell] at (2.65,0) {Ocean fish\\Groundwater\\[2pt]
+      \textcolor{green}{\textbf{Yale candy}}};
+    \node[cell] at (7.35,0) {National defense\\Public parks};
+  \end{tikzpicture}
+  \end{center}
+
+\end{frame}
+
+% ---------- Full labeled matrix ----------
+\begin{frame}{Four Types of Goods}
+
+  \begin{center}
+  \begin{tikzpicture}[
+    cell/.style={minimum width=4.8cm, minimum height=2cm, align=center,
+                 font=\small, rounded corners=2pt},
+    lbl/.style={font=\small\bfseries, text=DarkGray}
+  ]
+    % Column headers
+    \node[lbl] at (2.5,3.3) {Rivalrous};
+    \node[lbl] at (7.5,3.3) {Non-rivalrous};
+
+    % Row headers
+    \node[lbl, rotate=90, anchor=south] at (-0.6,1) {\normalsize Excludability};
+    \node[lbl, rotate=90] at (-0.1,2) {High};
+    \node[lbl, rotate=90] at (-0.1,0) {Low};
+
+    % Grid lines
+    \draw[DarkGray, thick] (0.3,-1.1) rectangle (9.7,2.9);
+    \draw[DarkGray, thick] (5,-1.1) -- (5,2.9);
+    \draw[DarkGray, thick] (0.3,0.9) -- (9.7,0.9);
+
+    % Highlight common resources cell (fill within grid borders)
+    \fill[orange!12] (0.3,-1.1) rectangle (5,0.9);
+
+    % Cells with category labels and examples
+    \node[cell] at (2.65,2) {\textbf{Private Goods}\\[2pt]
+      {\scriptsize Store clothing, cars}};
+    \node[cell] at (7.35,2) {\textbf{Club Goods}\\[2pt]
+      {\scriptsize Netflix, toll road}};
+    \node[cell] at (2.65,0) {\textbf{\textcolor{vermillion}{Common Resources}}\\[2pt]
+      {\scriptsize Ocean fish, groundwater, Yale candy}};
+    \node[cell] at (7.35,0) {\textbf{Public Goods}\\[2pt]
+      {\scriptsize National defense, public parks}};
+  \end{tikzpicture}
+  \end{center}
+
+\end{frame}
+
+% ---------- Tragedy of the Commons (1/2) ----------
+\begin{frame}{Tragedy of the Commons}
+
+  \begin{columns}[T]
+    \begin{column}{0.55\textwidth}
+      \begin{definitionbox}[Tragedy of the Commons]
+        When individuals deplete a common resource. 
+      \end{definitionbox}
+
+      \vspace{0.3em}
+      \textbf{Why it happens:}
+      \begin{itemize}
+        \item The good is \textbf{non-excludable} and no price to ration it
+        \item The demand for the good is infinite 
+        \item The good is \textbf{rivalrous} because its supply is finite 
+        \item The result is depletion 
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.42\textwidth}
+      \centering
+      {\small\textbf{Price = \$0 on a common resource}}
+
+      \vspace{0.3em}
+      \begin{tikzpicture}[scale=0.5]
+        % Axes
+        \draw[-{Stealth[length=4pt]}, thick] (0,0) -- (7.5,0)
+          node[below, font=\small] {Quantity};
+        \draw[-{Stealth[length=4pt]}, thick] (0,0) -- (0,5.5)
+          node[above, font=\small] {Price};
+
+        % Price line at zero
+        \draw[vermillion, thick, dashed] (0,0.15) -- (7.2,0.15);
+        \node[vermillion, font=\small\bfseries, anchor=east] at (-0.2,0.15) {\$0};
+
+        % Demand curve
+        \clip (-0.5,0) rectangle (7.5,5.3);
+        \draw[blue, very thick, domain=0.25:7, smooth, samples=80]
+          plot (\x, {3.2/(\x+0.15) + 0.2});
+
+        % Label
+        \node[blue, font=\small\bfseries] at (5.5,1.8) {Demand};
+      \end{tikzpicture}
+
+      \vspace{0.2em}
+    \end{column}
+  \end{columns} 
+  \pause 
+      \begin{questionbox}
+        Are people ``bad''? Why can't they just self-regulate their behavior? 
+      \end{questionbox}
+
+\end{frame}
+
+% ---------- Self-Interest ----------
+\begin{frame}{Self-Interest}
+
+  \begin{columns}[T]
+    \begin{column}{0.6\textwidth}
+      \vspace{0.5em}
+      \begin{quotebox}
+        ``It is not from the benevolence of the butcher, the brewer, or the baker that we expect our dinner, but from their regard to their own interest.''
+
+        \vspace{0.3em}
+        \hfill --- Adam Smith, \textit{The Wealth of Nations} (1776)
+      \end{quotebox}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth,height=3.5cm,keepaspectratio]{fig/adam_smith.jpg}
+
+      \vspace{0.1em}
+      {\scriptsize Adam Smith (1723--1790)\par}
+    \end{column}
+  \end{columns}
+
+  \pause
+  \vspace{0.3em}
+  What is Adam Smith saying? 
+  \begin{itemize}
+    \item People act in their own interest to maximize their own happiness
+    \item This is not greed --- it is \textbf{rational behavior}
+    \item He argues that, overall, it's actually good for society that everyone acts this way! 
+  \end{itemize}
+
+  \vspace{0.3em}
+  \begin{insightbox}
+    Nobody is being ``bad,'' we are acting in our self-interest. This can have both good and bad outcomes.  
+  \end{insightbox}
+\end{frame}
+
+% ---------- Negative Externalities ----------
+\begin{frame}{Negative Externalities}
+
+  \begin{definitionbox}[Externality]
+    An \textbf{externality} is a \textbf{cost} or benefit that affects someone \textbf{who is not directly involved} in a decision or transaction. 
+  \end{definitionbox}
+
+  \vspace{0.5em}
+  \textbf{Candy example}
+  \begin{itemize}
+    \item \textit{Today}, I collect a lot of candy. 
+    \item This affects the people who want candy \textit{tomorrow}. 
+    \item The cost is the lack of candy. 
+  \end{itemize} \pause 
+
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{\red{Negative} externality}
+      \begin{itemize}
+        \item Carbon emissions from driving $\rightarrow$ everyone faces climate change
+      \end{itemize}
+    \end{column}
+    \pause
+    \begin{column}{0.48\textwidth}
+      \textbf{\textcolor{green}{Positive} externality}
+      \begin{itemize}
+        \item A neighbor plants a beautiful garden $\rightarrow$ the whole street enjoys the view
+      \end{itemize}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ---------- Policy Solutions ----------
+\begin{frame}{How Can We Fix the ``Tragedy of the Commons''?}
+
+  \begin{columns}[c]
+    \begin{column}{0.48\textwidth}
+      \centering
+      {\small\textbf{Price = \$0 (no policy)}}
+
+      \vspace{0.3em}
+      \begin{tikzpicture}[scale=0.55]
+        % Axes
+        \draw[-{Stealth[length=4pt]}, thick] (0,0) -- (7.5,0)
+          node[below, font=\small] {Quantity};
+        \draw[-{Stealth[length=4pt]}, thick] (0,0) -- (0,5.5)
+          node[above, font=\small] {Price};
+
+        % Price line
+        \draw[vermillion, thick, dashed] (0,0.15) -- (7.2,0.15);
+        \node[vermillion, font=\small\bfseries, anchor=east] at (-0.2,0.15) {\$0};
+
+        % Demand curve
+        \clip (-0.5,0) rectangle (7.5,5.3);
+        \draw[blue, very thick, domain=0.25:7, smooth, samples=80]
+          plot (\x, {3.2/(\x+0.15) + 0.2});
+
+        % Label
+        \node[blue, font=\small\bfseries] at (5.5,1.8) {Demand};
+      \end{tikzpicture}
+    \end{column}
+    \pause
+    \begin{column}{0.48\textwidth}
+      \centering
+      {\small\textbf{Price = \$5 (tax/fine)}}
+
+      \vspace{0.3em}
+      \begin{tikzpicture}[scale=0.55]
+        % Axes
+        \draw[-{Stealth[length=4pt]}, thick] (0,0) -- (7.5,0)
+          node[below, font=\small] {Quantity};
+        \draw[-{Stealth[length=4pt]}, thick] (0,0) -- (0,5.5)
+          node[above, font=\small] {Price};
+
+        % Price line (higher up)
+        \draw[vermillion, thick, dashed] (0,3.2) -- (7.2,3.2);
+        \node[vermillion, font=\small\bfseries, anchor=east] at (-0.2,3.2) {\$5};
+
+        % Demand curve
+        \clip (-0.5,0) rectangle (7.5,5.3);
+        \draw[blue, very thick, domain=0.25:7, smooth, samples=80]
+          plot (\x, {3.2/(\x+0.15) + 0.2});
+
+        % Label
+        \node[blue, font=\small\bfseries] at (5.5,1.8) {Demand};
+
+        % Vertical dotted line from intersection down to x-axis
+        \draw[DarkGray, thick, dotted] (0.917,3.2) -- (0.917,0);
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+
+  \pause
+  \vspace{0.5em}
+  \begin{insightbox}
+    By raising the price, we reduce demand and prevent overuse.
+    This is the logic behind taxes, fines, and cap-and-trade systems.
+  \end{insightbox}
+
+\end{frame}
+
+% ---------- Provocative Question ----------
+% \begin{frame}{Something to Think About}
+
+%   \vspace{2em}
+%   \begin{questionbox}
+%     Every time you ask ChatGPT a question, it uses electricity.
+%     That electricity produces carbon emissions.
+
+%     \vspace{0.5em}
+%     \textbf{Should there be a price for polluting the air?}
+%   \end{questionbox}
+
+%   \vspace{1.5em}
+%   \textit{We'll come back to this at the end of class.}
+
+% \end{frame}
+
+
+% =============================================================================
+\section{Carbon Tax Policy Discussion}
+% =============================================================================
+
+% ---------- Policy Discussion Header ----------
+\begin{frame}{Policy Discussion}
+
+  \vspace{2em}
+  {\Huge\textbf{\textit{Should the U.S.\ put\\a price on carbon?}}}
+
+\end{frame}
+
+% ---------- Cause and Consequence ----------
+\begin{frame}{The Cause and the Consequence}
+
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \centering
+      {\small\textbf{Global CO\textsubscript{2} Emissions (Gt/yr)}}
+
+      \vspace{0.2em}
+      \begin{tikzpicture}[scale=0.42]
+        % Axes
+        \draw[-{Stealth[length=3pt]}, thick] (0,0) -- (12.5,0);
+        \draw[-{Stealth[length=3pt]}, thick] (0,0) -- (0,6.5)
+          node[above left, font=\tiny] {Gt/yr};
+
+        % Y-axis labels
+        \foreach \y/\lbl in {0/0, 1.5/10, 3/20, 4.5/30, 6/40} {
+          \draw[DarkGray] (-0.15,\y) -- (0.15,\y);
+          \node[font=\tiny, anchor=east] at (-0.2,\y) {\lbl};
+        }
+
+        % X-axis labels
+        \foreach \x/\lbl in {0/1800, 4/1900, 6/1950, 8/1980, 10/2000, 12/2025} {
+          \draw[DarkGray] (\x,-0.15) -- (\x,0.15);
+          \node[font=\tiny, below] at (\x,-0.2) {\lbl};
+        }
+
+        % Emission curve
+        \draw[blue, very thick] (0,0.01) -- (2,0.03) -- (4,0.3) -- (6,0.9)
+          -- (8,3.0) -- (10,3.75) -- (12,5.7);
+
+        % Data point labels
+        \node[font=\tiny, blue, above] at (6,0.9) {6};
+        \node[font=\tiny, blue, above] at (8,3.0) {20};
+        \node[font=\tiny, blue, above left] at (12,5.7) {\textbf{38}};
+      \end{tikzpicture}
+
+      \vspace{0.2em}
+      {\tiny Source: Global Carbon Project (2025).}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \centering
+      {\small\textbf{Temperature Anomaly (\textdegree C vs.\ 1850--1900)}}
+
+      \vspace{0.2em}
+      \begin{tikzpicture}[scale=0.42]
+        % Axes
+        \draw[-{Stealth[length=3pt]}, thick] (0,-0.3) -- (12.5,-0.3);
+        \draw[-{Stealth[length=3pt]}, thick] (0,-0.3) -- (0,7)
+          node[above left, font=\tiny] {\textdegree C};
+
+        % Y-axis labels (4 units = 1°C)
+        \foreach \y/\lbl in {0/0, 2/{+0.5}, 4/{+1.0}, 6/{+1.5}} {
+          \draw[DarkGray] (-0.15,\y) -- (0.15,\y);
+          \node[font=\tiny, anchor=east] at (-0.2,\y) {\lbl};
+        }
+
+        % Zero line
+        \draw[DarkGray, dashed, thin] (0,0) -- (12,0);
+
+        % X-axis labels
+        \foreach \x/\lbl in {0/1880, 4/1920, 8/1960, 10/1980, 12/2025} {
+          \draw[DarkGray] (\x,-0.45) -- (\x,-0.15);
+          \node[font=\tiny, below] at (\x,-0.45) {\lbl};
+        }
+
+        % 1.5°C target line
+        \draw[orange, thick, dashed] (0,6) -- (12,6);
+        \node[orange, font=\tiny, anchor=west] at (12.2,6) {1.5\textdegree C};
+
+        % Temperature curve
+        \fill[vermillion!15] (0,-0.4) -- (2,0) -- (4,-0.2) -- (6,0.6)
+          -- (8,0.2) -- (10,1.2) -- (11,2.6) -- (12,6.0)
+          -- (12,-0.3) -- (0,-0.3) -- cycle;
+
+        \draw[vermillion, very thick] (0,-0.4) -- (2,0) -- (4,-0.2) -- (6,0.6)
+          -- (8,0.2) -- (10,1.2) -- (11,2.6) -- (12,6.0);
+
+        % Key label
+        \node[font=\tiny, vermillion, above left] at (12,6.0) {\textbf{+1.5\textdegree C}};
+      \end{tikzpicture}
+
+      \vspace{0.2em}
+      {\tiny Source: NASA GISS; Copernicus.}
+    \end{column}
+  \end{columns}
+
+  \vspace{0.3em}
+  \begin{insightbox}
+    Most emissions have occurred in the last 70 years.
+    The Earth is now 1.5\textdegree C warmer --- right at the Paris Agreement target.
+  \end{insightbox}
+
+\end{frame}
+
+% ---------- Who Emits in the US ----------
+\begin{frame}{Who Emits in the U.S.?}
+
+  \textbf{U.S.\ Greenhouse Gas Emissions by Sector (2022)}
+  \centering
+  \vspace{0.3em}
+  {\small
+  \begin{tabular}{@{} l c p{3.2cm} p{3.2cm} @{}}
+    \toprule
+    \textbf{Sector} & \textbf{\%} & \textcolor{skyblue}{\textbf{Households}} & \textcolor{orange}{\textbf{Firms}} \\
+    \midrule
+    Transportation & 28\% &
+      Cars, personal trucks &
+      Freight, airlines, shipping \\[0.4em]
+    Electric Power & 25\% &
+      Home electricity use &
+      Factory \& office electricity \\[0.4em]
+    Industry & 23\% &
+      --- &
+      Manufacturing, refining, chemicals \\[0.4em]
+    Comm.\ \& Residential & 13\% &
+      Home heating, refrigerants &
+      Office \& retail heating \\[0.4em]
+    Agriculture & 10\% &
+      --- &
+      Livestock, crops, fertilizer \\
+    \bottomrule
+  \end{tabular}
+  }
+
+  % \vspace{0.5em}
+  % \begin{insightbox}
+  %   Every sector has a mix of household and firm emissions.
+  %   A carbon tax would affect \textbf{both} --- the question is \textbf{who pays more}.
+  % \end{insightbox}
+
+  \vspace{0.2em}
+  {\tiny Source: U.S.\ EPA, \textit{Inventory of U.S.\ Greenhouse Gas Emissions and Sinks: 1990--2022}.}
+
+\end{frame}
+
+% ---------- Policy Proposal: Carbon Tax ----------
+\begin{frame}{A Policy Proposal: Tax Carbon Emissions}
+
+  \begin{definitionbox}[Carbon Tax]
+    A fixed price charged for every \textbf{tonne of CO\textsubscript{2}} emitted.
+    The polluter pays for the damage their emissions cause.
+  \end{definitionbox}
+
+  \vspace{0.5em}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{How it works:}
+      \begin{itemize}
+        \item Government sets a price, e.g.\ \textbf{\$50 per tonne} of CO\textsubscript{2}
+        \item Firms and households pay when they emit
+        \item Higher price $\rightarrow$ stronger incentive to emit less
+      \end{itemize}
+    \end{column}
+    \pause
+    \begin{column}{0.48\textwidth}
+      \textbf{Why economists like it:}
+      \begin{itemize}
+        \item Partially corrects the \textbf{negative externality}
+        \item Lets people \textbf{choose how} to reduce 
+        \item Generates \textbf{revenue} the government can spend or return
+      \end{itemize}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ---------- What Does This Mean at the Gas Pump ----------
+\begin{frame}{What Does \$50 per Tonne of CO\textsubscript{2} Mean?}
+
+  \begin{columns}[T]
+    \begin{column}{0.55\textwidth}
+      \textbf{Gas price example:}
+      \begin{itemize}
+        \item 1 gallon of gasoline produces \textbf{8.9 kg} of CO\textsubscript{2}
+        \item Carbon tax = \$50 per tonne = \$0.05 per kg
+        \item Extra cost per gallon: $8.9 \times \$0.05 = $ \textbf{\$0.44}
+      \end{itemize}
+
+      \vspace{0.5em}
+      \begin{answerbox}
+        \centering
+        Gas price: \$3.50 $\rightarrow$ \textbf{\$3.94 per gallon}\\[0.3em]
+        {\small An increase of about \textbf{13\%}}
+      \end{answerbox}
+
+      \vspace{0.3em}
+      {\tiny Source: EPA, ``Greenhouse Gases Equivalencies Calculator.''\\
+       Average U.S.\ gas price as of 2025.}
+    \end{column}
+    \pause
+    \begin{column}{0.42\textwidth}
+      \begin{insightbox}
+        This affects everyone:
+
+        \vspace{0.3em}
+        \begin{itemize}
+          \item Firms and households
+          \item Whether you are rich or poor
+        \end{itemize}
+
+        \vspace{0.3em}
+        It affects people unequally:
+        \vspace{0.3em}
+        \begin{itemize}
+          \item Poor more than the rich
+          \item People who drive more to work 
+        \end{itemize}
+      \end{insightbox}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ---------- Government Revenue ----------
+\begin{frame}{What Should the Government Do with the Revenue?}
+
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{How much revenue?}
+      \begin{itemize}
+        \item U.S.\ emits $\approx$ 5 billion tonnes of CO\textsubscript{2}/year
+        \item At \$50/tonne: $5\text{B} \times \$50 = $ \textbf{\$250 billion/year}
+        \item That is roughly \textbf{\$1{,}900 per household}
+              {\scriptsize (130 million U.S.\ households)}
+      \end{itemize}
+    \end{column}
+    \pause
+    \begin{column}{0.48\textwidth}
+      \textbf{Options for the revenue:}
+      \begin{enumerate}
+        \item \textbf{\textcolor{orange}{Return it to households}} as a rebate check
+        \item \textbf{\textcolor{skyblue}{Invest}} in clean energy or transit
+        \item \textbf{\textcolor{green}{Cut other taxes}} (e.g.\ income tax)
+      \end{enumerate}
+    \end{column}
+  \end{columns}
+
+  \pause
+  \vspace{0.5em}
+  \begin{definitionbox}[Canada's Real-World Example]
+    Canada introduced a carbon tax of CA\$80/tonne in 2024.
+    \textbf{90\% of revenue is returned directly to households} via quarterly rebate checks (the Climate Action Incentive Payment).
+
+    \vspace{0.3em}
+    Result: \textbf{8 out of 10 households get back more than they pay} in higher prices.
+
+    \vspace{0.2em}
+    {\scriptsize Source: Canada Parliamentary Budget Officer (2024).}
+  \end{definitionbox}
+
+\end{frame}
+
+% ---------- Stakeholder Hearing ----------
+\begin{frame}{Policy Debate}
+
+  \begin{columns}[c]
+    \begin{column}{0.48\textwidth}
+      \begin{questionbox}
+        \textbf{Economic analysis:} Should the U.S.\ put a price on carbon?
+      \end{questionbox}
+
+      \vspace{0.5em}
+      Three stakeholder groups will analyze the question:
+      \begin{itemize}
+        \item Households
+        \item Firms
+        \item Government
+      \end{itemize}
+
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{Your Task:} For your assigned group, answer:
+      \vspace{0.3em}
+
+      \begin{enumerate}
+        \item What are the \textcolor{green}{benefits} of a carbon tax for your group?
+        \vspace{0.3em}
+        \item What are the \textcolor{vermillion}{costs} of a carbon tax for your group?
+        \vspace{0.3em}
+        \item What is your \textbf{policy recommendation}? Choose one of the following:
+        \begin{enumerate}
+          \item No tax
+          \item Tax + rebate to households 
+          \item Tax + green investment 
+          \item Other (formulate your own policy!) 
+        \end{enumerate}
+      \end{enumerate}
+
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ---------- Stakeholder Analysis: Households ----------
+\begin{frame}{Stakeholder Analysis: Households}
+
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{\textcolor{green!60!black}{Benefits}}
+      \begin{itemize}\small
+        \item Cleaner air $\rightarrow$ fewer health problems (asthma, heart disease)
+        \item Rebate checks could exceed what most families pay in higher prices
+        \item Drives innovation in affordable clean energy
+        \item Protects future generations from climate damage
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{\textcolor{vermillion}{Costs}}
+      \begin{itemize}\small
+        \item Higher gas, electricity, and heating bills
+        \item Poor households spend a larger share of income on energy
+        \item Rural families with no transit alternatives are hit hardest
+        \item Higher prices on everyday goods (food, shipping)
+      \end{itemize}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ---------- Stakeholder Analysis: Firms ----------
+\begin{frame}{Stakeholder Analysis: Firms}
+
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{\textcolor{green!60!black}{Benefits}}
+      \begin{itemize}\small
+        \item Clear price signal helps long-term planning
+        \item Early movers gain competitive advantage in clean technology
+        \item Level playing field if all firms face the same carbon price
+        \item New markets for low-carbon products and services
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{\textcolor{vermillion}{Costs}}
+      \begin{itemize}\small
+        \item Higher production costs (energy, raw materials)
+        \item Disadvantage vs.\ foreign competitors without a carbon tax
+        \item Energy-intensive industries may relocate abroad (``carbon leakage'')
+        \item Short-run job losses in fossil fuel sectors (coal, oil, gas)
+      \end{itemize}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ---------- Stakeholder Analysis: Government ----------
+\begin{frame}{Stakeholder Analysis: Government}
+
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{\textcolor{green!60!black}{Benefits}}
+      \begin{itemize}\small
+        \item New revenue stream (\$250B/year at \$50/tonne)
+        \item Meets international climate commitments (Paris Agreement)
+        \item Reduces future costs of climate disasters (floods, wildfires)
+        \item Market-based approach --- less bureaucracy than regulations
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{\textcolor{vermillion}{Costs}}
+      \begin{itemize}\small
+        \item Political backlash --- voters dislike higher energy prices
+        \item Administrative cost of implementing and enforcing the tax
+        \item If the U.S.\ acts alone, global emissions may not fall much
+        \item Revenue spent on rebates cannot fund other priorities
+      \end{itemize}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% =============================================================================
+\section{Recap}
+% =============================================================================
+
+\begin{frame}{Today's Key Takeaways}
+
+  \begin{enumerate}
+    \item The \textbf{Tragedy of the Commons} arises when goods are \textbf{common resources}:
+    \begin{itemize}
+      \item \textbf{Rivalrous} 
+      \item \textbf{Non-excludable}
+    \end{itemize}
+    \vspace{0.5em}
+    \item People demand too much and \textbf{deplete} the resource.
+    This imposes a \textbf{negative externality} on others: they lose the opportunity to consume.
+    \vspace{0.5em}
+
+    \item This problem can be mitigated with a \textbf{price system},
+    which changes incentives and generates revenue.
+    \vspace{0.5em}
+
+    \item We applied this logic to \textbf{climate change}
+    \vspace{0.5em}
+
+    \item But there are \textbf{always costs} to such policies! Different stakeholders
+    (households, firms, government) are affected differently.
+  \end{enumerate}
+
+\end{frame}
+
+
+\end{document}
