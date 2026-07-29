@@ -1,5 +1,5 @@
 ---
-name: compile-latex
+name: compile-beamer
 description: Compile a Beamer LaTeX slide deck with XeLaTeX (3 passes + bibtex). Use when compiling lecture slides.
 argument-hint: "[filename without .tex extension]"
 allowed-tools: ["Read", "Bash", "Glob"]

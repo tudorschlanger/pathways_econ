@@ -36,6 +36,12 @@ Thumbs.db
 .claude/state/
 CLAUDE.local.md
 
+# Project data, docs, and internal files
+/doc/
+/data/
+/quality_reports/
+/templates/
+
 # IDE
 .vscode/
 .idea/

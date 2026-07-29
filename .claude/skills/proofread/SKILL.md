@@ -13,13 +13,13 @@ Run the mandatory proofreading protocol on lecture files. This produces a report
 
 1. **Identify files to review:**
    - If `$ARGUMENTS` is a specific filename: review that file only
-   - If `$ARGUMENTS` is "all": review all lecture files in `Slides/` and `Handouts/`
+   - If `$ARGUMENTS` is "all": review all lecture files in `Slides/`
 
 2. **For each file, launch the proofreader agent** that checks for:
 
    **GRAMMAR:** Subject-verb agreement, articles (a/an/the), prepositions, tense consistency
    **TYPOS:** Misspellings, search-and-replace artifacts, duplicated words
-   **OVERFLOW:** Overfull hbox (LaTeX)
+   **OVERFLOW:** Overfull hbox (LaTeX), content exceeding slide boundaries
    **CONSISTENCY:** Citation format, notation, terminology
    **ACADEMIC QUALITY:** Informal language, missing words, awkward constructions
 

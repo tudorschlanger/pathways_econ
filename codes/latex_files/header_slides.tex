@@ -1,10 +1,10 @@
 % =============================================================================
-% Pathways: Economics & Finance Workshop — Beamer Preamble
+% [YOUR PROJECT NAME] — Beamer Preamble
 % =============================================================================
 % Usage: Each lecture .tex file should start with:
 %   \documentclass[10pt,english,aspectratio=169]{beamer}
-%   \input{../../codes/Preambles/header_slides}
-% Compile: cd output/Slides && TEXINPUTS=../../codes/Preambles:$TEXINPUTS xelatex file.tex
+%   \input{header_slides}
+% Compile: cd drafts/slides && TEXINPUTS=../latex_files:$TEXINPUTS xelatex file.tex
 % =============================================================================
 
 % =============================================================================
@@ -49,7 +49,7 @@
 % =============================================================================
 \usetheme{Boadilla}
 \usecolortheme{seagull}
-\usepackage{appendixnumberbeamer}
+% \usepackage{appendixnumberbeamer}  % disabled: suppresses appendix page output
 % Apply sophisticated fonts
 \usefonttheme{professionalfonts}
 % Set title font
@@ -287,6 +287,7 @@
 % Color utilities
 \newcommand{\red}[1]{\textcolor{vermillion}{#1}}
 \newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
 
 % =============================================================================
 % ---------- Economics Shortcuts ----------
@@ -295,3 +296,23 @@
 \newcommand{\DWL}{\text{DWL}}
 \newcommand{\pmark}{\textcolor{resultgreen}{\checkmark}}
 \newcommand{\xmark}{\textcolor{darkred}{\texttimes}}
+
+% =============================================================================
+% ---------- Tables ----------
+% =============================================================================
+\usepackage{makecell}
+% esttab significance stars
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+% Suppress esttab \caption inside Beamer frames
+\renewcommand{\caption}[2][]{}
+
+% =============================================================================
+% ---------- References ----------
+% =============================================================================
+\usepackage[round]{natbib}
+% Note: \bibliographystyle must be set in each .tex file with the correct path
+% e.g., \bibliographystyle{../latex_files/aea}
+% Fix: mathastext noparenthesis breaks natbib \citet parentheses in Beamer.
+% Workaround: build "Author (Year)" manually from \citeauthor + \citeyear.
+\newcommand{\citeay}[1]{\citeauthor{#1} (\citeyear{#1})}
+\newcommand{\citegray}[1]{{\scriptsize\textcolor{DarkGray}{\citeay{#1}}}}%

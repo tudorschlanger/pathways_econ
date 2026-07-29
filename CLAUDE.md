@@ -122,5 +122,5 @@ cd output/syllabus && TEXINPUTS=../../codes/Preambles:$TEXINPUTS xelatex -intera
 | Syllabus | -- | `syllabus.tex` | 5-day workshop overview |
 | 2: Causal Claims & Data | Planned | Planned | Causal claims, DAGs, firefighter activity, chart detective |
 | 3: Markets & Externalities | Planned | Planned | Commons game, tragedy of the commons, carbon tax game |
-| 4: Trade Policy | Planned | Planned | Steel tariff debate, stakeholder analysis with citations |
-| 5: Finance & Behavior | Planned | Planned | Stock market game, behavioral finance, prospect theory |
+| 4: Trade and Tariffs | `lec4_slides.tex` | -- | Trade, tariffs, steel tariff debate, cost-benefit analysis |
+| 5: Your Money, Your Brain | `lec5_slides.tex` | -- | Stock market participation, credit card puzzles, pain of paying, nudges, baby bonds |

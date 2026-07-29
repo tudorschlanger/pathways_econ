@@ -1,5 +1,5 @@
 ---
-name: pedagogy-review
+name: review-slides-pedagogy
 description: Run holistic pedagogical review on lecture slides. Checks narrative arc, student prerequisites, worked examples, notation clarity, and deck pacing.
 argument-hint: "[TEX filename]"
 allowed-tools: ["Read", "Grep", "Glob", "Write", "Task"]
@@ -13,7 +13,7 @@ Perform a comprehensive pedagogical review.
 
 1. **Identify the file** specified in `$ARGUMENTS`
    - If no argument, ask user which lecture to review
-   - If just a name, look in `Slides/` or `Handouts/`
+   - If just a name, look in `Slides/`
 
 2. **Launch the pedagogy-reviewer agent** with the full file path
    - The agent checks 13 pedagogical patterns

@@ -14,7 +14,7 @@ Run a comprehensive multi-dimensional review of lecture slides. Multiple agents 
 
 ### 1. Identify the File
 
-Parse `$ARGUMENTS` for the filename. Resolve path in `Slides/` or `Handouts/`.
+Parse `$ARGUMENTS` for the filename. Resolve path in `Slides/`.
 
 ### 2. Run Review Agents in Parallel
 
@@ -34,7 +34,7 @@ Parse `$ARGUMENTS` for the filename. Resolve path in `Slides/` or `Handouts/`.
 - Label overlaps, geometric accuracy, visual semantics
 - Save: `quality_reports/[FILE]_tikz_review.md`
 
-**Agent 5: Substance Review** (optional, for lecture slides)
+**Agent 5: Substance Review** (optional, for .tex files)
 - Domain correctness via domain-reviewer protocol
 - Save: `quality_reports/[FILE]_substance_review.md`
 

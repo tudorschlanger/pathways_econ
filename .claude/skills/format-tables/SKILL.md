@@ -4,10 +4,8 @@ description: >
   Apply a consistent LaTeX table style for table output. Use this skill whenever
   the user is writing code that produces LaTeX tables — including missing
   values tables, sample means tables, and summary statistics tables — or whenever
-  they ask to format, fix, or generate any such table. Also trigger when the user
-  references esttab, outreg2, putexcel, file write, or any table-building
-  workflow, or asks about table style, indentation, panel headers, booktabs, or
-  footnotes in the context of LaTeX. When in doubt, load this skill.
+  they ask to format, fix, or generate any such table. Do not trigger this when 
+  formatting regression tables. When in doubt, load this skill.
 ---
 
 # Stata LaTeX Table Style Guide
@@ -44,8 +42,14 @@ Do **not** use `\toprule` or `\bottomrule`; use `\midrule\midrule` for both top 
 - Variables within a panel are indented relative to the panel name
 - Use `\hspace{0.5em}` before the variable label in the first column
 
-### Variable conventions
+### Variable label conventions
 - Keep the variable names under 20 characters (which includes spaces)
+
+### Column name conventions
+- Keep the variable names under 20 characters (which includes spaces)
+- In a regression table, put the outcome variable name above the number of the specification using the `prehead/posthead` esttab commands
+- In a regression table, if the outcome variable is common to all specifications, combine them into one header (e.g. `\multicolumn{N}{c}{Variable Name}`)
+- In a regression table, do NOT add the "b/se" tag on the column headers
 
 ### Footnotes
 - Every table has a note
@@ -106,6 +110,16 @@ Do **not** use `\toprule` or `\bottomrule`; use `\midrule\midrule` for both top 
 
 **Footnote must explain:** What the table shows and how the sample is defined.
 
+### 2d. Regression Table
+
+**Default title:** "Regression table"
+
+**Structure:**
+- **Columns (fixed order):** Specification (1) | Specification (2)  
+- **Rows:** One per regressor, or specification information (e.g. Fixed effects, Observations)
+
+**Footnote must explain:** What the table shows and how the sample is defined.
+
 ---
 
 ## 3. Skeleton Template
@@ -113,7 +127,7 @@ Do **not** use `\toprule` or `\bottomrule`; use `\midrule\midrule` for both top 
 Use this as the base for all three table types (adapt column count and content):
 
 ```latex
-\begin{table}[htbp]
+\begin{table}[!htp]
 \centering
 \begin{threeparttable}
 \caption{TABLE TITLE}

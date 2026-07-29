@@ -36,7 +36,6 @@ Cross-reference all citations in lecture files against bibliography entries.
 ## Files to scan:
 ```
 Slides/*.tex
-Handouts/*.tex
 ```
 
 ## Bibliography location:
