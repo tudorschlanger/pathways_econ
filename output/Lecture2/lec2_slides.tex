@@ -150,7 +150,7 @@
   \end{questionbox}
 
   \vspace{0.8em}
-  \Large\textcolor{blue}{Discuss with your group for 2 minutes\ldots}
+  \Large\textcolor{blue}{Discuss with your group for 1 minute \ldots}
 
 \end{frame}
 
@@ -274,25 +274,47 @@
       \begin{tikzpicture}
         \begin{axis}[
           width=\textwidth,
-          height=6cm,
-          xlabel={\tiny Netflix stock price (\$)},
-          ylabel={\tiny Babies named ``Stevie''},
+          height=6.5cm,
+          xlabel={\small Netflix stock price (\$)},
+          ylabel={\small Babies named ``Stevie''},
           xmin=-20, xmax=680,
           ymin=150, ymax=1350,
           grid=major,
           grid style={gray!20},
           xticklabel style={font=\tiny},
           yticklabel style={font=\tiny},
-          xlabel style={font=\tiny},
-          ylabel style={font=\tiny},
+          xlabel style={font=\small},
+          ylabel style={font=\small},
         ]
-        \addplot[only marks, mark=*, mark size=1.5pt, blue!70!black] coordinates {
+        \addplot[only marks, mark=*, mark size=2pt, blue!70!black] coordinates {
           (1,232) (4,215) (2,211) (4,251) (4,229)
           (4,217) (4,239) (8,210) (25,227) (10,253)
           (14,259) (52,316) (49,310) (109,376) (125,440)
           (196,469) (259,622) (326,791) (539,1131) (606,1200)
         };
+        % Line of best fit (r = 0.996)
         \addplot[domain=0:650, thick, vermillion, dashed, samples=2] {232 + 1.6*x};
+        % Year annotations
+        \node[font=\tiny, anchor=south] at (1,240) {03};
+        \node[font=\tiny, anchor=west] at (6,215) {04};
+        \node[font=\tiny, anchor=north] at (2,203) {05};
+        \node[font=\tiny, anchor=west] at (6,251) {06};
+        \node[font=\tiny, anchor=south west] at (6,229) {07};
+        \node[font=\tiny, anchor=north] at (4,209) {08};
+        \node[font=\tiny, anchor=south] at (4,247) {09};
+        \node[font=\tiny, anchor=north west] at (10,205) {10};
+        \node[font=\tiny, anchor=south west] at (27,227) {11};
+        \node[font=\tiny, anchor=west] at (12,253) {12};
+        \node[font=\tiny, anchor=south west] at (16,259) {13};
+        \node[font=\tiny, anchor=south] at (52,324) {14};
+        \node[font=\tiny, anchor=north] at (49,302) {15};
+        \node[font=\tiny, anchor=south] at (109,384) {16};
+        \node[font=\tiny, anchor=south] at (125,448) {17};
+        \node[font=\tiny, anchor=south] at (196,477) {18};
+        \node[font=\tiny, anchor=south] at (259,630) {19};
+        \node[font=\tiny, anchor=south] at (326,799) {20};
+        \node[font=\tiny, anchor=south] at (539,1139) {21};
+        \node[font=\tiny, anchor=south] at (606,1208) {22};
         \end{axis}
       \end{tikzpicture}
     \end{column}
@@ -386,7 +408,7 @@
 
   \vspace{1.5em}
   \begin{insightbox}
-    The arrow means: if you \textbf{change} A, B changes too. The direction matters---A $\rightarrow$ B is not the same as B $\rightarrow$ A.
+    The arrow means: if you \textbf{change} A, B changes too. \\ The direction matters: A $\rightarrow$ B is not the same as B $\rightarrow$ A.
   \end{insightbox}
 
 \end{frame}
@@ -410,25 +432,47 @@
       \begin{tikzpicture}
         \begin{axis}[
           width=\textwidth,
-          height=6cm,
-          xlabel={\tiny Netflix stock price (\$)},
-          ylabel={\tiny Babies named ``Stevie''},
+          height=6.5cm,
+          xlabel={\small Netflix stock price (\$)},
+          ylabel={\small Babies named ``Stevie''},
           xmin=-20, xmax=680,
           ymin=150, ymax=1350,
           grid=major,
           grid style={gray!20},
           xticklabel style={font=\tiny},
           yticklabel style={font=\tiny},
-          xlabel style={font=\tiny},
-          ylabel style={font=\tiny},
+          xlabel style={font=\small},
+          ylabel style={font=\small},
         ]
-        \addplot[only marks, mark=*, mark size=1.5pt, blue!70!black] coordinates {
+        \addplot[only marks, mark=*, mark size=2pt, blue!70!black] coordinates {
           (1,232) (4,215) (2,211) (4,251) (4,229)
           (4,217) (4,239) (8,210) (25,227) (10,253)
           (14,259) (52,316) (49,310) (109,376) (125,440)
           (196,469) (259,622) (326,791) (539,1131) (606,1200)
         };
+        % Line of best fit (r = 0.996)
         \addplot[domain=0:650, thick, vermillion, dashed, samples=2] {232 + 1.6*x};
+        % Year annotations
+        \node[font=\tiny, anchor=south] at (1,240) {03};
+        \node[font=\tiny, anchor=west] at (6,215) {04};
+        \node[font=\tiny, anchor=north] at (2,203) {05};
+        \node[font=\tiny, anchor=west] at (6,251) {06};
+        \node[font=\tiny, anchor=south west] at (6,229) {07};
+        \node[font=\tiny, anchor=north] at (4,209) {08};
+        \node[font=\tiny, anchor=south] at (4,247) {09};
+        \node[font=\tiny, anchor=north west] at (10,205) {10};
+        \node[font=\tiny, anchor=south west] at (27,227) {11};
+        \node[font=\tiny, anchor=west] at (12,253) {12};
+        \node[font=\tiny, anchor=south west] at (16,259) {13};
+        \node[font=\tiny, anchor=south] at (52,324) {14};
+        \node[font=\tiny, anchor=north] at (49,302) {15};
+        \node[font=\tiny, anchor=south] at (109,384) {16};
+        \node[font=\tiny, anchor=south] at (125,448) {17};
+        \node[font=\tiny, anchor=south] at (196,477) {18};
+        \node[font=\tiny, anchor=south] at (259,630) {19};
+        \node[font=\tiny, anchor=south] at (326,799) {20};
+        \node[font=\tiny, anchor=south] at (539,1139) {21};
+        \node[font=\tiny, anchor=south] at (606,1208) {22};
         \end{axis}
       \end{tikzpicture}
     \end{column}
@@ -513,25 +557,47 @@
       \begin{tikzpicture}
         \begin{axis}[
           width=\textwidth,
-          height=6cm,
-          xlabel={\tiny Netflix stock price (\$)},
-          ylabel={\tiny Babies named ``Stevie''},
+          height=6.5cm,
+          xlabel={\small Netflix stock price (\$)},
+          ylabel={\small Babies named ``Stevie''},
           xmin=-20, xmax=680,
           ymin=150, ymax=1350,
           grid=major,
           grid style={gray!20},
           xticklabel style={font=\tiny},
           yticklabel style={font=\tiny},
-          xlabel style={font=\tiny},
-          ylabel style={font=\tiny},
+          xlabel style={font=\small},
+          ylabel style={font=\small},
         ]
-        \addplot[only marks, mark=*, mark size=1.5pt, blue!70!black] coordinates {
+        \addplot[only marks, mark=*, mark size=2pt, blue!70!black] coordinates {
           (1,232) (4,215) (2,211) (4,251) (4,229)
           (4,217) (4,239) (8,210) (25,227) (10,253)
           (14,259) (52,316) (49,310) (109,376) (125,440)
           (196,469) (259,622) (326,791) (539,1131) (606,1200)
         };
+        % Line of best fit (r = 0.996)
         \addplot[domain=0:650, thick, vermillion, dashed, samples=2] {232 + 1.6*x};
+        % Year annotations
+        \node[font=\tiny, anchor=south] at (1,240) {03};
+        \node[font=\tiny, anchor=west] at (6,215) {04};
+        \node[font=\tiny, anchor=north] at (2,203) {05};
+        \node[font=\tiny, anchor=west] at (6,251) {06};
+        \node[font=\tiny, anchor=south west] at (6,229) {07};
+        \node[font=\tiny, anchor=north] at (4,209) {08};
+        \node[font=\tiny, anchor=south] at (4,247) {09};
+        \node[font=\tiny, anchor=north west] at (10,205) {10};
+        \node[font=\tiny, anchor=south west] at (27,227) {11};
+        \node[font=\tiny, anchor=west] at (12,253) {12};
+        \node[font=\tiny, anchor=south west] at (16,259) {13};
+        \node[font=\tiny, anchor=south] at (52,324) {14};
+        \node[font=\tiny, anchor=north] at (49,302) {15};
+        \node[font=\tiny, anchor=south] at (109,384) {16};
+        \node[font=\tiny, anchor=south] at (125,448) {17};
+        \node[font=\tiny, anchor=south] at (196,477) {18};
+        \node[font=\tiny, anchor=south] at (259,630) {19};
+        \node[font=\tiny, anchor=south] at (326,799) {20};
+        \node[font=\tiny, anchor=south] at (539,1139) {21};
+        \node[font=\tiny, anchor=south] at (606,1208) {22};
         \end{axis}
       \end{tikzpicture}
     \end{column}
@@ -578,15 +644,15 @@
           width=\textwidth,
           height=4.5cm,
           axis y line*=left,
-          xlabel style={font=\tiny},
-          ylabel style={font=\tiny, color=orange!80!black},
+          xlabel style={font=\scriptsize},
+          ylabel style={font=\scriptsize, color=orange!80!black},
           ylabel={Ice cream sales (k/day)},
           xmin=0.5, xmax=20.5,
           ymin=5, ymax=24,
           xtick={1,5,10,15,20},
           xticklabels={Aug 1,5,10,15,20},
-          xticklabel style={font=\tiny},
-          yticklabel style={font=\tiny, color=orange!80!black},
+          xticklabel style={font=\scriptsize},
+          yticklabel style={font=\scriptsize, color=orange!80!black},
           axis line style={orange!80!black},
           tick style={orange!80!black},
         ]
@@ -602,12 +668,12 @@
           height=4.5cm,
           axis y line*=right,
           axis x line=none,
-          ylabel style={font=\tiny, color=blue!70!black},
+          ylabel style={font=\scriptsize, color=blue!70!black},
           ylabel={Excess deaths/day},
           xmin=0.5, xmax=20.5,
           ymin=0, ymax=2500,
           ytick={0,500,1000,1500,2000},
-          yticklabel style={font=\tiny, color=blue!70!black},
+          yticklabel style={font=\scriptsize, color=blue!70!black},
           axis line style={blue!70!black},
           tick style={blue!70!black},
         ]
@@ -621,7 +687,7 @@
       \end{tikzpicture}
 
       \vspace{0.3em}
-      {\small Does ice cream \textbf{cause} heatstroke?}
+      {\small Does ice cream \textbf{cause} excess deaths?}
     \end{column}
     \begin{column}{0.48\textwidth}
       \pause
@@ -634,15 +700,15 @@
           width=\textwidth,
           height=4.5cm,
           axis y line*=left,
-          xlabel style={font=\tiny},
-          ylabel style={font=\tiny, color=vermillion},
+          xlabel style={font=\scriptsize},
+          ylabel style={font=\scriptsize, color=vermillion},
           ylabel={Max temp.\ (\textdegree F)},
           xmin=0.5, xmax=20.5,
           ymin=77, ymax=112,
           xtick={1,5,10,15,20},
           xticklabels={Aug 1,5,10,15,20},
-          xticklabel style={font=\tiny},
-          yticklabel style={font=\tiny, color=vermillion},
+          xticklabel style={font=\scriptsize},
+          yticklabel style={font=\scriptsize, color=vermillion},
           axis line style={vermillion},
           tick style={vermillion},
         ]
@@ -658,12 +724,12 @@
           height=4.5cm,
           axis y line*=right,
           axis x line=none,
-          ylabel style={font=\tiny, color=blue!70!black},
+          ylabel style={font=\scriptsize, color=blue!70!black},
           ylabel={Excess deaths/day},
           xmin=0.5, xmax=20.5,
           ymin=0, ymax=2500,
           ytick={0,500,1000,1500,2000},
-          yticklabel style={font=\tiny, color=blue!70!black},
+          yticklabel style={font=\scriptsize, color=blue!70!black},
           axis line style={blue!70!black},
           tick style={blue!70!black},
         ]
@@ -721,9 +787,6 @@
   \vspace{2em}
   {\Large But what if the \textbf{numbers are real}---and the \textbf{graph itself} is designed to mislead you?}
 
-  \vspace{2em}
-  \emph{In Part 2, we will learn how graphs can trick you \textbf{without faking any data}.}
-
 \end{frame}
 
 % =============================================================================
@@ -756,7 +819,7 @@
           bar width=2cm,
           ymin=80.0, ymax=82.0,
           ytick={80.2,80.4,80.6,80.8,81.0,81.2,81.4,81.6,81.8},
-          yticklabel style={font=\tiny},
+          yticklabel style={font=\small},
           xmin=-0.6, xmax=1.6,
           xtick={0,1},
           xticklabels={2024, 2025},
@@ -804,7 +867,7 @@
           bar width=1.8cm,
           ymin=0, ymax=100,
           ytick={0,20,40,60,80,100},
-          yticklabel style={font=\tiny},
+          yticklabel style={font=\small},
           xmin=-0.6, xmax=1.6,
           xtick={0,1},
           xticklabels={2024, 2025},
@@ -838,7 +901,7 @@
   \end{enumerate}
 
   \vspace{0.8em}
-  \Large\textcolor{blue}{You have about 2 minutes per chart.}
+  \Large\textcolor{blue}{You have about 1 minute per chart.}
 
 \end{frame}
 
@@ -870,9 +933,9 @@
           xmin=1999, xmax=2015,
           ymin=0, ymax=1050,
           ytick={0,200,400,600,800,1000},
-          yticklabel style={font=\tiny},
+          yticklabel style={font=\small},
           xtick={2000,2003,2005,2008,2011,2014},
-          xticklabel style={font=\tiny},
+          xticklabel style={font=\small},
           x tick label style={/pgf/number format/1000 sep={}},
           axis line style={black},
           title style={font=\small\bfseries},
@@ -943,10 +1006,10 @@
           % but with unequal numerical values
           ymin=0, ymax=420,
           ytick={30,60,90,130,174,192,250,300,350,400},
-          yticklabel style={font=\tiny},
+          yticklabel style={font=\small},
           xtick={1,5,10,15,20,25},
           xticklabels={Mar 1, Mar 5, Mar 10, Mar 15, Mar 20, Mar 25},
-          xticklabel style={font=\tiny, rotate=45, anchor=east},
+          xticklabel style={font=\small, rotate=45, anchor=east},
           xmin=0, xmax=27,
           axis line style={black},
           grid=major,
@@ -957,10 +1020,6 @@
           (14,192) (17,250) (19,300) (21,350) (24,400)
         };
         \end{axis}
-
-        % Label: FOX NEWS style
-        \node[font=\tiny\bfseries, fill=blue!80, text=white, inner sep=2pt, rounded corners=1pt]
-          at (0.8,5.2) {NEWS};
       \end{tikzpicture}
     \end{column}
   \end{columns}
@@ -1015,9 +1074,9 @@
           xmin=2014.2, xmax=2022.8,
           ymin=-0.2, ymax=2.4,
           xtick={2015,2016,...,2022},
-          xticklabel style={font=\tiny},
+          xticklabel style={font=\small},
           x tick label style={/pgf/number format/1000 sep={}},
-          yticklabel style={font=\tiny},
+          yticklabel style={font=\small},
           grid=major,
           grid style={gray!15},
         ]
@@ -1049,9 +1108,9 @@
       xmin=1878, xmax=2024,
       ymin=-1.1, ymax=2.2,
       xtick={1880,1900,1920,1940,1960,1980,2000,2020},
-      xticklabel style={font=\tiny},
+      xticklabel style={font=\small},
       x tick label style={/pgf/number format/1000 sep={}},
-      yticklabel style={font=\tiny},
+      yticklabel style={font=\small},
       ymajorgrids=true,
       grid style={gray!15},
     ]
@@ -1082,7 +1141,7 @@
     \node[font=\tiny, orange, anchor=south] at (10.9,4.8) {Cherry-picked window};
   \end{tikzpicture}
 
-  \vspace{0.3em}
+  \vspace{-0.3em}
   \begin{insightbox}
     \textbf{A tiny slice of data can tell a very big lie.} The short window hides a clear 140-year warming trend. Always ask: what is the bigger picture?
   \end{insightbox}
@@ -1139,12 +1198,12 @@
       }
 
       \vspace{0.3em}
-      {\small\textbf{Context:} Inflation Reduction Act signed \textbf{Aug 16, 2022}.}
+      {\small\textbf{Context:} \blue{\href{https://en.wikipedia.org/wiki/Inflation_Reduction_Act}{Inflation Reduction Act}} signed \textbf{Aug 16, 2022}.}
     \end{column}
     \begin{column}{0.48\textwidth}
       \begin{methodbox}
         \textbf{Activity} (see handout):\\[0.3em]
-        In pairs, create \textbf{two graphs} from the same data:
+        In groups, create \textbf{two graphs} from the same data:
         \begin{itemize}
           \item \textbf{Graph A:} Tell a ``policy worked!'' story (misleading but technically true)
           \item \textbf{Graph B:} Tell a more careful, honest story
@@ -1154,8 +1213,6 @@
         Also list \textbf{3 other reasons} inflation might have fallen (confounders!).
       \end{methodbox}
 
-      \vspace{0.3em}
-      \Large\textcolor{blue}{You have 8--10 minutes.}
     \end{column}
   \end{columns}
 
@@ -1179,11 +1236,11 @@
           ymin=6.3, ymax=8.5,
           xtick={8,9,10,11,12},
           xticklabels={Aug,Sep,Oct,Nov,Dec},
-          xticklabel style={font=\tiny},
-          yticklabel style={font=\tiny},
+          xticklabel style={font=\small},
+          yticklabel style={font=\small},
           ymajorgrids=true,
           grid style={gray!15},
-          title style={font=\tiny\bfseries, text=vermillion},
+          title style={font=\small\bfseries, text=vermillion},
         ]
         \addplot[vermillion, very thick, mark=*, mark size=2pt] coordinates {
           (8,8.3) (9,8.2) (10,7.7) (11,7.1) (12,6.5)
@@ -1212,8 +1269,8 @@
           ymin=0, ymax=10,
           xtick={1,2,...,12},
           xticklabels={J,F,M,A,M,J,J,A,S,O,N,D},
-          xticklabel style={font=\tiny},
-          yticklabel style={font=\tiny},
+          xticklabel style={font=\small},
+          yticklabel style={font=\small},
           ymajorgrids=true,
           grid style={gray!15},
         ]
@@ -1268,7 +1325,7 @@
 
   \vspace{0.5em}
   \begin{itemize}
-    \item \textbf{Correlation is not causality.} It can be:
+    \item \textbf{Correlation is not causality.} It can also be:
       \begin{enumerate}
         \item Coincidence
         \item Reverse causality
