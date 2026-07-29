@@ -34,9 +34,9 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Claude Code local files (not shared across machines)
-.claude/settings.local.json
-.claude/state/
+# Claude Code
+.claude/
+CLAUDE.md
 CLAUDE.local.md
 
 # Project data, docs, and internal files
