@@ -1,6 +1,6 @@
 # Economics & Policy Workshop
 
-Teaching materials for the **Economics & Finance Workshop**, part of the [Yale Pathways to Arts & Humanities Summer Scholars Program](https://pathways.yalecollege.yale.edu/).
+Teaching materials for the **Economics & Finance Workshop**, part of the [Yale Pathways to Arts & Humanities Summer Scholars Program](https://onha.yale.edu/pathways-arts-humanities).
 
 ## About
 
