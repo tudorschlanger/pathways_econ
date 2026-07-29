@@ -14,7 +14,7 @@ This five-day workshop introduces high school students to economic thinking thro
 | 2 | Economics & Data | Correlation vs. causation, confounding variables, selection bias |
 | 3 | Climate Change & Common Resources | Externalities, tragedy of the commons, government policy tools |
 | 4 | Trade & Tariffs | Gains from trade, imports/exports, tariffs |
-| 5 | Behavioral Finance | Loss aversion, anchoring, herding, gambler's fallacy |
+| 5 | Financial Literacy | Saving & investing, borrowing smart, spending & behavior |
 
 Each session (90 minutes) combines short lectures with hands-on activities and group discussions.
 
