@@ -22,6 +22,9 @@
 *.pdf
 *.pptx
 
+# Allow PDFs in output/
+!output/**/*.pdf
+
 # Python
 __pycache__/
 *.pyc
