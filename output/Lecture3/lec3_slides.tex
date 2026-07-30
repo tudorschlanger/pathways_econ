@@ -230,8 +230,7 @@
     ar/.style={-{Stealth[length=4pt]}, thick, DarkGray}
   ]
     \node[nd, fill=vermillion!15, draw=vermillion] (obs) at (0,4)
-      {\textbf{Observe the problem}\\[-1pt]
-       {\scriptsize e.g., Policy 101 depleted all candy}};
+      {\textbf{Observe the problem}};
     \node[circle, fill=vermillion, text=white, font=\small\bfseries,
           inner sep=0pt, minimum size=0.5cm] at ([shift={(0.25,-.25)}]obs.north west) {1};
 
@@ -242,8 +241,7 @@
           inner sep=0pt, minimum size=0.5cm] at ([shift={(0.25,-.25)}]why.north west) {2};
 
     \node[nd, fill=green!12, draw=green] (design) at (0,0.1)
-      {\textbf{Design better rules}\\[-1pt]
-       {\scriptsize e.g., Policy 102 puts a price on overuse}};
+      {\textbf{Design better rules}};
     \node[circle, fill=green, text=white, font=\small\bfseries,
           inner sep=0pt, minimum size=0.5cm] at ([shift={(0.25,-.25)}]design.north west) {3};
 
@@ -260,57 +258,34 @@
 \end{frame}
 
 
-% ---------- Policy Comparison Diagram ----------
+% ---------- The Problem (flowchart style) ----------
 \begin{frame}{The Problem}
 
   \begin{center}
   \begin{tikzpicture}[
-    pol/.style={rounded corners=4pt, minimum width=3.2cm,
-                minimum height=0.9cm, align=center, font=\small\bfseries},
-    stp/.style={rounded corners=2pt, draw=DarkGray, fill=softbg,
-                minimum width=3.2cm, minimum height=0.7cm,
-                align=center, font=\scriptsize},
-    res/.style={rounded corners=2pt, minimum width=3.2cm,
-                minimum height=0.7cm, align=center, font=\scriptsize\bfseries},
+    nd/.style={rounded corners=3pt, draw=DarkGray, fill=softbg,
+               text width=5cm, minimum height=0.8cm,
+               align=center, font=\small},
     ar/.style={-{Stealth[length=4pt]}, thick, DarkGray}
   ]
-    % --- Policy 101 (left) ---
-    \node[pol, fill=vermillion!20, draw=vermillion] (p1) at (-3.5,3)
-      {Policy 101\\{\scriptsize \$0 price}};
-    \node[stp] (p1s1) at (-3.5,1.8) {Everyone grabs\\as much as they want};
-    \node[font=\scriptsize\bfseries, text=blue, anchor=west]
-      at ([xshift=4pt]p1s1.east) {$\leftarrow$ Demand};
+    \node[nd, fill=vermillion!15, draw=vermillion] (obs) at (0,4)
+      {\textbf{Depletion + Unfair distribution}};
+    \node[circle, fill=vermillion, text=white, font=\small\bfseries,
+          inner sep=0pt, minimum size=0.5cm] at ([shift={(0.25,-.25)}]obs.north west) {1};
 
-    \node[stp] (p1s2) at (-3.5,0.6) {Bowl empties\\in seconds};
-    \node[font=\scriptsize\bfseries, text=orange, anchor=west]
-      at ([xshift=4pt]p1s2.east) {$\leftarrow$ Supply};
-    \node[res, text=vermillion] (p1out) at (-3.5,-0.7)
-      {Depletion +\\Unfair distribution};
+    \node[nd, text=gray] (why1) at (0,2.7)
+      {Everyone grabs as much as they want};
+    \node[nd, text=gray] (why2) at (0,1.5)
+      {Limited amount of candy};
 
-    \draw[ar] (p1) -- (p1s1);
-    \draw[ar] (p1s1) -- (p1s2);
-    \draw[ar] (p1s2) -- (p1out);
+    \node[nd, fill=green!12, draw=green] (design) at (0,0.1)
+      {\textbf{Policy 102: Design better rules}};
+    \node[circle, fill=green, text=white, font=\small\bfseries,
+          inner sep=0pt, minimum size=0.5cm] at ([shift={(0.25,-.25)}]design.north west) {3};
 
-    % --- Policy 102 (right) ---
-    % \node[pol, fill=green!15, draw=green] (p2) at (3.5,3)
-    %   {Policy 102\\{\scriptsize \$5 per extra piece}};
-    % \node[stp] (p2s1) at (3.5,1.8) {Students compare cost\\to willingness to pay};
-    % \node[stp] (p2s2) at (3.5,0.6) {People take less\\candy remains};
-    % \node[res, text=green] (p2out) at (3.5,-0.7)
-    %   {Conservation +\\Fairer outcome};
-
-    % \draw[ar] (p2) -- (p2s1);
-    % \draw[ar] (p2s1) -- (p2s2);
-    % \draw[ar] (p2s2) -- (p2out);
-
-    % % --- Center comparison ---
-    % \node[font=\Large\bfseries, text=DarkGray] at (0,3) {vs.};
-    % \draw[dotted, thick, DarkGray] (0,2.5) -- (0,-1.1);
-
-    % % --- Bottom insight ---
-    % \node[text width=10cm, align=center, font=\small] at (0,-1.7)
-    %   {The \textbf{same people}, the \textbf{same candy} ---
-    %    only the \textbf{rules} changed.};
+    \draw[ar] (obs) -- (why1);
+    \draw[ar] (why1) -- (why2);
+    \draw[ar] (why2) -- (design);
   \end{tikzpicture}
   \end{center}
 
@@ -380,7 +355,7 @@
       \begin{enumerate}
         \item I cannot demand an infinite amount
         \item Every unit I consume is one less unit for others!
-      \end{enumerate}
+      \end{enumerate} \pause
 
       \begin{definitionbox}[Rivalrous]
         A good is rivalrous when one person's consumption reduces the amount available for others.
@@ -409,11 +384,11 @@
   \begin{tikzpicture}[
     cell/.style={minimum width=4.8cm, minimum height=2cm, align=center,
                  font=\small, rounded corners=2pt},
-    lbl/.style={font=\small\bfseries, text=DarkGray}
+    lbl/.style={font=\small\bfseries}
   ]
-    % Column headers
-    \node[lbl] at (2.5,3.3) {Rivalrous};
-    \node[lbl] at (7.5,3.3) {Non-rivalrous};
+    % Column headers (black)
+    \node[lbl, text=black] at (2.5,3.3) {Rivalrous};
+    \node[lbl, text=black] at (7.5,3.3) {Non-rivalrous};
 
     % Grid lines
     \draw[DarkGray, thick] (0.3,-1.1) rectangle (9.7,2.9);
@@ -421,15 +396,15 @@
     \draw[DarkGray, thick] (0.3,0.9) -- (9.7,0.9);
 
     % Cells — examples only, no category labels
-    \node[cell] at (2.65,2) {Store clothing\\Cars at a dealership};
-    \node[cell] at (7.35,2) {Netflix movies\\Toll road};
-    \node[cell] at (2.65,0) {Ocean fish\\Groundwater};
-    \node[cell] at (7.35,0) {National defense\\Public parks};
+    \node[cell] at (2.65,2) {\textbullet~Store clothing\\\textbullet~Cars at a dealership};
+    \node[cell] at (7.35,2) {\textbullet~Netflix movies\\\textbullet~Toll road};
+    \node[cell] at (2.65,0) {\textbullet~Ocean fish\\\textbullet~Groundwater};
+    \node[cell] at (7.35,0) {\textbullet~National defense\\\textbullet~Public parks};
   \end{tikzpicture}
-  \end{center} \pause 
+  \end{center} \pause
 
   \begin{questionbox}
-    What is the difference between top and bottom rows?
+    Which items do you need to pay to use?
   \end{questionbox}
 
 \end{frame}
@@ -441,30 +416,33 @@
   \begin{tikzpicture}[
     cell/.style={minimum width=4.8cm, minimum height=2cm, align=center,
                  font=\small, rounded corners=2pt},
-    lbl/.style={font=\small\bfseries, text=DarkGray}
+    lbl/.style={font=\small\bfseries}
   ]
-    % Row headers
-    \node[lbl, rotate=90, anchor=south] at (-0.6,1) {\normalsize Excludability};
-    \node[lbl, rotate=90] at (-0.1,2) {High};
-    \node[lbl, rotate=90] at (-0.1,0) {Low};
+    % Column headers (greyed out)
+    \node[lbl, text=gray] at (2.5,3.3) {Rivalrous};
+    \node[lbl, text=gray] at (7.5,3.3) {Non-rivalrous};
+
+    % Row headers (black)
+    \node[lbl, text=black, rotate=90, anchor=south] at (-0.6,1) {\normalsize Excludability};
+    \node[lbl, text=black, rotate=90] at (-0.1,2) {High};
+    \node[lbl, text=black, rotate=90] at (-0.1,0) {Low};
 
     % Grid lines
     \draw[DarkGray, thick] (0.3,-1.1) rectangle (9.7,2.9);
     \draw[DarkGray, thick] (5,-1.1) -- (5,2.9);
     \draw[DarkGray, thick] (0.3,0.9) -- (9.7,0.9);
 
-    % Cells — examples only
-    \node[cell] at (2.65,2) {Store clothing\\Cars at a dealership};
-    \node[cell] at (7.35,2) {Netflix movies\\Toll road};
-    \node[cell] at (2.65,0) {Ocean fish\\Groundwater};
-    \node[cell] at (7.35,0) {National defense\\Public parks};
+    % Cells
+    \node[cell] at (2.65,2) {\textbullet~Store clothing\\\textbullet~Cars at a dealership};
+    \node[cell] at (7.35,2) {\textbullet~Netflix movies\\\textbullet~Toll road};
+    \node[cell] at (2.65,0) {\textbullet~Ocean fish\\\textbullet~Groundwater};
+    \node[cell] at (7.35,0) {\textbullet~National defense\\\textbullet~Public parks};
   \end{tikzpicture}
   \end{center} \pause
 
   \begin{definitionbox}[Excludable]
       A good is excludable when it's possible to prevent people who haven't paid from using it.
   \end{definitionbox}
-
 
 \end{frame}
 
@@ -474,28 +452,31 @@
   \begin{tikzpicture}[
     cell/.style={minimum width=4.8cm, minimum height=2cm, align=center,
                  font=\small, rounded corners=2pt},
-    lbl/.style={font=\small\bfseries, text=DarkGray}
+    lbl/.style={font=\small\bfseries}
   ]
-    % Row headers
-    \node[lbl, rotate=90, anchor=south] at (-0.6,1) {\normalsize Excludability};
-    \node[lbl, rotate=90] at (-0.1,2) {High};
-    \node[lbl, rotate=90] at (-0.1,0) {Low};
+    % Column headers (greyed out)
+    \node[lbl, text=gray] at (2.5,3.3) {Rivalrous};
+    \node[lbl, text=gray] at (7.5,3.3) {Non-rivalrous};
+
+    % Row headers (black)
+    \node[lbl, text=black, rotate=90, anchor=south] at (-0.6,1) {\normalsize Excludability};
+    \node[lbl, text=black, rotate=90] at (-0.1,2) {High};
+    \node[lbl, text=black, rotate=90] at (-0.1,0) {Low};
 
     % Grid lines
     \draw[DarkGray, thick] (0.3,-1.1) rectangle (9.7,2.9);
     \draw[DarkGray, thick] (5,-1.1) -- (5,2.9);
     \draw[DarkGray, thick] (0.3,0.9) -- (9.7,0.9);
 
-    % Cells — examples only
-    \node[cell] at (2.65,2) {Store clothing\\Cars at a dealership};
-    \node[cell] at (7.35,2) {Netflix movies\\Toll road};
-    \node[cell] at (2.65,0) {Ocean fish\\Groundwater};
-    \node[cell] at (7.35,0) {National defense\\Public parks};
+    % Cells
+    \node[cell] at (2.65,2) {\textbullet~Store clothing\\\textbullet~Cars at a dealership};
+    \node[cell] at (7.35,2) {\textbullet~Netflix movies\\\textbullet~Toll road};
+    \node[cell] at (2.65,0) {\textbullet~Ocean fish\\\textbullet~Groundwater};
+    \node[cell] at (7.35,0) {\textbullet~National defense\\\textbullet~Public parks};
   \end{tikzpicture}
   \end{center}
 
-
-    \begin{questionbox}
+  \begin{questionbox}
     What type of good is the candy in Yale Policy 101?
   \end{questionbox}
 
@@ -508,12 +489,16 @@
   \begin{tikzpicture}[
     cell/.style={minimum width=4.8cm, minimum height=2cm, align=center,
                  font=\small, rounded corners=2pt},
-    lbl/.style={font=\small\bfseries, text=DarkGray}
+    lbl/.style={font=\small\bfseries}
   ]
-    % Row headers
-    \node[lbl, rotate=90, anchor=south] at (-0.6,1) {\normalsize Excludability};
-    \node[lbl, rotate=90] at (-0.1,2) {High};
-    \node[lbl, rotate=90] at (-0.1,0) {Low};
+    % Column headers (greyed out)
+    \node[lbl, text=gray] at (2.5,3.3) {Rivalrous};
+    \node[lbl, text=gray] at (7.5,3.3) {Non-rivalrous};
+
+    % Row headers (black)
+    \node[lbl, text=black, rotate=90, anchor=south] at (-0.6,1) {\normalsize Excludability};
+    \node[lbl, text=black, rotate=90] at (-0.1,2) {High};
+    \node[lbl, text=black, rotate=90] at (-0.1,0) {Low};
 
     % Grid lines
     \draw[DarkGray, thick] (0.3,-1.1) rectangle (9.7,2.9);
@@ -521,11 +506,11 @@
     \draw[DarkGray, thick] (0.3,0.9) -- (9.7,0.9);
 
     % Cells
-    \node[cell] at (2.65,2) {Store clothing\\Cars at a dealership};
-    \node[cell] at (7.35,2) {Netflix movies\\Toll road};
-    \node[cell] at (2.65,0) {Ocean fish\\Groundwater\\[2pt]
+    \node[cell] at (2.65,2) {\textbullet~Store clothing\\\textbullet~Cars at a dealership};
+    \node[cell] at (7.35,2) {\textbullet~Netflix movies\\\textbullet~Toll road};
+    \node[cell] at (2.65,0) {\textbullet~Ocean fish\\\textbullet~Groundwater\\[2pt]
       \textcolor{green}{\textbf{Yale candy}}};
-    \node[cell] at (7.35,0) {National defense\\Public parks};
+    \node[cell] at (7.35,0) {\textbullet~National defense\\\textbullet~Public parks};
   \end{tikzpicture}
   \end{center}
 
@@ -538,7 +523,7 @@
   \begin{tikzpicture}[
     cell/.style={minimum width=4.8cm, minimum height=2cm, align=center,
                  font=\small, rounded corners=2pt},
-    lbl/.style={font=\small\bfseries, text=DarkGray}
+    lbl/.style={font=\small\bfseries, text=black}
   ]
     % Column headers
     \node[lbl] at (2.5,3.3) {Rivalrous};
@@ -559,13 +544,13 @@
 
     % Cells with category labels and examples
     \node[cell] at (2.65,2) {\textbf{Private Goods}\\[2pt]
-      {\scriptsize Store clothing, cars}};
+      {\scriptsize \textbullet~Store clothing \textbullet~Cars}};
     \node[cell] at (7.35,2) {\textbf{Club Goods}\\[2pt]
-      {\scriptsize Netflix, toll road}};
+      {\scriptsize \textbullet~Netflix \textbullet~Toll road}};
     \node[cell] at (2.65,0) {\textbf{\textcolor{vermillion}{Common Resources}}\\[2pt]
-      {\scriptsize Ocean fish, groundwater, Yale candy}};
+      {\scriptsize \textbullet~Ocean fish \textbullet~Groundwater \textbullet~Yale candy}};
     \node[cell] at (7.35,0) {\textbf{Public Goods}\\[2pt]
-      {\scriptsize National defense, public parks}};
+      {\scriptsize \textbullet~National defense \textbullet~Public parks}};
   \end{tikzpicture}
   \end{center}
 
@@ -583,9 +568,8 @@
       \vspace{0.3em}
       \textbf{Why it happens:}
       \begin{itemize}
-        \item The good is \textbf{non-excludable} and no price to ration it
-        \item The demand for the good is infinite 
-        \item The good is \textbf{rivalrous} because its supply is finite 
+        \item The good is \textbf{non-excludable} \& demand is infinite
+        \item The good is \textbf{rivalrous} because supply is finite 
         \item The result is depletion 
       \end{itemize}
     \end{column}
@@ -619,7 +603,7 @@
   \end{columns} 
   \pause 
       \begin{questionbox}
-        Are people ``bad''? Why can't they just self-regulate their behavior? 
+        Why can't people self-regulate their behavior?
       \end{questionbox}
 
 \end{frame}
@@ -662,20 +646,13 @@
 \end{frame}
 
 % ---------- Negative Externalities ----------
-\begin{frame}{Negative Externalities}
+\begin{frame}{Externalities}
 
   \begin{definitionbox}[Externality]
-    An \textbf{externality} is a \textbf{cost} or benefit that affects someone \textbf{who is not directly involved} in a decision or transaction. 
+    An \textbf{externality} is a cost or benefit that affects someone \textbf{who is not directly involved} in a decision or transaction.
   \end{definitionbox}
 
   \vspace{0.5em}
-  \textbf{Candy example}
-  \begin{itemize}
-    \item \textit{Today}, I collect a lot of candy. 
-    \item This affects the people who want candy \textit{tomorrow}. 
-    \item The cost is the lack of candy. 
-  \end{itemize} \pause 
-
   \begin{columns}[T]
     \begin{column}{0.48\textwidth}
       \textbf{\red{Negative} externality}
@@ -683,7 +660,6 @@
         \item Carbon emissions from driving $\rightarrow$ everyone faces climate change
       \end{itemize}
     \end{column}
-    \pause
     \begin{column}{0.48\textwidth}
       \textbf{\textcolor{green}{Positive} externality}
       \begin{itemize}
@@ -692,15 +668,25 @@
     \end{column}
   \end{columns}
 
+  \vspace{0.5em} \pause
+  \begin{questionbox}
+    Which type of externality is the candy example?
+  \end{questionbox}
+
 \end{frame}
 
 % ---------- Policy Solutions ----------
 \begin{frame}{How Can We Fix the ``Tragedy of the Commons''?}
 
+  \begin{definitionbox}[Tragedy of the Commons]
+    When individuals deplete a common resource.
+  \end{definitionbox}
+
+  \vspace{0.3em}
   \begin{columns}[c]
     \begin{column}{0.48\textwidth}
       \centering
-      {\small\textbf{Price = \$0 (no policy)}}
+      {\small\textbf{Price = \$0 (Yale Policy 101)}}
 
       \vspace{0.3em}
       \begin{tikzpicture}[scale=0.55]
@@ -726,7 +712,7 @@
     \pause
     \begin{column}{0.48\textwidth}
       \centering
-      {\small\textbf{Price = \$5 (tax/fine)}}
+      {\small\textbf{Price = \$5 (Yale Policy 102)}}
 
       \vspace{0.3em}
       \begin{tikzpicture}[scale=0.55]
@@ -755,10 +741,10 @@
   \end{columns}
 
   \pause
-  \vspace{0.5em}
+  \vspace{0.3em}
   \begin{insightbox}
     By raising the price, we reduce demand and prevent overuse.
-    This is the logic behind taxes, fines, and cap-and-trade systems.
+    This is the logic behind taxes and fines.
   \end{insightbox}
 
 \end{frame}
@@ -780,6 +766,61 @@
 
 % \end{frame}
 
+
+% ---------- Candy to Climate Change Comparison ----------
+\begin{frame}{From Candy to Climate Change}
+
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \centering
+      {\small\textbf{The Candy Problem}}
+
+      \vspace{0.3em}
+      \begin{tikzpicture}[
+        nd/.style={rounded corners=3pt, draw=DarkGray, fill=softbg,
+                   text width=3.8cm, minimum height=0.7cm,
+                   align=center, font=\scriptsize},
+        ar/.style={-{Stealth[length=3pt]}, thick, DarkGray}
+      ]
+        \node[nd, fill=vermillion!15, draw=vermillion] (obs) at (0,3.2)
+          {\textbf{Candy runs out}};
+        \node[nd] (why) at (0,2)
+          {No price $\rightarrow$ everyone\\grabs as much as they want};
+        \node[nd, fill=green!12, draw=green] (fix) at (0,0.8)
+          {\textbf{Yale Policy 102}\\Charge \$5 per extra piece};
+        \draw[ar] (obs) -- (why);
+        \draw[ar] (why) -- (fix);
+      \end{tikzpicture}
+    \end{column} \pause
+    \begin{column}{0.48\textwidth}
+      \centering
+      {\small\textbf{Climate Change}}
+
+      \vspace{0.3em}
+      \begin{tikzpicture}[
+        nd/.style={rounded corners=3pt, draw=DarkGray, fill=softbg,
+                   text width=3.8cm, minimum height=0.7cm,
+                   align=center, font=\scriptsize},
+        ar/.style={-{Stealth[length=3pt]}, thick, DarkGray}
+      ]
+        \node[nd, fill=vermillion!15, draw=vermillion] (obs) at (0,3.2)
+          {\textbf{Planet warms up}};
+        \node[nd] (why) at (0,2)
+          {No price on CO\textsubscript{2} $\rightarrow$\\everyone pollutes freely};
+        \node[nd, fill=green!12, draw=green] (fix) at (0,0.8)
+          {\textbf{Carbon tax}\\Charge per ton of CO\textsubscript{2}};
+        \draw[ar] (obs) -- (why);
+        \draw[ar] (why) -- (fix);
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+
+  \vspace{0.5em}
+  \begin{insightbox}
+    Same logic, bigger scale: the atmosphere is a common resource.
+  \end{insightbox}
+
+\end{frame}
 
 % =============================================================================
 \section{Carbon Tax Policy Discussion}
@@ -933,7 +974,7 @@
 \begin{frame}{A Policy Proposal: Tax Carbon Emissions}
 
   \begin{definitionbox}[Carbon Tax]
-    A fixed price charged for every \textbf{tonne of CO\textsubscript{2}} emitted.
+    A fixed price charged for every \textbf{ton of CO\textsubscript{2}} emitted.
     The polluter pays for the damage their emissions cause.
   \end{definitionbox}
 
@@ -942,18 +983,9 @@
     \begin{column}{0.48\textwidth}
       \textbf{How it works:}
       \begin{itemize}
-        \item Government sets a price, e.g.\ \textbf{\$50 per tonne} of CO\textsubscript{2}
+        \item Government sets a price, e.g.\ \textbf{\$50 per ton} of CO\textsubscript{2}
         \item Firms and households pay when they emit
-        \item Higher price $\rightarrow$ stronger incentive to emit less
-      \end{itemize}
-    \end{column}
-    \pause
-    \begin{column}{0.48\textwidth}
-      \textbf{Why economists like it:}
-      \begin{itemize}
-        \item Partially corrects the \textbf{negative externality}
-        \item Lets people \textbf{choose how} to reduce 
-        \item Generates \textbf{revenue} the government can spend or return
+
       \end{itemize}
     \end{column}
   \end{columns}
@@ -961,21 +993,13 @@
 \end{frame}
 
 % ---------- What Does This Mean at the Gas Pump ----------
-\begin{frame}{What Does \$50 per Tonne of CO\textsubscript{2} Mean?}
+\begin{frame}{What Does \$50 per Ton of CO\textsubscript{2} Mean?}
 
   \begin{columns}[T]
-    \begin{column}{0.55\textwidth}
-      \textbf{Gas price example:}
-      \begin{itemize}
-        \item 1 gallon of gasoline produces \textbf{8.9 kg} of CO\textsubscript{2}
-        \item Carbon tax = \$50 per tonne = \$0.05 per kg
-        \item Extra cost per gallon: $8.9 \times \$0.05 = $ \textbf{\$0.44}
-      \end{itemize}
-
-      \vspace{0.5em}
+    \begin{column}{0.40\textwidth}
       \begin{answerbox}
         \centering
-        Gas price: \$3.50 $\rightarrow$ \textbf{\$3.94 per gallon}\\[0.3em]
+        Gas price: \$3.50 $\rightarrow$ \textbf{\$3.94}\\[0.3em]
         {\small An increase of about \textbf{13\%}}
       \end{answerbox}
 
@@ -984,24 +1008,45 @@
        Average U.S.\ gas price as of 2025.}
     \end{column}
     \pause
-    \begin{column}{0.42\textwidth}
-      \begin{insightbox}
-        This affects everyone:
+    \begin{column}{0.56\textwidth}
+      \centering
+      {\small\textbf{Who is affected?}}
 
-        \vspace{0.3em}
-        \begin{itemize}
-          \item Firms and households
-          \item Whether you are rich or poor
-        \end{itemize}
+      \vspace{0.3em}
+      \begin{tikzpicture}[
+        grp/.style={rounded corners=3pt, minimum width=2.2cm,
+                    minimum height=1.4cm, align=center, font=\scriptsize},
+      ]
+        % Firms — factory icon
+        \node[grp, draw=blue, fill=blue!8] (firms) at (0,1.5) {};
+        \fill[blue!60] (-0.4,1.65) rectangle (0.2,1.95);
+        \fill[blue!60] (0.25,1.75) rectangle (0.4,1.95);
+        \node[font=\scriptsize\bfseries] at (0,1.25) {Firms};
 
-        \vspace{0.3em}
-        It affects people unequally:
-        \vspace{0.3em}
-        \begin{itemize}
-          \item Poor more than the rich
-          \item People who drive more to work 
-        \end{itemize}
-      \end{insightbox}
+        % Households — house icon
+        \node[grp, draw=orange, fill=orange!8] (hh) at (2.8,1.5) {};
+        \fill[orange!60] (2.5,1.55) rectangle (3.1,1.8);
+        \fill[orange!60] (2.5,1.8) -- (2.8,2.0) -- (3.1,1.8) -- cycle;
+        \node[font=\scriptsize\bfseries] at (2.8,1.25) {Households};
+
+        % High income — large stick figure
+        \node[grp, draw=green, fill=green!8] (rich) at (0,0) {};
+        \draw[green!70!black, thick] (0,0.55) circle (0.12);
+        \draw[green!70!black, thick] (0,0.43) -- (0,0.15);
+        \draw[green!70!black, thick] (-0.15,0.35) -- (0.15,0.35);
+        \draw[green!70!black, thick] (0,0.15) -- (-0.12,0.0) (0,0.15) -- (0.12,0.0);
+        \node[font=\scriptsize\bfseries, below] at (0,-0.15) {High income};
+
+        % Low income — small stick figure
+        \node[grp, draw=vermillion, fill=vermillion!8] (poor) at (2.8,0) {};
+        \draw[vermillion, thick] (2.8,0.4) circle (0.1);
+        \draw[vermillion, thick] (2.8,0.3) -- (2.8,0.1);
+        \draw[vermillion, thick] (2.68,0.22) -- (2.92,0.22);
+        \draw[vermillion, thick] (2.8,0.1) -- (2.7,0.0) (2.8,0.1) -- (2.9,0.0);
+        \node[font=\scriptsize\bfseries, below] at (2.8,-0.15) {Low income};
+      \end{tikzpicture}
+
+
     \end{column}
   \end{columns}
 
@@ -1010,39 +1055,76 @@
 % ---------- Government Revenue ----------
 \begin{frame}{What Should the Government Do with the Revenue?}
 
-  \begin{columns}[T]
+  A carbon tax generates \textbf{billions of dollars} in revenue every year.
+  The government has three main options:
+
+  \vspace{0.5em}
+  \begin{center}
+  \begin{tikzpicture}[
+    nd/.style={rounded corners=3pt, draw=DarkGray, fill=softbg,
+               text width=3.2cm, minimum height=0.8cm,
+               align=center, font=\small},
+    ar/.style={-{Stealth[length=4pt]}, thick, DarkGray}
+  ]
+    % Revenue source
+    \node[nd, fill=blue!12, draw=blue, text width=4cm] (rev) at (0,2.5)
+      {\textbf{Carbon Tax Revenue}};
+
+    % Three options
+    \node[nd, fill=orange!12, draw=orange] (opt1) at (-4,0.5)
+      {\textbf{Return to households}\\[2pt] as rebate checks};
+    \node[nd, fill=skyblue!12, draw=skyblue] (opt2) at (0,0.5)
+      {\textbf{Invest}\\[2pt] in firms to reduce CO\textsubscript{2}};
+    \node[nd, fill=green!12, draw=green] (opt3) at (4,0.5)
+      {\textbf{Cut other taxes}\\[2pt] e.g.\ income tax};
+
+    \draw[ar] (rev) -- (opt1);
+    \draw[ar] (rev) -- (opt2);
+    \draw[ar] (rev) -- (opt3);
+  \end{tikzpicture}
+  \end{center}
+
+\end{frame}
+
+% ---------- Canada's Real-World Example ----------
+\begin{frame}{Real-World Example: Canada}
+
+  \begin{columns}[c]
     \begin{column}{0.48\textwidth}
-      \textbf{How much revenue?}
-      \begin{itemize}
-        \item U.S.\ emits $\approx$ 5 billion tonnes of CO\textsubscript{2}/year
-        \item At \$50/tonne: $5\text{B} \times \$50 = $ \textbf{\$250 billion/year}
-        \item That is roughly \textbf{\$1{,}900 per household}
-              {\scriptsize (130 million U.S.\ households)}
-      \end{itemize}
+      \centering
+      \begin{tikzpicture}[scale=0.75]
+        % Newspaper frame
+        \draw[black, thick] (0,0) rectangle (5,6.5);
+        % Masthead
+        \fill[vermillion!15] (0,5.5) rectangle (5,6.5);
+        \node[font=\large\bfseries\scshape] at (2.5,6.2) {The Globe and Mail};
+        \draw[black, thin] (0.3,5.7) -- (4.7,5.7);
+        \node[font=\tiny] at (2.5,5.85) {Toronto, ON \quad 2024};
+        % Headline
+        \node[text width=4.2cm, align=center, font=\small\bfseries]
+          at (2.5,4.8) {CANADA PRICES CARBON:\\CA\$80 per Ton of CO\textsubscript{2}};
+        % Sub-headline
+        \node[text width=4.2cm, align=center, font=\scriptsize]
+          at (2.5,3.9) {90\% of revenue returned\\directly to households};
+        % Divider
+        \draw[black, thin] (0.3,3.4) -- (4.7,3.4);
+        % Fake article body (gray lines)
+        \foreach \y in {3.1,2.85,2.6,2.35,2.1,1.85,1.6,1.35,1.1,0.85,0.6}
+          \fill[gray!40] (0.4,\y) rectangle (4.6,\y+0.12);
+      \end{tikzpicture}
     \end{column}
-    \pause
     \begin{column}{0.48\textwidth}
-      \textbf{Options for the revenue:}
-      \begin{enumerate}
-        \item \textbf{\textcolor{orange}{Return it to households}} as a rebate check
-        \item \textbf{\textcolor{skyblue}{Invest}} in clean energy or transit
-        \item \textbf{\textcolor{green}{Cut other taxes}} (e.g.\ income tax)
-      \end{enumerate}
+      \textbf{What happened:}
+      \begin{itemize}
+        \item Canada introduced a carbon tax of \textbf{CA\$80/ton} in 2024
+        \item \textbf{90\%} of revenue is returned to households via quarterly rebate checks
+        \item \textbf{8 out of 10 households get back more} than they pay in higher prices
+      \end{itemize}
+
+      \vspace{0.3em}
+      {\tiny Source: Canada Parliamentary Budget Officer (2024).}
     \end{column}
   \end{columns}
-
-  \pause
-  \vspace{0.5em}
-  \begin{definitionbox}[Canada's Real-World Example]
-    Canada introduced a carbon tax of CA\$80/tonne in 2024.
-    \textbf{90\% of revenue is returned directly to households} via quarterly rebate checks (the Climate Action Incentive Payment).
-
-    \vspace{0.3em}
-    Result: \textbf{8 out of 10 households get back more than they pay} in higher prices.
-
-    \vspace{0.2em}
-    {\scriptsize Source: Canada Parliamentary Budget Officer (2024).}
-  \end{definitionbox}
 
 \end{frame}
 
@@ -1146,7 +1228,7 @@
     \begin{column}{0.48\textwidth}
       \textbf{\textcolor{green!60!black}{Benefits}}
       \begin{itemize}\small
-        \item New revenue stream (\$250B/year at \$50/tonne)
+        \item New revenue stream (\$250B/year at \$50/ton)
         \item Meets international climate commitments (Paris Agreement)
         \item Reduces future costs of climate disasters (floods, wildfires)
         \item Market-based approach --- less bureaucracy than regulations

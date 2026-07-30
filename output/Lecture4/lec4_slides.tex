@@ -20,7 +20,7 @@
 \newcommand{\thumbside}{%
   \begin{tikzpicture}[baseline=-0.3em]
     \fill[DarkGray, rounded corners=2pt] (0,0) rectangle (1.4,1.4);
-    \node[white, font=\Large\bfseries] at (0.7,0.7) {$\Rightarrow$};
+    \node[white, font=\Large\bfseries] at (0.7,0.7) {?};
   \end{tikzpicture}%
 }
 
@@ -93,12 +93,10 @@
   {\Large\textbf{``International trade is generally good for a country's economy.''}}
 
   \vspace{2em}
-  \thumbup\hspace{2em}
-  \thumbdown\hspace{2em}
-  \thumbside\\[0.5em]
-  \textcolor{green}{\textbf{Agree}} \hspace{2.5em}
-  \textcolor{vermillion}{\textbf{Disagree}} \hspace{2em}
-  \textcolor{DarkGray}{\textbf{Not sure}}
+  \begin{tabular}{c@{\hspace{2em}}c@{\hspace{2em}}c}
+    \thumbup & \thumbdown & \thumbside \\[0.5em]
+    \textcolor{green}{\textbf{Agree}} & \textcolor{vermillion}{\textbf{Disagree}} & \textcolor{DarkGray}{\textbf{Not sure}}
+  \end{tabular}
 
 \end{frame}
 
@@ -108,12 +106,10 @@
   {\Large\textbf{``International trade is generally good for \underline{every sector} of a country's economy.''}}
 
   \vspace{2em}
-  \thumbup\hspace{2em}
-  \thumbdown\hspace{2em}
-  \thumbside\\[0.5em]
-  \textcolor{green}{\textbf{Agree}} \hspace{2.5em}
-  \textcolor{vermillion}{\textbf{Disagree}} \hspace{2em}
-  \textcolor{DarkGray}{\textbf{Not sure}}
+  \begin{tabular}{c@{\hspace{2em}}c@{\hspace{2em}}c}
+    \thumbup & \thumbdown & \thumbside \\[0.5em]
+    \textcolor{green}{\textbf{Agree}} & \textcolor{vermillion}{\textbf{Disagree}} & \textcolor{DarkGray}{\textbf{Not sure}}
+  \end{tabular}
 
 \end{frame}
 
@@ -123,12 +119,10 @@
   {\Large\textbf{``If international trade is not good for every sector, \underline{tariffs} can protect those affected sectors.''}}
 
   \vspace{2em}
-  \thumbup\hspace{2em}
-  \thumbdown\hspace{2em}
-  \thumbside\\[0.5em]
-  \textcolor{green}{\textbf{Agree}} \hspace{2.5em}
-  \textcolor{vermillion}{\textbf{Disagree}} \hspace{2em}
-  \textcolor{DarkGray}{\textbf{Not sure}}
+  \begin{tabular}{c@{\hspace{2em}}c@{\hspace{2em}}c}
+    \thumbup & \thumbdown & \thumbside \\[0.5em]
+    \textcolor{green}{\textbf{Agree}} & \textcolor{vermillion}{\textbf{Disagree}} & \textcolor{DarkGray}{\textbf{Not sure}}
+  \end{tabular}
 
   \vspace{1.5em}
   \textcolor{DarkGray}{\textit{We'll revisit these at the end of class.}}
@@ -142,7 +136,7 @@
 \begin{frame}{What Is International Trade?}
 
   \begin{columns}[T]
-    \begin{column}{0.58\textwidth}
+    \begin{column}{0.5\textwidth}
       \begin{definitionbox}[International Trade]
         The exchange of goods and services across national borders.
       \end{definitionbox}
@@ -155,7 +149,7 @@
       \textcolor{green}{\textbf{Exports}} = goods going OUT of a country
       {\small\textit{\textcolor{DarkGray}{(U.S.\ soybeans, shipped to China)}}}
     \end{column}
-    \begin{column}{0.38\textwidth}
+    \begin{column}{0.48\textwidth}
       \includegraphics[width=\textwidth]{fig/container_ship_port.jpg}
     \end{column}
   \end{columns}
@@ -165,7 +159,32 @@
 \begin{frame}{Why Do Countries Trade?}
 
   \begin{columns}[T]
-    \begin{column}{0.58\textwidth}
+    \begin{column}{0.5\textwidth}
+      \vspace{0.5em}
+      Not every country can make everything well, it at all:
+
+      \vspace{0.8em}
+      \begin{itemize}
+        \item Different climates, resources, and skills
+        \item Some countries have more workers; others have more technology
+        \item Making everything yourself is expensive and slow
+        \item Sometimes, it's just not possible 
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \includegraphics[width=\textwidth]{fig/coffee_plantation.jpg}
+
+      \vspace{0.3em}
+      {\small\textcolor{DarkGray}{\textit{Coffee plantation in Colombia}}}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}{Why Do Countries Trade?}
+
+  \begin{columns}[T]
+    \begin{column}{0.5\textwidth}
       \vspace{0.5em}
       Not every country can make everything well:
 
@@ -176,11 +195,11 @@
         \item Making everything yourself is expensive and slow
       \end{itemize}
     \end{column}
-    \begin{column}{0.38\textwidth}
-      \includegraphics[width=\textwidth, height=0.35\textheight, keepaspectratio]{fig/coffee_plantation.jpg}
+    \begin{column}{0.48\textwidth}
+      \includegraphics[width=\textwidth]{fig/meta_hq.jpg}
 
-      \vspace{0.5em}
-      \includegraphics[width=\textwidth, height=0.35\textheight, keepaspectratio]{fig/meta_hq.jpg}
+      \vspace{0.3em}
+      {\small\textcolor{DarkGray}{\textit{Meta headquarters in California}}}
     \end{column}
   \end{columns}
 
@@ -243,7 +262,7 @@
   \vspace{0.8em}
   \begin{tabular}{@{} l c c c c @{}}
     \toprule
-    & \textbf{Software} & \textbf{Coffee} & \textbf{OC of Coffee} & \textbf{Benefit/OC} \\
+    & \textbf{Software} & \textbf{Coffee} & \textbf{OC of Coffee} & \textbf{Benefit/OC of Coffee} \\
     & (units) & (tons) & (software units) & (units/ton) \\
     \midrule
     \textcolor{blue}{\textbf{U.S.}} & 40 & 20 & & \\
@@ -266,7 +285,7 @@
   \vspace{0.8em}
   \begin{tabular}{@{} l c c c c @{}}
     \toprule
-    & \textbf{Software} & \textbf{Coffee} & \textbf{OC of Coffee} & \textbf{Benefit/OC} \\
+    & \textbf{Software} & \textbf{Coffee} & \textbf{OC of Coffee} & \textbf{Benefit/OC of Coffee} \\
     & (units) & (tons) & (software units) & (units/ton) \\
     \midrule
     \textcolor{blue}{\textbf{U.S.}} & 40 & 20 & 40 & \\
@@ -292,10 +311,10 @@
   \vspace{0.8em}
   \begin{tabular}{@{} l c c c c @{}}
     \toprule
-    & \textbf{Software} & \textbf{Coffee} & \textbf{OC of Coffee} & \textbf{Benefit/OC} \\
+    & \textbf{Software} & \textbf{Coffee} & \textbf{OC of Coffee} & \textbf{Benefit/OC of Coffee} \\
     & (units) & (tons) & (software units) & (units/ton) \\
     \midrule
-    \textcolor{blue}{\textbf{U.S.}} & 40 & 20 & 40 & $\frac{1}{2}$ \\
+    \textcolor{blue}{\textbf{U.S.}} & 40 & 20 & 40 & $1/2$ \\
     \textcolor{orange}{\textbf{Colombia}} & 10 & 20 & 10 & 2 \\
     \bottomrule
   \end{tabular}
@@ -573,7 +592,7 @@
         height=6.5cm,
         xmin=1986, xmax=2008,
         xtick={1987,1989,...,2007},
-        xticklabel style={font=\tiny, /pgf/number format/1000 sep={}},
+        xticklabel style={font=\small, /pgf/number format/1000 sep={}},
         grid=major,
         grid style={gray!20},
         xlabel style={font=\small},
@@ -587,7 +606,7 @@
       ylabel style={font=\small},
       ymin=0, ymax=0.06,
       ytick={0, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06},
-      yticklabel style={font=\tiny, color=blue},
+      yticklabel style={font=\small, color=blue},
     ]
       \addplot[blue, thick, mark=none, smooth] coordinates {
         (1987,0.002) (1988,0.003) (1989,0.004) (1990,0.005)
@@ -919,7 +938,7 @@
       \pause
       \begin{answerbox}
         \centering
-        Jan 2026: {\Large $\approx$ \textbf{100\%}}
+        {\Large \textbf{50-100\%}}
       \end{answerbox}
 
       \vspace{0.3em}
@@ -944,7 +963,7 @@
       {\small young industries from British competition}
     };
     \node[tag, fill=blue, text=white, anchor=north west] at (econ.north west) {Economic};
-
+    \pause 
     % Top-right: Security
     \node[cell, draw=green, fill=green!8] (sec) at (3.6,1.7) {
       \textbf{Protect strategic industries}\\[4pt]
@@ -952,7 +971,7 @@
       {\small to secure semiconductor production}
     };
     \node[tag, fill=green, text=white, anchor=north west] at (sec.north west) {Security};
-
+    \pause
     % Bottom-left: Political
     \node[cell, draw=orange, fill=orange!8] (pol) at (-3.6,-1.7) {
       \textbf{Protect political industries}\\[4pt]
@@ -960,7 +979,7 @@
       {\small farmers despite cheaper imports abroad}
     };
     \node[tag, fill=orange, text=white, anchor=north west] at (pol.north west) {Political};
-
+    \pause
     % Bottom-right: Strategic
     \node[cell, draw=vermillion, fill=vermillion!8] (strat) at (3.6,-1.7) {
       \textbf{Bargaining leverage}\\[4pt]
