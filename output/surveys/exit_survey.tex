@@ -1,0 +1,173 @@
+% =============================================================================
+% Exit Survey — Last Day  (REVISED)
+% Pathways: Economics & Finance Workshop
+%
+% Sections marked % OPTIONAL can be cut to reach a shorter form.
+% Cutting Parts 3 and the optional rows elsewhere gets you to ~1.5 pages.
+% =============================================================================
+\documentclass[letterpaper,10pt]{article}
+\input{../../codes/Preambles/header_doc}
+
+% --- Packages needed by this file. All are loaded without options, so these
+% --- lines are harmless duplicates if header_doc already provides them.
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{amssymb}   % \square
+\usepackage{pgffor}    % \foreach, used by \answerlines
+
+\pagestyle{plain}
+
+% -----------------------------------------------------------------------------
+% Self-numbering questions. Use \q anywhere — list item, table row, paragraph —
+% and the numbering stays correct when questions are added or removed.
+% -----------------------------------------------------------------------------
+\newcounter{qnum}
+\newcommand{\q}{\refstepcounter{qnum}\textbf{\theqnum.}\ }
+
+% Ruled answer lines: \answerlines{3} gives three writing lines.
+\newcommand{\answerlines}[1]{%
+  \par\vspace{0.6em}%
+  \foreach \n in {1,...,#1}{\noindent\rule{\textwidth}{0.2pt}\par\vspace{1.0em}}%
+}
+
+% Section divider
+\newcommand{\parthead}[2]{%
+  \vspace{2em}%
+  \noindent{\bfseries #1}\quad{\small\itshape #2}\par
+  \vspace{-0.3em}\noindent\rule{\textwidth}{0.4pt}\par\vspace{0.5em}%
+}
+
+\newcommand{\bx}{$\square$}
+
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+  {\LARGE\bfseries Pathways: Economics \& Finance Workshop}\\[0.4em]
+  {\large Exit Survey --- Day 5}\\[0.3em]
+  {\small Instructor: Tudor Schlanger \quad$\mid$\quad Summer 2026 \quad$\mid$\quad Yale University}
+\end{center}
+
+\vspace{0.3em}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.4em}
+
+\noindent{\small\textbf{This survey is anonymous.} Please do not write your name. }
+
+% =============================================================================
+\parthead{Part 1. A few quick facts}{}
+
+\noindent\q Grade you will be in this fall:\quad
+\bx\ 9 \quad \bx\ 10 \quad \bx\ 11 \quad \bx\ 12 \quad \bx\ Other: \underline{\hspace{2.5cm}}
+\vspace{0.7em}
+
+\noindent\q Before this week, had you studied any economics or personal finance? \\
+\vspace{0.3em}
+\begin{tabular}{@{}p{0.46\textwidth}p{0.46\textwidth}@{}}
+  \bx\ Yes --- a class at school &
+  \bx\ Yes --- on my own (videos, books, a club) \\[0.3em]
+  \bx\ A little, informally (family, news) &
+  \bx\ No, this was my first exposure \\
+\end{tabular}
+\vspace{0.7em}
+
+\noindent\q Before this week, how interested were you in economics?
+\vspace{0.3em}
+
+\noindent\bx\ Not at all \quad \bx\ A little \quad \bx\ Somewhat \quad \bx\ Very \quad \bx\ It was already a top interest of mine
+
+\vspace{1.5em}
+
+
+% =============================================================================
+\parthead{Part 2. What you thought about the course}{}
+
+\noindent\q\ \textbf{Put exactly one check in each column.} It's fine for the same
+day to get more than one check.
+\vspace{0.4em}
+
+\renewcommand{\arraystretch}{1.4}
+\noindent\begin{tabular}{@{}p{0.48\textwidth}ccc@{}}
+  & {\scriptsize Most} & {\scriptsize Most useful} & {\scriptsize Hardest} \\
+  & {\scriptsize interesting} & {\scriptsize outside school} & {\scriptsize to follow} \\
+  \hline
+  Day 1: Economic Decision-Making\newline {\scriptsize\textit{trade-offs, opportunity cost, sunk costs}} & \bx & \bx & \bx \\
+  Day 2: Correlation vs Causation\newline {\scriptsize\textit{confounding variables, misleading charts}} & \bx & \bx & \bx \\
+  Day 3: Markets \& Externalities\newline {\scriptsize\textit{common resources, tragedy of the commons}} & \bx & \bx & \bx \\
+  Day 4: Trade \& Tariffs\newline {\scriptsize\textit{gains from trade, comparative advantage}} & \bx & \bx & \bx \\
+  Day 5: Financial Literacy\newline {\scriptsize\textit{compound interest, real rates, investing}} & \bx & \bx & \bx \\
+  \hline
+\end{tabular}
+\renewcommand{\arraystretch}{1.0}
+
+\vspace{2em}
+\noindent\q Which ways of learning helped you most? \textit{Check up to two.}
+\vspace{0.3em}
+
+\noindent\begin{tabular}{@{}p{0.47\textwidth}p{0.47\textwidth}@{}}
+  \bx\ Instructor explaining at the board & \bx\ Whole-class discussion or debate \\[0.35em]
+  \bx\ Small-group activities             & \bx\ Games and simulations \\[0.35em]
+  \bx\ Slides and handouts                & \bx\ Real-world news examples \\[0.35em]
+  \bx\ Other: \underline{\hspace{4cm}}                \\
+\end{tabular}
+
+\vspace{2em}
+\noindent\q Would you recommend this workshop to a friend?
+\vspace{0.3em}
+
+\noindent\bx\ Definitely not \quad \bx\ Probably not \quad \bx\ Not sure \quad \bx\ Probably \quad \bx\ Definitely
+
+\newpage
+% =============================================================================
+\parthead{Part 3. How the workshop changed how you think}{Circle the number that best describes how you feel now.}
+
+\renewcommand{\arraystretch}{1.5}
+\noindent\begin{tabular}{@{}p{0.52\textwidth}ccccc@{}}
+  & {\scriptsize Much less} & {\scriptsize Somewhat} & {\scriptsize About the} & {\scriptsize Somewhat} & {\scriptsize Much more} \\
+  & {\scriptsize than before} & {\scriptsize less} & {\scriptsize same} & {\scriptsize more} & {\scriptsize than before} \\
+  \hline
+  \q I think economics is relevant to my daily life. & 1 & 2 & 3 & 4 & 5 \\
+  \hline
+  \q I'm interested in how governments make policy. & 1 & 2 & 3 & 4 & 5 \\
+  \hline
+  \q I feel confident discussing economic ideas with adults. & 1 & 2 & 3 & 4 & 5 \\
+  \hline
+  \q I want to take an economics or finance class in high school. & 1 & 2 & 3 & 4 & 5 \\
+  \hline
+  \q I am interested in studying economics in college. & 1 & 2 & 3 & 4 & 5 \\
+  \hline
+\end{tabular}
+\renewcommand{\arraystretch}{1.0}
+
+
+\vspace{0em}
+% =============================================================================
+\parthead{Part 4. Teaching}{Your honest feedback is what helps the instructor improve. Remember that this is anonymous.}
+
+\renewcommand{\arraystretch}{1.5}
+\noindent\begin{tabular}{@{}p{0.55\textwidth}ccccc@{}}
+  & {\scriptsize Strongly} & {\scriptsize Disagree} & {\scriptsize Neutral} & {\scriptsize Agree} & {\scriptsize Strongly} \\
+  & {\scriptsize disagree} & & & & {\scriptsize agree} \\
+  \hline
+  \q The instructor explained ideas clearly. & 1 & 2 & 3 & 4 & 5 \\
+  \hline
+  \q The instructor made the material interesting. & 1 & 2 & 3 & 4 & 5 \\
+  \hline
+  \q The instructor encouraged questions and discussion. & 1 & 2 & 3 & 4 & 5 \\
+  \hline
+  \q I felt comfortable saying when I was confused. & 1 & 2 & 3 & 4 & 5 \\
+  \hline
+  \q I understood the point of each lesson while we were in it. & 1 & 2 & 3 & 4 & 5 \\
+  \hline
+  \q Examples connected to things I actually care about. & 1 & 2 & 3 & 4 & 5 \\
+  \hline
+\end{tabular}
+\renewcommand{\arraystretch}{1.0}
+
+\vspace{1em}
+% =============================================================================
+\parthead{Part 5. Any other feedback you would like to share?}{}
+
+\answerlines{4}
+
+\end{document}
