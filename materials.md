@@ -42,3 +42,20 @@
 
 ---
 
+## Day 4: Trade & Tariffs
+
+| Item | Qty | Notes |
+|------|-----|-------|
+| No additional materials needed | — | Slides only |
+
+---
+
+## Day 5: Financial Literacy
+
+| Item | Qty | Notes |
+|------|-----|-------|
+| Financial literacy quiz (`lec5_worksheet`) | 15 | Print one-sided |
+| Exit survey (`exit_survey`) | 15 | Print double-sided |
+
+---
+

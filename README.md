@@ -10,11 +10,11 @@ This five-day workshop introduces high school students to economic thinking thro
 
 | Day | Topic | Key Concepts |
 |-----|-------|-------------|
-| 1 | Economic Decision Making | Trade-offs, opportunity cost, sunk costs, incentives |
-| 2 | Economics & Data | Correlation vs. causation, confounding variables, selection bias |
-| 3 | Climate Change & Common Resources | Externalities, tragedy of the commons, government policy tools |
-| 4 | Trade & Tariffs | Gains from trade, imports/exports, tariffs |
-| 5 | Financial Literacy | Saving & investing, borrowing smart, spending & behavior |
+| 1 | Economic Decision-Making | Scarcity, trade-offs, opportunity cost, sunk-cost fallacy, cost-benefit analysis |
+| 2 | Correlation vs. Causation | Correlation vs. causation, confounding variables, reverse causality, causal diagrams (DAGs) |
+| 3 | Climate Change & Common Resources | Supply & demand, externalities, tragedy of the commons, government policy tools |
+| 4 | Trade & Tariffs | Gains from trade, comparative advantage, specialization, tariffs |
+| 5 | Financial Literacy | Compound interest, inflation & real vs. nominal returns, bonds & stocks, diversification |
 
 Each session (90 minutes) combines short lectures with hands-on activities and group discussions.
 
@@ -33,6 +33,8 @@ codes/               # LaTeX preambles and templates
 ## Acknowledgments
 
 These materials were developed based on the work of the **Yale Pathways to Arts & Humanities Summer Scholars Program** staff and fellows. Their curriculum design, lesson plans, and teaching resources provided the foundation for this workshop.
+
+I am very grateful for the feedback and suggestions received from Naomi Gluck and Hyun Ja Shin. 
 
 ## License
 
